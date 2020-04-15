@@ -38,7 +38,7 @@
         "metadata": {
           "description": "The base URI where artifacts required by this template are located."
         },
-        "defaultValue": "https://raw.githubusercontent.com/arnabganguly/Kafkaschemaregistry/master/"
+        "defaultValue": "https://raw.githubusercontent.com/arnabganguly/Kafkaconnect/master/"
       },
       "_artifactsLocationSasToken": {
         "type": "securestring",
@@ -221,7 +221,7 @@
             "roles": [
               {
                 "name": "edgenode",
-                "targetInstanceCount": 1,
+                "targetInstanceCount": 2,
                 "hardwareProfile": {
                   "vmSize": "Standard_D3_v2"
                 }
