@@ -59,7 +59,7 @@
         "metadata": {
           "description": "A script action you can run on the empty node to install or configure additional software."
         },
-        "defaultValue": "schemaregistry.sh"
+        "defaultValue": "EmptyNodeSetup.sh"
       },
       "location": {
         "type": "string",
@@ -228,15 +228,14 @@
               }
             ]
           },
-          "installScriptActions": [
-            {
-              "name": "[concat('schemaregistry','-' ,uniquestring(variables('applicationName')))]",
-              "uri": "[concat(parameters('_artifactsLocation'), parameters('installScriptActionFolder'), '/', parameters('installScriptAction'), parameters('_artifactsLocationSasToken'))]",
-              "roles": [
-                "edgenode"
-              ]
-            }
-          ],
+          "installScriptAction": {
+      "type": "string",
+      "metadata": {
+        "description": "A script action you can run on the empty node to install or configure additiona software."
+      },
+      "defaultValue": "EmptyNodeSetup.sh"
+    }
+    },
           "sshEndpoints": [
             {
               "location": "[concat(variables('applicationName'),'.',parameters('clusterName'),'-ssh.azurehdinsight.net')]",
