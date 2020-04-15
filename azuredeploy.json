@@ -228,14 +228,15 @@
               }
             ]
           },
-          "installScriptAction": {
-      "type": "string",
-      "metadata": {
-        "description": "A script action you can run on the empty node to install or configure additiona software."
-      },
-      "defaultValue": "EmptyNodeSetup.sh"
-    }
-    },
+          "installScriptActions": [
+            {
+                "name": "[concat('emptynode','-' ,uniquestring(variables('applicationName')))]",
+                "uri": "[concat(parameters('_artifactsLocation'), '/', parameters('installScriptActionFolder'), '/', parameters('installScriptAction'), parameters('_artifactsLocationSasToken'))]",
+                "roles": [
+                  "edgenode"
+              ]
+            }
+          ],
           "sshEndpoints": [
             {
               "location": "[concat(variables('applicationName'),'.',parameters('clusterName'),'-ssh.azurehdinsight.net')]",
