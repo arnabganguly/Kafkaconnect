@@ -11,12 +11,12 @@ Below is a representative architecture of how the Schema Registry is deployed on
 
 ![HDInsight Kafka Schema Registry](https://github.com/arnabganguly/Kafkaschemaregistry/blob/master/images/Pic1.png)
 
-Click [**Next**](https://github.com/arnabganguly/Kafkaschemaregistry/blob/master/HDInsightManagedKafka.md) to start the Lab 
+Click [**Next**](https://github.com/arnabganguly/Kafkaconnect/blob/master/HDInsightManagedKafka.md) to start the Lab 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2MjkwNzU2MywtMTg1NTU4MTQ2MywxNj
-M1NzEzNzU1LC05NzA2MDkxOTUsMjAyMzI5ODA3MywtNDQwNTgz
-OTY3LC0xMjY2NzcwNTI1LDE0OTE1MzY2MSw2NTU4MzE5NDksOD
-UyMzAxNDU1LDI3MDUzOTY2OV19
+eyJoaXN0b3J5IjpbLTU3Mjk3Mjc0NywxMjYyOTA3NTYzLC0xOD
+U1NTgxNDYzLDE2MzU3MTM3NTUsLTk3MDYwOTE5NSwyMDIzMjk4
+MDczLC00NDA1ODM5NjcsLTEyNjY3NzA1MjUsMTQ5MTUzNjYxLD
+Y1NTgzMTk0OSw4NTIzMDE0NTUsMjcwNTM5NjY5XX0=
 -->
