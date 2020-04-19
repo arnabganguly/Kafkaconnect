@@ -10,17 +10,11 @@ In these circumstances it is the application developer's responsibility to ensur
 
 A  _source connector_ collects data from a system. Source systems can be entire databases, applications or message brokers. A source connector could also collect metrics from application servers into Kafka topics, making the data available for stream processing with low latency.
 
-A  _sink connector_  delivers data from Kafka topics into other systems, which might be indexes such as Elasticsearch, storage systems such as Hadoop, or any kind of database.
+A  _sink connector_  delivers data from Kafka topics into other systems, which might be indexes such as Elasticsearch, storage systems such as Azure Blob storage, or databases.
 
-**Some connectors are maintained by the community, while others are supported by Confluent or its partners. Really, we can find connectors for most popular systems, like S3, JDBC, and Cassandra, just to name a few.**
+**Most connectors are maintained by the community, while others are supported by Confluent or its partners.  One can normally find connectors for most popular systems, like Azure Blob , Azure Data Lake Store, Elastic Search etc. 
 
-Kafka Schema Registry provides serializers that plug into Kafka clients that handle  message schema storage and retrieval for Kafka messages that are sent in the Avro format. Its used to be a  OSS project by Confluent , but is now under the [Confluent community license](https://www.confluent.io/blog/license-changes-confluent-platform/) . The Schema Registry can additionally serves the below purposes
- 
- - Store and retrieve schemas for producers and consumers
- - Enforce backward/forward /full compatibility on Topics
- - Decrease the size of the payload sent to Kafka  
 
-In an HDInsight Managed Kafka cluster the Schema Registry is typically deployed on an Edge node to allow compute separation from Head Nodes. 
 
 Below is a representative architecture of how the Schema Registry is deployed on an HDInsight cluster. Note that Schema Registry natively exposes a REST API for operations on it.  Producers and consumers can interact with the Schema Registry from within the VNet or using the [Kafka REST Proxy](https://docs.microsoft.com/en-us/azure/hdinsight/kafka/rest-proxy). 
 
@@ -30,7 +24,7 @@ Click [**Next**](https://github.com/arnabganguly/Kafkaconnect/blob/master/HDInsi
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyNjc5ODkxNywxNDYwOTc0ODA0LDgwMT
+eyJoaXN0b3J5IjpbMTc1MDQ0ODA4OSwxNDYwOTc0ODA0LDgwMT
 U4MjIyMiwxOTA1MDMwNzcsMTI2MjkwNzU2MywtMTg1NTU4MTQ2
 MywxNjM1NzEzNzU1LC05NzA2MDkxOTUsMjAyMzI5ODA3MywtND
 QwNTgzOTY3LC0xMjY2NzcwNTI1LDE0OTE1MzY2MSw2NTU4MzE5
