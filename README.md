@@ -4,7 +4,7 @@ In a normal Kafka cluster a producer application produces a message and publishe
 
 In these circumstances it is the application developer's responsibility to ensure that the producer and consumers are reliable and fault tolerant. 
 
-**Kafka Connect is a framework for connecting Kafka with external systems**  such as databases, storage systems, Applications , search indexes, and file systems, using so-called  _Connectors_.
+**Kafka Connect is a framework for connecting Kafka with external systems**  such as databases, storage systems, applications , search indexes, and file systems, using so-called  _Connectors_, in a reliable and fault tolerant way.
 
 **Kafka Connectors are ready-to-use components, which can help import data from external systems into Kafka topics and export data from Kafka topics into external systems**. Existing connector implementations are normally available for common data sources and sinks with the option of creating ones own connector.
 
@@ -30,9 +30,9 @@ Click [**Next**](https://github.com/arnabganguly/Kafkaconnect/blob/master/HDInsi
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0NDM3NzU2MSw3MjUzMjY5MjQsMTQ2MD
-k3NDgwNCw4MDE1ODIyMjIsMTkwNTAzMDc3LDEyNjI5MDc1NjMs
-LTE4NTU1ODE0NjMsMTYzNTcxMzc1NSwtOTcwNjA5MTk1LDIwMj
-MyOTgwNzMsLTQ0MDU4Mzk2NywtMTI2Njc3MDUyNSwxNDkxNTM2
-NjEsNjU1ODMxOTQ5LDg1MjMwMTQ1NSwyNzA1Mzk2NjldfQ==
+eyJoaXN0b3J5IjpbLTE0MDEwMjkzMzYsNzI1MzI2OTI0LDE0Nj
+A5NzQ4MDQsODAxNTgyMjIyLDE5MDUwMzA3NywxMjYyOTA3NTYz
+LC0xODU1NTgxNDYzLDE2MzU3MTM3NTUsLTk3MDYwOTE5NSwyMD
+IzMjk4MDczLC00NDA1ODM5NjcsLTEyNjY3NzA1MjUsMTQ5MTUz
+NjYxLDY1NTgzMTk0OSw4NTIzMDE0NTUsMjcwNTM5NjY5XX0=
 -->
