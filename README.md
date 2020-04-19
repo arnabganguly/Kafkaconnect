@@ -24,13 +24,13 @@ Below is a representative architecture of how **Kafka Connect** is  is deployed 
 can be added to an HDInsight cluster [either at the time of creation](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-apps-use-edge-node#add-an-edge-node-when-creating-a-cluster) or [post creation](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-apps-use-edge-node#add-an-edge-node-to-an-existing-cluster). 
 The number of Edge nodes can be scaled up or down on an existing cluster and this functionality can be used to scale the size of the Kafka Connect cluster.
 
-![HDInsight Kafka Schema Registry](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/Pic1.png)
+![HDInsight Kafka Schema Registry](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic2.png)
 
 Click [**Next**](https://github.com/arnabganguly/Kafkaconnect/blob/master/HDInsightManagedKafka.md) to start the Lab 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1NjAxNDYzMCw3MjUzMjY5MjQsMTQ2MD
+eyJoaXN0b3J5IjpbMTg0NDM3NzU2MSw3MjUzMjY5MjQsMTQ2MD
 k3NDgwNCw4MDE1ODIyMjIsMTkwNTAzMDc3LDEyNjI5MDc1NjMs
 LTE4NTU1ODE0NjMsMTYzNTcxMzc1NSwtOTcwNjA5MTk1LDIwMj
 MyOTgwNzMsLTQ0MDU4Mzk2NywtMTI2Njc3MDUyNSwxNDkxNTM2
