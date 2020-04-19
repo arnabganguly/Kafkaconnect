@@ -21,8 +21,8 @@ A  _sink connector_  delivers data from Kafka topics into other systems, which m
 
 
 Below is a representative architecture of how **Kafka Connect** is  is deployed on an HDInsight Managed Kafka Cluster in **distributed mode**. Note that the Kafka Connect cluster may be deployed on a set of edge nodes. Edges nodes 
-can be added to an HDInsight cluster either at the time of creation or post creation. 
-can be added or deleted from the cluster and this functionality can be used to scale the size of the Kafka Connect cluster.
+can be added to an HDInsight cluster [either at the time of creation](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-apps-use-edge-node#add-an-edge-node-when-creating-a-cluster) or [post creation](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-apps-use-edge-node#add-an-edge-node-to-an-existing-cluster). 
+The number of Edge nodes can be scaled up or down on an existing cluster and this functionality can be used to scale the size of the Kafka Connect cluster.
 
 ![HDInsight Kafka Schema Registry](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/Pic1.png)
 
@@ -30,7 +30,7 @@ Click [**Next**](https://github.com/arnabganguly/Kafkaconnect/blob/master/HDInsi
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2MjkyOTczOCw3MjUzMjY5MjQsMTQ2MD
+eyJoaXN0b3J5IjpbLTg1NjAxNDYzMCw3MjUzMjY5MjQsMTQ2MD
 k3NDgwNCw4MDE1ODIyMjIsMTkwNTAzMDc3LDEyNjI5MDc1NjMs
 LTE4NTU1ODE0NjMsMTYzNTcxMzc1NSwtOTcwNjA5MTk1LDIwMj
 MyOTgwNzMsLTQ0MDU4Mzk2NywtMTI2Njc3MDUyNSwxNDkxNTM2
