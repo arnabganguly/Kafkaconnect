@@ -20,11 +20,16 @@ A  _sink connector_  delivers data from Kafka topics into other systems, which m
 
 
 
-In this lab **Kafka Connect**  is  is deployed on an HDInsight Managed Kafka Cluster in **distributed mode**. Note that the Kafka Connect cluster may be deployed on a set of edge nodes. Edges nodes 
-can be added to an HDInsight cluster [either at the time of creation](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-apps-use-edge-node#add-an-edge-node-when-creating-a-cluster) or [post creation](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-apps-use-edge-node#add-an-edge-node-to-an-existing-cluster). 
-The number of Edge nodes can be scaled up or down on an existing cluster and this functionality can be used to scale the size of the Kafka Connect cluster.
+- This lab explores ways to use **Kafka Connect** on an HDInsight Managed Kafka Cluster in both **distributed mode**
+- In this lab **Kafka Connect**  is  deployed on an HDInsight Managed Kafka Cluster in **distributed mode**.  The la
 
-The connect cluster would ingest messages from twitter and rgen write them to an Azure Storage Blob. 
+
+Note that the Kafka Connect cluster may be deployed on a set of edge nodes. Edges nodes 
+can be added to an HDInsight cluster [either at the time of creation](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-apps-use-edge-node#add-an-edge-node-when-creating-a-cluster) or [post creation](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-apps-use-edge-node#add-an-edge-node-to-an-existing-cluster). 
+
+- The number of Edge nodes can be scaled up or down on an existing cluster and this functionality can be used to scale the size of the Kafka Connect cluster.
+
+- The connect cluster would ingest messages from twitter and rgen write them to an Azure Storage Blob. 
 
 ![HDInsight Kafka Schema Registry](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic2.png)
 
@@ -32,7 +37,7 @@ Click [**Next**](https://github.com/arnabganguly/Kafkaconnect/blob/master/HDInsi
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTM3NjcyNyw3MjUzMjY5MjQsMTQ2MD
+eyJoaXN0b3J5IjpbMTAxNTcxMjc5OSw3MjUzMjY5MjQsMTQ2MD
 k3NDgwNCw4MDE1ODIyMjIsMTkwNTAzMDc3LDEyNjI5MDc1NjMs
 LTE4NTU1ODE0NjMsMTYzNTcxMzc1NSwtOTcwNjA5MTk1LDIwMj
 MyOTgwNzMsLTQ0MDU4Mzk2NywtMTI2Njc3MDUyNSwxNDkxNTM2
