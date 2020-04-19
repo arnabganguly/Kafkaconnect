@@ -4,7 +4,7 @@ In a normal Kafka cluster a producer application produces a message and publishe
 
 In these circumstances it is the application developer's responsibility to ensure that the producer and consumers are reliable and fault tolerant. 
 
-Kafka Conenct is a framework to connect 
+Kafka Concnct is a framework to connect 
 
 Kafka Schema Registry provides serializers that plug into Kafka clients that handle  message schema storage and retrieval for Kafka messages that are sent in the Avro format. Its used to be a  OSS project by Confluent , but is now under the [Confluent community license](https://www.confluent.io/blog/license-changes-confluent-platform/) . The Schema Registry can additionally serves the below purposes
  
@@ -22,9 +22,9 @@ Click [**Next**](https://github.com/arnabganguly/Kafkaconnect/blob/master/HDInsi
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2MDk3NDgwNCw4MDE1ODIyMjIsMTkwNT
-AzMDc3LDEyNjI5MDc1NjMsLTE4NTU1ODE0NjMsMTYzNTcxMzc1
-NSwtOTcwNjA5MTk1LDIwMjMyOTgwNzMsLTQ0MDU4Mzk2NywtMT
-I2Njc3MDUyNSwxNDkxNTM2NjEsNjU1ODMxOTQ5LDg1MjMwMTQ1
-NSwyNzA1Mzk2NjldfQ==
+eyJoaXN0b3J5IjpbLTk5OTA3MjMwMiwxNDYwOTc0ODA0LDgwMT
+U4MjIyMiwxOTA1MDMwNzcsMTI2MjkwNzU2MywtMTg1NTU4MTQ2
+MywxNjM1NzEzNzU1LC05NzA2MDkxOTUsMjAyMzI5ODA3MywtND
+QwNTgzOTY3LC0xMjY2NzcwNTI1LDE0OTE1MzY2MSw2NTU4MzE5
+NDksODUyMzAxNDU1LDI3MDUzOTY2OV19
 -->
