@@ -30,9 +30,9 @@ A  _sink connector_  delivers data from Kafka topics into other systems, which m
 #### Distributed Mode 
 -  Two edge nodes on an HDInsight cluster will be used to demonstrate a distributed mode Kafka Connect setup. 
 
- - Scalability is achieved in Kafka Connect with the addition of more edges nodes an HDInsight cluster [either at the time of creation](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-apps-use-edge-node#add-an-edge-node-when-creating-a-cluster) or [post creation](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-apps-use-edge-node#add-an-edge-node-to-an-existing-cluster). 
+ - Scalability is achieved in Kafka Connect with the addition of more edges nodes to the HDInsight cluster [either at the time of creation](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-apps-use-edge-node#add-an-edge-node-when-creating-a-cluster) or [post creation](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-apps-use-edge-node#add-an-edge-node-to-an-existing-cluster). 
 
-- Since the number of Edge nodes can be scaled up or down on an existing cluster , this functionality can be used to scale the size of the Kafka Connect cluster as well.
+- Since the number of edge nodes can be scaled up or down on an existing cluster , this functionality can be used to scale the size of the Kafka Connect cluster as well.
 
 ![HDInsight Kafka Schema Registry](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic2.png)
 
@@ -40,9 +40,9 @@ Click [**Next**](https://github.com/arnabganguly/Kafkaconnect/blob/master/HDInsi
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTg2Mzk4OTYsNzI1MzI2OTI0LDE0Nj
-A5NzQ4MDQsODAxNTgyMjIyLDE5MDUwMzA3NywxMjYyOTA3NTYz
-LC0xODU1NTgxNDYzLDE2MzU3MTM3NTUsLTk3MDYwOTE5NSwyMD
-IzMjk4MDczLC00NDA1ODM5NjcsLTEyNjY3NzA1MjUsMTQ5MTUz
-NjYxLDY1NTgzMTk0OSw4NTIzMDE0NTUsMjcwNTM5NjY5XX0=
+eyJoaXN0b3J5IjpbNjY0Nzk5NzUsNzI1MzI2OTI0LDE0NjA5Nz
+Q4MDQsODAxNTgyMjIyLDE5MDUwMzA3NywxMjYyOTA3NTYzLC0x
+ODU1NTgxNDYzLDE2MzU3MTM3NTUsLTk3MDYwOTE5NSwyMDIzMj
+k4MDczLC00NDA1ODM5NjcsLTEyNjY3NzA1MjUsMTQ5MTUzNjYx
+LDY1NTgzMTk0OSw4NTIzMDE0NTUsMjcwNTM5NjY5XX0=
 -->
