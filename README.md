@@ -1,6 +1,8 @@
 # Kafka Connect with HDInsight Managed Kafka 
 
-In a normal Kafka cluster a produc
+In a normal Kafka cluster a producer application produces a message and publishes it to Kafka and a consumer application consumes the message from Kafka. 
+
+In these circumstances it is the application developer's resp
 
 Kafka Schema Registry provides serializers that plug into Kafka clients that handle  message schema storage and retrieval for Kafka messages that are sent in the Avro format. Its used to be a  OSS project by Confluent , but is now under the [Confluent community license](https://www.confluent.io/blog/license-changes-confluent-platform/) . The Schema Registry can additionally serves the below purposes
  
@@ -18,7 +20,7 @@ Click [**Next**](https://github.com/arnabganguly/Kafkaconnect/blob/master/HDInsi
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyOTI0ODM0OCwxOTA1MDMwNzcsMTI2Mj
+eyJoaXN0b3J5IjpbLTc0ODA0MjAyOSwxOTA1MDMwNzcsMTI2Mj
 kwNzU2MywtMTg1NTU4MTQ2MywxNjM1NzEzNzU1LC05NzA2MDkx
 OTUsMjAyMzI5ODA3MywtNDQwNTgzOTY3LC0xMjY2NzcwNTI1LD
 E0OTE1MzY2MSw2NTU4MzE5NDksODUyMzAxNDU1LDI3MDUzOTY2
