@@ -84,7 +84,7 @@
 
       "clStgAcnt": "[concat(parameters('clusterName'),'store')]",
       "storageAccountType": "Standard_LRS",
-      "applicationName": "schema-registry"
+      "applicationName": "kafka-connect"
     },
     "resources": [
         {
