@@ -1,5 +1,7 @@
 # Kafka Connect with HDInsight Managed Kafka 
 
+
+### Kafka Connect
 In a normal Kafka cluster a producer application produces a message and publishes it to Kafka and a consumer application consumes the message from Kafka. 
 
 In these circumstances it is the application developer's responsibility to ensure that the producer and consumers are reliable and fault tolerant. 
@@ -19,20 +21,18 @@ A  _sink connector_  delivers data from Kafka topics into other systems, which m
 
 
 
-### Lab Objective 
+### Lab Objectives 
 - This lab explores ways to use **Kafka Connect** on an HDInsight Managed Kafka Cluster in both **Standalone Mode** and **Distributed Mode**. - The connect cluster in both the setups would ingest messages from twitter and  write them to an Azure Storage Blob. 
 
 #### Standalone Mode 
-- Single edge on the HDInsight cluster will used to demonstrate a standalone mode setup. 
+- Single edge node on the HDInsight cluster will used to demonstrate a standalone mode Kafka Connect setup. 
 
 #### Distributed Mode 
--  Two edge nodes on an HDInsight cluster will be used to demonstrate a distributed mode setup. 
+-  Two edge nodes on an HDInsight cluster will be used to demonstrate a distributed mode Kafka Connect setup. 
 
  - Scalabilty is achieved in Kafka Connect with the addition of more edges nodes an HDInsight cluster [either at the time of creation](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-apps-use-edge-node#add-an-edge-node-when-creating-a-cluster) or [post creation](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-apps-use-edge-node#add-an-edge-node-to-an-existing-cluster). 
 
 - Since the number of Edge nodes can be scaled up or down on an existing cluster , this functionality can be used to scale the size of the Kafka Connect cluster as well.
-
-
 
 ![HDInsight Kafka Schema Registry](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic2.png)
 
@@ -40,9 +40,9 @@ Click [**Next**](https://github.com/arnabganguly/Kafkaconnect/blob/master/HDInsi
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTYzNzk4NTgzLDcyNTMyNjkyNCwxNDYwOT
-c0ODA0LDgwMTU4MjIyMiwxOTA1MDMwNzcsMTI2MjkwNzU2Mywt
-MTg1NTU4MTQ2MywxNjM1NzEzNzU1LC05NzA2MDkxOTUsMjAyMz
-I5ODA3MywtNDQwNTgzOTY3LC0xMjY2NzcwNTI1LDE0OTE1MzY2
-MSw2NTU4MzE5NDksODUyMzAxNDU1LDI3MDUzOTY2OV19
+eyJoaXN0b3J5IjpbMTY4Mjk5NTY2NSw3MjUzMjY5MjQsMTQ2MD
+k3NDgwNCw4MDE1ODIyMjIsMTkwNTAzMDc3LDEyNjI5MDc1NjMs
+LTE4NTU1ODE0NjMsMTYzNTcxMzc1NSwtOTcwNjA5MTk1LDIwMj
+MyOTgwNzMsLTQ0MDU4Mzk2NywtMTI2Njc3MDUyNSwxNDkxNTM2
+NjEsNjU1ODMxOTQ5LDg1MjMwMTQ1NSwyNzA1Mzk2NjldfQ==
 -->
