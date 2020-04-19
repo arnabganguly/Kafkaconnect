@@ -20,7 +20,7 @@ A  _sink connector_  delivers data from Kafka topics into other systems, which m
 
 
 ### Lab Objective 
-- This lab explores ways to use **Kafka Connect** on an HDInsight Managed Kafka Cluster in both **Standalone Mode** and **Distributed Mode**. - The connect cluster in bot hthe setups would ingest messages from twitter and  write them to an Azure Storage Blob. 
+- This lab explores ways to use **Kafka Connect** on an HDInsight Managed Kafka Cluster in both **Standalone Mode** and **Distributed Mode**. - The connect cluster in both the setups would ingest messages from twitter and  write them to an Azure Storage Blob. 
 
 #### Standalone Mode 
 - Single edge on the HDInsight cluster will used to demonstrate a standalone mode setup. 
@@ -40,7 +40,7 @@ Click [**Next**](https://github.com/arnabganguly/Kafkaconnect/blob/master/HDInsi
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxMzYzOTI5LDcyNTMyNjkyNCwxNDYwOT
+eyJoaXN0b3J5IjpbNTYzNzk4NTgzLDcyNTMyNjkyNCwxNDYwOT
 c0ODA0LDgwMTU4MjIyMiwxOTA1MDMwNzcsMTI2MjkwNzU2Mywt
 MTg1NTU4MTQ2MywxNjM1NzEzNzU1LC05NzA2MDkxOTUsMjAyMz
 I5ODA3MywtNDQwNTgzOTY3LC0xMjY2NzcwNTI1LDE0OTE1MzY2
