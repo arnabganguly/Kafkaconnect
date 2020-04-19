@@ -4,7 +4,15 @@ In a normal Kafka cluster a producer application produces a message and publishe
 
 In these circumstances it is the application developer's responsibility to ensure that the producer and consumers are reliable and fault tolerant. 
 
-Kafka Concnct is a framework to connect 
+**Kafka Connect is a framework for connecting Kafka with external systems**  such as databases, storage systems, Applications , search indexes, and file systems, using so-called  _Connectors_.
+
+**Kafka Connectors are ready-to-use components, which can help import data from external systems into Kafka topics and export data from Kafka topics into external systems**. We can use existing connector implementations for common data sources and sinks or implement our own connectors.
+
+A  _source connector_ collects data from a system. Source systems can be entire databases, streams tables, or message brokers. A source connector could also collect metrics from application servers into Kafka topics, making the data available for stream processing with low latency.
+
+A  _sink connector_  delivers data from Kafka topics into other systems, which might be indexes such as Elasticsearch, batch systems such as Hadoop, or any kind of database.
+
+**Some connectors are maintained by the community, while others are supported by Confluent or its partners. Really, we can find connectors for most popular systems, like S3, JDBC, and Cassandra, just to name a few.**
 
 Kafka Schema Registry provides serializers that plug into Kafka clients that handle  message schema storage and retrieval for Kafka messages that are sent in the Avro format. Its used to be a  OSS project by Confluent , but is now under the [Confluent community license](https://www.confluent.io/blog/license-changes-confluent-platform/) . The Schema Registry can additionally serves the below purposes
  
@@ -22,9 +30,9 @@ Click [**Next**](https://github.com/arnabganguly/Kafkaconnect/blob/master/HDInsi
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5OTA3MjMwMiwxNDYwOTc0ODA0LDgwMT
-U4MjIyMiwxOTA1MDMwNzcsMTI2MjkwNzU2MywtMTg1NTU4MTQ2
-MywxNjM1NzEzNzU1LC05NzA2MDkxOTUsMjAyMzI5ODA3MywtND
-QwNTgzOTY3LC0xMjY2NzcwNTI1LDE0OTE1MzY2MSw2NTU4MzE5
-NDksODUyMzAxNDU1LDI3MDUzOTY2OV19
+eyJoaXN0b3J5IjpbMTkxNDQxMDM5LDE0NjA5NzQ4MDQsODAxNT
+gyMjIyLDE5MDUwMzA3NywxMjYyOTA3NTYzLC0xODU1NTgxNDYz
+LDE2MzU3MTM3NTUsLTk3MDYwOTE5NSwyMDIzMjk4MDczLC00ND
+A1ODM5NjcsLTEyNjY3NzA1MjUsMTQ5MTUzNjYxLDY1NTgzMTk0
+OSw4NTIzMDE0NTUsMjcwNTM5NjY5XX0=
 -->
