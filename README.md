@@ -16,7 +16,7 @@ A  _sink connector_  delivers data from Kafka topics into other systems, which m
 
 **Most connectors are maintained by the community, while others are supported by Confluent or its partners at [Confluent Connector Hub](https://www.confluent.io/hub/). One can normally find connectors for most popular systems like Azure Blob ,Azure Data Lake Store, Elastic Search etc. 
 
-
+Every connector spawns **tasks** which are then distributed across workers in the Kafka Connect cluster. 
 ![HDInsight Kafka Schema Registry](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic1.png)
 
 
@@ -40,9 +40,10 @@ Click [**Next**](https://github.com/arnabganguly/Kafkaconnect/blob/master/HDInsi
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjY0Nzk5NzUsNzI1MzI2OTI0LDE0NjA5Nz
-Q4MDQsODAxNTgyMjIyLDE5MDUwMzA3NywxMjYyOTA3NTYzLC0x
-ODU1NTgxNDYzLDE2MzU3MTM3NTUsLTk3MDYwOTE5NSwyMDIzMj
-k4MDczLC00NDA1ODM5NjcsLTEyNjY3NzA1MjUsMTQ5MTUzNjYx
-LDY1NTgzMTk0OSw4NTIzMDE0NTUsMjcwNTM5NjY5XX0=
+eyJoaXN0b3J5IjpbNzUzNTc4MjIyLDY2NDc5OTc1LDcyNTMyNj
+kyNCwxNDYwOTc0ODA0LDgwMTU4MjIyMiwxOTA1MDMwNzcsMTI2
+MjkwNzU2MywtMTg1NTU4MTQ2MywxNjM1NzEzNzU1LC05NzA2MD
+kxOTUsMjAyMzI5ODA3MywtNDQwNTgzOTY3LC0xMjY2NzcwNTI1
+LDE0OTE1MzY2MSw2NTU4MzE5NDksODUyMzAxNDU1LDI3MDUzOT
+Y2OV19
 -->
