@@ -12,7 +12,7 @@ A  _source connector_ collects data from a system. Source systems can be entire 
 
 A  _sink connector_  delivers data from Kafka topics into other systems, which might be indexes such as Elasticsearch, storage systems such as Azure Blob storage, or databases.
 
-**Most connectors are maintained by the community, while others are supported by Confluent or its partners.  One can normally find connectors for most popular systems, like Azure Blob , Azure Data Lake Store, Elastic Search etc. 
+**Most connectors are maintained by the community, while others are supported by Confluent or its partners at Confluent Connector Hub .  One can normally find connectors for most popular systems, like Azure Blob , Azure Data Lake Store, Elastic Search etc. 
 
 
 
@@ -24,9 +24,9 @@ Click [**Next**](https://github.com/arnabganguly/Kafkaconnect/blob/master/HDInsi
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1MDQ0ODA4OSwxNDYwOTc0ODA0LDgwMT
-U4MjIyMiwxOTA1MDMwNzcsMTI2MjkwNzU2MywtMTg1NTU4MTQ2
-MywxNjM1NzEzNzU1LC05NzA2MDkxOTUsMjAyMzI5ODA3MywtND
-QwNTgzOTY3LC0xMjY2NzcwNTI1LDE0OTE1MzY2MSw2NTU4MzE5
-NDksODUyMzAxNDU1LDI3MDUzOTY2OV19
+eyJoaXN0b3J5IjpbNjIwODA0NDU0LDE0NjA5NzQ4MDQsODAxNT
+gyMjIyLDE5MDUwMzA3NywxMjYyOTA3NTYzLC0xODU1NTgxNDYz
+LDE2MzU3MTM3NTUsLTk3MDYwOTE5NSwyMDIzMjk4MDczLC00ND
+A1ODM5NjcsLTEyNjY3NzA1MjUsMTQ5MTUzNjYxLDY1NTgzMTk0
+OSw4NTIzMDE0NTUsMjcwNTM5NjY5XX0=
 -->
