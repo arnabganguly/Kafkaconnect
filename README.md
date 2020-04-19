@@ -22,7 +22,11 @@ A  _sink connector_  delivers data from Kafka topics into other systems, which m
 ### Lab Objective 
 - This lab explores ways to use **Kafka Connect** on an HDInsight Managed Kafka Cluster in both **Standalone Mode** and **Distributed Mode**
 
--  **Kafka Connect**  is  deployed on an HDInsight Managed Kafka Cluster in **distributed mode**.  
+#### Standalone Mode 
+- Only one edge on the HDInsight cluster will used to demonstarte a standalone mode setup. 
+
+#### Distributed Mode 
+-  An HDInsight cluster with two edge nodes is used as a 
 
 Note that the Kafka Connect cluster may be deployed on a set of edge nodes. Edges nodes 
 can be added to an HDInsight cluster [either at the time of creation](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-apps-use-edge-node#add-an-edge-node-when-creating-a-cluster) or [post creation](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-apps-use-edge-node#add-an-edge-node-to-an-existing-cluster). 
@@ -37,9 +41,9 @@ Click [**Next**](https://github.com/arnabganguly/Kafkaconnect/blob/master/HDInsi
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzU2MjIxNDc5LDcyNTMyNjkyNCwxNDYwOT
-c0ODA0LDgwMTU4MjIyMiwxOTA1MDMwNzcsMTI2MjkwNzU2Mywt
-MTg1NTU4MTQ2MywxNjM1NzEzNzU1LC05NzA2MDkxOTUsMjAyMz
-I5ODA3MywtNDQwNTgzOTY3LC0xMjY2NzcwNTI1LDE0OTE1MzY2
-MSw2NTU4MzE5NDksODUyMzAxNDU1LDI3MDUzOTY2OV19
+eyJoaXN0b3J5IjpbLTE0Mzc3Mjk3NDIsNzI1MzI2OTI0LDE0Nj
+A5NzQ4MDQsODAxNTgyMjIyLDE5MDUwMzA3NywxMjYyOTA3NTYz
+LC0xODU1NTgxNDYzLDE2MzU3MTM3NTUsLTk3MDYwOTE5NSwyMD
+IzMjk4MDczLC00NDA1ODM5NjcsLTEyNjY3NzA1MjUsMTQ5MTUz
+NjYxLDY1NTgzMTk0OSw4NTIzMDE0NTUsMjcwNTM5NjY5XX0=
 -->
