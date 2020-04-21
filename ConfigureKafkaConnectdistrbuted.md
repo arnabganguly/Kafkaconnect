@@ -1,6 +1,9 @@
 ## Configure the Confluent Schema Registry
 
-The Kafjka Connect properties  is located at  ``` /usr/hdp/current/kafka-broker/conf/connect-distributed.properties
+The Kafka connect 
+
+
+The Kafka Connect properties  is located at  ``` /usr/hdp/current/kafka-broker/conf/connect-distributed.properties
  ``` and the mechanisms to start and stop service executables are located at the  ```/usr/hdp/current/kafka-broker/bin/connect-distributed.sh``` folder. 
 
 
@@ -146,6 +149,6 @@ Server: Jetty(9.2.24.v20180105)
 
 Click [Next](https://github.com/arnabganguly/Kafkaschemaregistry/blob/master/UseAvroSchema.md) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjUxMTc4ODQsMTgyMzE4MDcxNiwtMT
-A3NDM1MjM1NywtMTU3MTA5MTcxOV19
+eyJoaXN0b3J5IjpbODMxNDY2NTcsMTgyMzE4MDcxNiwtMTA3ND
+M1MjM1NywtMTU3MTA5MTcxOV19
 -->
