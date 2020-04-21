@@ -4,7 +4,7 @@ The confluent schema registry is located at  ``` /usr/hdp/current/kafka-broker/c
  ``` and the mechanisms to start and stop service executables are located at the  ```/usr/hdp/current/kafka-broker/bin/connect-distributed.sh``` folder. 
 
 
-### Configure the Kafka 
+### Configuration 
 
 
 
@@ -146,6 +146,6 @@ Server: Jetty(9.2.24.v20180105)
 
 Click [Next](https://github.com/arnabganguly/Kafkaschemaregistry/blob/master/UseAvroSchema.md) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyMzE4MDcxNiwtMTA3NDM1MjM1NywtMT
-U3MTA5MTcxOV19
+eyJoaXN0b3J5IjpbMTAxNTQzNzkzOSwxODIzMTgwNzE2LC0xMD
+c0MzUyMzU3LC0xNTcxMDkxNzE5XX0=
 -->
