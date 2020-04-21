@@ -1,13 +1,14 @@
 ## Configure the Confluent Schema Registry
 
-To run the HDInsight worker in distributed mode one needs to look at two important files 
-
-- `connect-distributed.properties` : Located at /usr/hdp/current/kafka-broker/bin/
-
-- `connect-distributed.sh` : Located at /usr/hdp/current/kafka-broker/conf/
+- To run the HDInsight worker in distributed mode one needs to look at two important files 
 
 
-2.  In the  `connect-distributed.properties`  file, define the topics that will store the connector state, task configuration state, and connector offset state.
+  - `connect-distributed.properties` : Located at /usr/hdp/current/kafka-broker/bin/
+
+  - `connect-distributed.sh` : Located at /usr/hdp/current/kafka-broker/conf/
+
+
+-   In the  `connect-distributed.properties`  file, define the topics that will store the connector state, task configuration state, and connector offset state.
 
    In distributed mode, the workers need to be able to discover each other and have shared storage for connector configuration and offset data. In addition to the usual worker settings, ensure you have configured the following for the cluster:
     
@@ -17,15 +18,14 @@ To run the HDInsight worker in distributed mode one needs to look at two importa
     -   rest.port: Port where the REST interface listens for HTTP requests. 
 
     
-4.  Run the distributed worker command, connect-distributed.sh.
+4.  Run the distributed worker command, `connect-distributed.properties`
     
       ```
     sudo  /usr/hdp/current/kafka-broker/bin/connect-distributed.sh  /usr/hdp/current/kafka-broker/conf/connect-distributed.properties
     ```
     
 
-Note:  >Distributed mode does not have any additional command line parameters. If other instances are already running, new workers either start a new group or join an existing one, and then wait for work to do. For information on managing the connectors running in the cluster, see  [REST API](https://mapr.com/docs/60/Kafka/Connect-rest-api.html "The Kafka Connect REST API for MapR-ES manages connectors.").
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ1NzE3ODQ0LDE4MjMxODA3MTYsLTEwNz
+eyJoaXN0b3J5IjpbNzUwMTU0ODUxLDE4MjMxODA3MTYsLTEwNz
 QzNTIzNTcsLTE1NzEwOTE3MTldfQ==
 -->
