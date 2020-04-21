@@ -8,7 +8,13 @@
   - `connect-distributed.sh` : Located at /usr/hdp/current/kafka-broker/conf/
 
 
--   In the  `connect-distributed.properties`  file, define the topics that will store the connector state, task configuration state, and connector offset state.
+- Create the config storage topic 
+
+
+- Create the offset storage topic
+
+    
+- In the  `connect-distributed.properties`  file, define the topics that will store the connector state, task configuration state, and connector offset state.
 
 - In distributed mode, the workers need to be able to discover each other and have shared storage for connector configuration and offset data. In addition to the usual worker settings, ensure you have configured the following for the cluster:
     
@@ -26,7 +32,7 @@
     
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTQ3ODM5OSwxMzg5MzMzMDU5LDE5Nj
-E3MzQ5NDYsMTgyMzE4MDcxNiwtMTA3NDM1MjM1NywtMTU3MTA5
-MTcxOV19
+eyJoaXN0b3J5IjpbLTE1MjE1Mjc1ODIsMTM4OTMzMzA1OSwxOT
+YxNzM0OTQ2LDE4MjMxODA3MTYsLTEwNzQzNTIzNTcsLTE1NzEw
+OTE3MTldfQ==
 -->
