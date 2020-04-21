@@ -18,14 +18,15 @@
     -   `rest.port`: Port where the REST interface listens for HTTP requests. 
 
     
-4.  Run the distributed worker command, `connect-distributed.properties`
+4.  To run the distributed worker command, `connect-distributed.properties`
     
       ```
     sudo  /usr/hdp/current/kafka-broker/bin/connect-distributed.sh  /usr/hdp/current/kafka-broker/conf/connect-distributed.properties
     ```
     
-5. 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4OTMzMzA1OSwxOTYxNzM0OTQ2LDE4Mj
-MxODA3MTYsLTEwNzQzNTIzNTcsLTE1NzEwOTE3MTldfQ==
+eyJoaXN0b3J5IjpbLTEyNTQ3ODM5OSwxMzg5MzMzMDU5LDE5Nj
+E3MzQ5NDYsMTgyMzE4MDcxNiwtMTA3NDM1MjM1NywtMTU3MTA5
+MTcxOV19
 -->
