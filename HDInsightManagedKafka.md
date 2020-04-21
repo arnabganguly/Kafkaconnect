@@ -1,6 +1,6 @@
-## Deploy a HDInsight Managed Kafka with Confluent Schema Registry 
+## Deploy a HDInsight Managed Kafka with a Kafka Connect Cluster 
 
-In this section we would deploy an HDInsight Managed Kafka  cluster with an Edge Node inside a Virtual Network and then install the Confluent Schema Registry on the Edge Node.  
+In this section we would deploy an HDInsight Managed Kafka  cluster with two Edge Node inside a Virtual Network and then enable distributed Kafka Connect on those edge node set. 
 
 - Click on the Deploy to Azure Button to start the deployment process
 
@@ -44,8 +44,8 @@ In this section we would deploy an HDInsight Managed Kafka  cluster with an Edge
 
 Click [**[Next](https://github.com/arnabganguly/Kafkaschemaregistry/blob/master/ConfigureSchemaRegistry.md)**]
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTM3MTM0NzksLTQyMjc3MTUzLC0xOT
-gxMzU5MTksMTM0MzEyMjI0NCw5NzIzNDg5MTQsMTc4NDI0ODMy
-NiwtMTA4MTk0OTQzNywtMzc2NjQxMDE5LC0xOTQ2NTk4MDAyLD
-EyMzk2MjUwMzUsMTY3NDQxNTQ2M119
+eyJoaXN0b3J5IjpbNDM2NzA1MDI5LC0xNjUzNzEzNDc5LC00Mj
+I3NzE1MywtMTk4MTM1OTE5LDEzNDMxMjIyNDQsOTcyMzQ4OTE0
+LDE3ODQyNDgzMjYsLTEwODE5NDk0MzcsLTM3NjY0MTAxOSwtMT
+k0NjU5ODAwMiwxMjM5NjI1MDM1LDE2NzQ0MTU0NjNdfQ==
 -->
