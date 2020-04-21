@@ -1,6 +1,6 @@
 ## Deploy a HDInsight Managed Kafka with a Kafka Connect Cluster 
 
-In this section we would deploy an HDInsight Managed Kafka  cluster with two Edge Node inside a Virtual Network and then enable distributed Kafka Connect on those edge node set. 
+In this section we would deploy an HDInsight Managed Kafka  cluster with two Edge Node inside a Virtual Network and then enable distributed Kafka Connect on those edge nodes.  
 
 - Click on the Deploy to Azure Button to start the deployment process
 
@@ -44,8 +44,8 @@ In this section we would deploy an HDInsight Managed Kafka  cluster with two Edg
 
 Click [**[Next](https://github.com/arnabganguly/Kafkaschemaregistry/blob/master/ConfigureSchemaRegistry.md)**]
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM2NzA1MDI5LC0xNjUzNzEzNDc5LC00Mj
-I3NzE1MywtMTk4MTM1OTE5LDEzNDMxMjIyNDQsOTcyMzQ4OTE0
-LDE3ODQyNDgzMjYsLTEwODE5NDk0MzcsLTM3NjY0MTAxOSwtMT
-k0NjU5ODAwMiwxMjM5NjI1MDM1LDE2NzQ0MTU0NjNdfQ==
+eyJoaXN0b3J5IjpbMjExNjA1MTc1NiwtMTY1MzcxMzQ3OSwtND
+IyNzcxNTMsLTE5ODEzNTkxOSwxMzQzMTIyMjQ0LDk3MjM0ODkx
+NCwxNzg0MjQ4MzI2LC0xMDgxOTQ5NDM3LC0zNzY2NDEwMTksLT
+E5NDY1OTgwMDIsMTIzOTYyNTAzNSwxNjc0NDE1NDYzXX0=
 -->
