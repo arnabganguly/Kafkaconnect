@@ -1,7 +1,12 @@
 ## Configure the Confluent Schema Registry
 
 The confluent schema registry is located at  ``` /usr/hdp/current/kafka-broker/conf/connect-distributed.properties
- ``` and the mechanisms to start and stop service executables are located at the  ```/usr/bin/``` folder. 
+ ``` and the mechanisms to start and stop service executables are located at the  ```/usr/hdp/current/kafka-broker/bin/connect-distributed.sh``` folder. 
+
+
+### Configure the Kafka 
+
+
 
 The Schema Register needs to know the Zookeeper service to be able to interact with HDInsight Kafka cluster. Follow the below steps to get the details of the Zookeeper Quorum.
 
@@ -141,6 +146,6 @@ Server: Jetty(9.2.24.v20180105)
 
 Click [Next](https://github.com/arnabganguly/Kafkaschemaregistry/blob/master/UseAvroSchema.md) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzQzNTIzNTcsLTE1NzEwOTE3MTldfQ
-==
+eyJoaXN0b3J5IjpbMTgyMzE4MDcxNiwtMTA3NDM1MjM1NywtMT
+U3MTA5MTcxOV19
 -->
