@@ -1,156 +1,32 @@
 ## Configure the Confluent Schema Registry
 
-The Kafka connect distrinuted mode os started using two important files
+To run the worker in distributed mode:
 
+1.  In the  `connect-distributed.properties`  file, define the topics that will store the connector state, task configuration state, and connector offset state.
+    
+    In distributed mode, the workers need to be able to discover each other and have shared storage for connector configuration and offset data. In addition to the usual worker settings, ensure you have configured the following for the cluster:
+    
+    -   **group.id**  - ID that uniquely identifies the cluster these workers belong to. Ensure this is unique for all groups that work with a cluster.
+    -   **config.storage.topic**  - Topic to store the connector and task configuration state in. Although this topic can be auto-created if your cluster has auto topic creation enabled, it is highly recommended that you create it before starting the cluster. This topic should  **always**  have a single partition and be highly replicated (3x or more).
+    -   **offset.storage.topic**  - Topic to store the connector offset state in. To support large  MapR-ES  clusters, this topic should have a large number of partitions (for example, 25 or 50 partitions and highly replicated (3x or more).
+    -   **rest.port**  - Port where the REST interface listens for HTTP requests. If you run more than one worker per host (for example, if you are testing distributed mode locally during development), this setting must have different values for each instance.
+2.  Set the group.id value for all of the workers in the cluster.
+    
+    Note:  All workers that belong to the same cluster must have the same group.id value.
+    
+3.  Run the distributed worker command, connect-distributed.sh.
+    
+    For example:
+    
+    ```
+    cd /opt/mapr/kafka/kafka-1.0/
+    ./bin/connect-distributed.sh 
+    ./config/connect-distributed.properties
+    ```
+    
 
-
-
-The Kafka Connect properties  is located at  ``` /usr/hdp/current/kafka-broker/conf/connect-distributed.properties
- ``` and the mechanisms to start and stop service executables are located at the  ```/usr/hdp/current/kafka-broker/bin/connect-distributed.sh``` folder. 
-
-
-### Configuration 
-
-
-
-The Schema Register needs to know the Zookeeper service to be able to interact with HDInsight Kafka cluster. Follow the below steps to get the details of the Zookeeper Quorum.
-
- - Set up password variable. Replace `PASSWORD` with the cluster login password, then enter the command
-
-```
-export password='PASSWORD' 
-```
-
-- Extract the correctly cased cluster name
-
-``` 
-export clusterName=$(curl -u admin:$password -sS -G "http://headnodehost:8080/api/v1/clusters" | jq -r '.items[].Clusters.cluster_name')
-```
-- Extract the Kafka Zookeeper hosts 
-
-```
-export KAFKAZKHOSTS=$(curl -sS -u admin:$password -G https://$clusterName.azurehdinsight.net/api/v1/clusters/$clusterName/services/ZOOKEEPER/components/ZOOKEEPER_SERVER | jq -r '["\(.host_components[].HostRoles.host_name):2181"] | join(",")' | cut -d',' -f1,2);
-```
-- Validate the content of the ```KAFKAZKHOSTS``` variable
-```
-echo  $KAFKAZKHOSTS
-```
-- Zookeeper values appear in the below format . Make a note of these values as they will be used later
-```
-zk1-ag4kaf.q2hwzr1xkxjuvobkaagmjjkhta.gx.internal.cloudapp.net:2181,zk2-ag4kaf.q2hwzr1xkxjuvobkaagmjjkhta.gx.internal.cloudapp.net:2181
-```
-- To extract  Kafka Broker information into the variable KAFKABROKERS use the below command.
-
-```
-export KAFKABROKERS=$(curl -sS -u admin:$password -G https://$clusterName.azurehdinsight.net/api/v1/clusters/$clusterName/services/KAFKA/components/KAFKA_BROKER | jq -r '["\(.host_components[].HostRoles.host_name):9092"] | join(",")' | cut -d',' -f1,2);
-```
-
-Check to see if the Kafka Broker  information is available
-```
-echo $KAFKABROKERS
-```
-- Kafka Broker host information appears in the below format
-```
-wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhdseyy1netdbyklgqj5y1ud.cx.internal.cloudapp.net:9092
-```
-
-
-
-- Open the Schema Registry properties files in edit mode
-
-``` 
-sudo vi /etc/schema-registry/schema-registry.properties
-```
-- By default the file would contain the below parameters 
-```
-listeners=http://0.0.0.0:8081
-kafkastore.connection.url=zk0-ohkl-h:2181,zk1-ohkl-h:2181,zk2-ohkl-h:2181
-kafkastore.topic=_schemas
-debug=false
-```
-- Replace the kafastore.connection.url variable with the Zookeeper string that you noted earlier.  Also replace the debug variable to true . If set to true true, API requests that fail will include extra debugging information, including stack traces. The properties files now looks like this.  
-
-```
-listeners=http://0.0.0.0:8081
-kafkastore.connection.url=zk1-ag4kaf.q2hwzr1xkxjuvobkaagmjjkhta.gx.internal.cloudapp.net:2181,zk2-ag4kaf.q2hwzr1xkxjuvobkaagmjjkhta.gx.internal.cloudapp.net:2181
-kafkastore.topic=_schemas
-debug=true
-```
-
-- Save and exit the properties file using ``` :wq``` command
-
-- Use the below commands to **Start the Schema Registry** and point it to use the updated Schema Registry properties file
-```
-cd /bin
-``` 
-
- ```
- $ sudo schema-registry-start /etc/schema-registry/schema-registry.properties
- ```
-
-
-- Schema Registry Starts and starts listening for requests. 
-```
-...
-...
-[2020-03-22 13:24:49,089] INFO Adding listener: http://0.0.0.0:8081 (io.confluent.rest.Application:190)
-[2020-03-22 13:24:49,154] INFO jetty-9.2.24.v20180105 (org.eclipse.jetty.server.Server:327)
-[2020-03-22 13:24:49,753] INFO HV000001: Hibernate Validator 5.1.3.Final (org.hibernate.validator.internal.util.Version:27)
-[2020-03-22 13:24:49,902] INFO Started o.e.j.s.ServletContextHandler@40844aab{/,null,AVAILABLE} (org.eclipse.jetty.server.handler.ContextHandler:744)
-[2020-03-22 13:24:49,914] INFO Started NetworkTrafficServerConnector@33fe57a9{HTTP/1.1}{0.0.0.0:8081} (org.eclipse.jetty.server.NetworkTrafficServerConnector:266)
-[2020-03-22 13:24:49,915] INFO Started @2780ms (org.eclipse.jetty.server.Server:379)
-[2020-03-22 13:24:49,915] INFO Server started, listening for requests... (io.confluent.kafka.schemaregistry.rest.SchemaRegistryMain:45)
-```
-
-- With the Schema Registry running in one SSH session , launch another SSH window and try out some basic commands to ensure that Schema Registry is working as expected.
-
-
- - Register a new version of a schema under the subject "Kafka-key" and note the output 
-```
-$ curl -X POST -i -H "Content-Type: application/vnd.schemaregistry.v1+json" \
-    --data '{"schema": "{\"type\": \"string\"}"}'
-```
-```
-   HTTP/1.1 200 OK
-Date: Sun, 22 Mar 2020 16:33:04 GMT
-Content-Type: application/vnd.schemaregistry.v1+json
-Content-Length: 9
-Server: Jetty(9.2.24.v20180105)
-```
-      
- - Register a new version of a schema under the subject "Kafka-value" and note the output
-
-```
-curl -X POST -i -H "Content-Type: application/vnd.schemaregistry.v1+json" \
-    --data '{"schema": "{\"type\": \"string\"}"}' \
-```
-```
-HTTP/1.1 200 OK
-Date: Sun, 22 Mar 2020 16:34:18 GMT
-Content-Type: application/vnd.schemaregistry.v1+json
-Content-Length: 9
-Server: Jetty(9.2.24.v20180105)
-```
-- List all subjects and check the output 
-```
-curl -X GET -i -H "Content-Type: application/vnd.schemaregistry.v1+json" \
-    http://localhost:8081/subjects
-```
-```
-HTTP/1.1 200 OK
-Date: Sun, 22 Mar 2020 16:34:39 GMT
-Content-Type: application/vnd.schemaregistry.v1+json
-Content-Length: 27
-Server: Jetty(9.2.24.v20180105)
-
-["Kafka-value","Kafka-key"]
-```
-- You may want to try some other [advanced commands listed here](https://docs.confluent.io/1.0/schema-registry/docs/intro.html#quickstart).
-
-- In the next section we will read data from standard input and write it to a Kafka Topic  topic in an  format. We will then read the data from the Kafka Topics using a consumer with an Avro formatter to transform that data into readable format. 
-
-Click [Next](https://github.com/arnabganguly/Kafkaschemaregistry/blob/master/UseAvroSchema.md) 
+Note:  >Distributed mode does not have any additional command line parameters. If other instances are already running, new workers either start a new group or join an existing one, and then wait for work to do. For information on managing the connectors running in the cluster, see  [REST API](https://mapr.com/docs/60/Kafka/Connect-rest-api.html "The Kafka Connect REST API for MapR-ES manages connectors.").
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzNjIzNzU2MSwxODIzMTgwNzE2LC0xMD
+eyJoaXN0b3J5IjpbMTU0MTk0NDc1OCwxODIzMTgwNzE2LC0xMD
 c0MzUyMzU3LC0xNTcxMDkxNzE5XX0=
 -->
