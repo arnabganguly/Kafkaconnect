@@ -2,8 +2,12 @@
 
 To run the HDInsight worker in distributed mode one needs to look at two important files 
 
-- `connect-distributed.properties` : Located at 
-- `connect-distributed.sh` 
+- `connect-distributed.properties` : Located at /usr/hdp/current/kafka-broker/bin/
+
+- `connect-distributed.sh` : Located at /usr/hdp/current/kafka-broker/conf/
+
+C
+
 
 3.  In the  `connect-distributed.properties`  file, define the topics that will store the connector state, task configuration state, and connector offset state.
     
@@ -30,6 +34,6 @@ To run the HDInsight worker in distributed mode one needs to look at two importa
 
 Note:  >Distributed mode does not have any additional command line parameters. If other instances are already running, new workers either start a new group or join an existing one, and then wait for work to do. For information on managing the connectors running in the cluster, see  [REST API](https://mapr.com/docs/60/Kafka/Connect-rest-api.html "The Kafka Connect REST API for MapR-ES manages connectors.").
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5MDk3NDgzMCwxODIzMTgwNzE2LC0xMD
+eyJoaXN0b3J5IjpbMjEzMDAzMjUzNywxODIzMTgwNzE2LC0xMD
 c0MzUyMzU3LC0xNTcxMDkxNzE5XX0=
 -->
