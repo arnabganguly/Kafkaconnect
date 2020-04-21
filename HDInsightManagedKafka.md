@@ -42,11 +42,11 @@ In this section we would deploy an HDInsight Managed Kafka  cluster with two Edg
 
 - In the next section we would configure the Confluent Kafka Schema Registry that we installed on the edge node.  
 
-Click  [Next](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectdistrbuted.md) 
+Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectdistrbuted.md)  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODYwMjc3MDgsLTIwNzUxNzUxOTQsLT
-E2NTM3MTM0NzksLTQyMjc3MTUzLC0xOTgxMzU5MTksMTM0MzEy
-MjI0NCw5NzIzNDg5MTQsMTc4NDI0ODMyNiwtMTA4MTk0OTQzNy
-wtMzc2NjQxMDE5LC0xOTQ2NTk4MDAyLDEyMzk2MjUwMzUsMTY3
-NDQxNTQ2M119
+eyJoaXN0b3J5IjpbMTA3ODM5NDQ2MSwtMjA3NTE3NTE5NCwtMT
+Y1MzcxMzQ3OSwtNDIyNzcxNTMsLTE5ODEzNTkxOSwxMzQzMTIy
+MjQ0LDk3MjM0ODkxNCwxNzg0MjQ4MzI2LC0xMDgxOTQ5NDM3LC
+0zNzY2NDEwMTksLTE5NDY1OTgwMDIsMTIzOTYyNTAzNSwxNjc0
+NDE1NDYzXX0=
 -->
