@@ -1,4 +1,4 @@
-# Kafka Connect with HDInsight Managed Kafka 
+# Kafka Connect with HDInsight Managed Kafka(WIP) 
 
 
 ### Kafka Connect
@@ -40,10 +40,10 @@ Click [**Next**](https://github.com/arnabganguly/Kafkaconnect/blob/master/HDInsi
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzUzNTc4MjIyLDY2NDc5OTc1LDcyNTMyNj
-kyNCwxNDYwOTc0ODA0LDgwMTU4MjIyMiwxOTA1MDMwNzcsMTI2
-MjkwNzU2MywtMTg1NTU4MTQ2MywxNjM1NzEzNzU1LC05NzA2MD
-kxOTUsMjAyMzI5ODA3MywtNDQwNTgzOTY3LC0xMjY2NzcwNTI1
-LDE0OTE1MzY2MSw2NTU4MzE5NDksODUyMzAxNDU1LDI3MDUzOT
-Y2OV19
+eyJoaXN0b3J5IjpbLTY0MjQ3MTMzMSw2NjQ3OTk3NSw3MjUzMj
+Y5MjQsMTQ2MDk3NDgwNCw4MDE1ODIyMjIsMTkwNTAzMDc3LDEy
+NjI5MDc1NjMsLTE4NTU1ODE0NjMsMTYzNTcxMzc1NSwtOTcwNj
+A5MTk1LDIwMjMyOTgwNzMsLTQ0MDU4Mzk2NywtMTI2Njc3MDUy
+NSwxNDkxNTM2NjEsNjU1ODMxOTQ5LDg1MjMwMTQ1NSwyNzA1Mz
+k2NjldfQ==
 -->
