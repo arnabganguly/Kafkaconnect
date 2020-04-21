@@ -1,8 +1,11 @@
 ## Configure the Confluent Schema Registry
 
-To run the worker in distributed mode:
+To run the HDInsight worker in distributed mode one needs to look at two importanr files 
 
-1.  In the  `connect-distributed.properties`  file, define the topics that will store the connector state, task configuration state, and connector offset state.
+- `connect-distributed.properties` 
+- `connect-distributed.sh` 
+
+3.  In the  `connect-distributed.properties`  file, define the topics that will store the connector state, task configuration state, and connector offset state.
     
     In distributed mode, the workers need to be able to discover each other and have shared storage for connector configuration and offset data. In addition to the usual worker settings, ensure you have configured the following for the cluster:
     
@@ -10,11 +13,11 @@ To run the worker in distributed mode:
     -   **config.storage.topic**  - Topic to store the connector and task configuration state in. Although this topic can be auto-created if your cluster has auto topic creation enabled, it is highly recommended that you create it before starting the cluster. This topic should  **always**  have a single partition and be highly replicated (3x or more).
     -   **offset.storage.topic**  - Topic to store the connector offset state in. To support large  MapR-ES  clusters, this topic should have a large number of partitions (for example, 25 or 50 partitions and highly replicated (3x or more).
     -   **rest.port**  - Port where the REST interface listens for HTTP requests. If you run more than one worker per host (for example, if you are testing distributed mode locally during development), this setting must have different values for each instance.
-2.  Set the group.id value for all of the workers in the cluster.
+4.  Set the group.id value for all of the workers in the cluster.
     
     Note:  All workers that belong to the same cluster must have the same group.id value.
     
-3.  Run the distributed worker command, connect-distributed.sh.
+5.  Run the distributed worker command, connect-distributed.sh.
     
     For example:
     
@@ -27,6 +30,6 @@ To run the worker in distributed mode:
 
 Note:  >Distributed mode does not have any additional command line parameters. If other instances are already running, new workers either start a new group or join an existing one, and then wait for work to do. For information on managing the connectors running in the cluster, see  [REST API](https://mapr.com/docs/60/Kafka/Connect-rest-api.html "The Kafka Connect REST API for MapR-ES manages connectors.").
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0MTk0NDc1OCwxODIzMTgwNzE2LC0xMD
+eyJoaXN0b3J5IjpbLTIyMjYyMzAxMSwxODIzMTgwNzE2LC0xMD
 c0MzUyMzU3LC0xNTcxMDkxNzE5XX0=
 -->
