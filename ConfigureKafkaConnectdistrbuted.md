@@ -1,6 +1,6 @@
 ## Configure the Confluent Schema Registry
 
-> Note :  The below steps need to be repeatred for both t
+> Note :  The below steps need to be repeatred for both the 
 
 
 - To run the HDInsight worker in distributed mode one needs to look at two important files 
@@ -35,7 +35,7 @@
     
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3MzIzMjAzMSwtMTUyMTUyNzU4MiwxMz
+eyJoaXN0b3J5IjpbLTkyNDU2MDk2NCwtMTUyMTUyNzU4MiwxMz
 g5MzMzMDU5LDE5NjE3MzQ5NDYsMTgyMzE4MDcxNiwtMTA3NDM1
 MjM1NywtMTU3MTA5MTcxOV19
 -->
