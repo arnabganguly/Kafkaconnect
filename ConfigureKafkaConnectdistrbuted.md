@@ -43,7 +43,9 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
 ```
 
 
-### Acquire the Zookeeper and Kafka broker data 
+### Deploy the Kafka Connect Plugins
+
+
 
 
 
@@ -128,7 +130,8 @@ plugin.path=/usr/hdp/current/kafka-broker/connectors/jcustenborder-kafka-connect
     
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDM4MjQzNzcsLTkyNDU2MDk2NCwtMT
-UyMTUyNzU4MiwxMzg5MzMzMDU5LDE5NjE3MzQ5NDYsMTgyMzE4
-MDcxNiwtMTA3NDM1MjM1NywtMTU3MTA5MTcxOV19
+eyJoaXN0b3J5IjpbLTI4NDc4Mzg1MiwtMjA0MzgyNDM3NywtOT
+I0NTYwOTY0LC0xNTIxNTI3NTgyLDEzODkzMzMwNTksMTk2MTcz
+NDk0NiwxODIzMTgwNzE2LC0xMDc0MzUyMzU3LC0xNTcxMDkxNz
+E5XX0=
 -->
