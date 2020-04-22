@@ -43,9 +43,12 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
 ```
 
 
+> Note: The below steps needs to be repeated for both the Edge nodes 
+
+
 ### Deploy the Kafka Connect Plugins
 
-
+- Download the l
 
 
 
@@ -130,8 +133,8 @@ plugin.path=/usr/hdp/current/kafka-broker/connectors/jcustenborder-kafka-connect
     
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4NDc4Mzg1MiwtMjA0MzgyNDM3NywtOT
-I0NTYwOTY0LC0xNTIxNTI3NTgyLDEzODkzMzMwNTksMTk2MTcz
-NDk0NiwxODIzMTgwNzE2LC0xMDc0MzUyMzU3LC0xNTcxMDkxNz
-E5XX0=
+eyJoaXN0b3J5IjpbNTkwMjA1MzcsLTIwNDM4MjQzNzcsLTkyND
+U2MDk2NCwtMTUyMTUyNzU4MiwxMzg5MzMzMDU5LDE5NjE3MzQ5
+NDYsMTgyMzE4MDcxNiwtMTA3NDM1MjM1NywtMTU3MTA5MTcxOV
+19
 -->
