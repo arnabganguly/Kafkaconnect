@@ -28,7 +28,22 @@ echo  $KAFKAZKHOSTS
 zk1-ag4kaf.q2hwzr1xkxjuvobkaagmjjkhta.gx.internal.cloudapp.net:2181,zk2-ag4kaf.q2hwzr1xkxjuvobkaagmjjkhta.gx.internal.cloudapp.net:2181
 ```
 
-- 
+- To extract Kafka Broker information into the variable KAFKABROKERS use the below command
+
+```
+export KAFKABROKERS=$(curl -sS -u admin:$password -G https://$clusterName.azurehdinsight.net/api/v1/clusters/$clusterName/services/KAFKA/components/KAFKA_BROKER | jq -r '["\(.host_components[].HostRoles.host_name):9092"] | join(",")' | cut -d',' -f1,2);
+```
+
+- Check to see if the Kafka Broker information is available
+```
+echo $KAFKABROKERS
+```
+- Kafka Broker host information appears in the below format
+```
+wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhdseyy1netdbyklgqj5y1ud.cx.internal.cloudapp.net:9092
+```
+
+
 
 - To run the HDInsight worker in **distributed mode** one needs to look at two important files 
 
@@ -62,7 +77,7 @@ zk1-ag4kaf.q2hwzr1xkxjuvobkaagmjjkhta.gx.internal.cloudapp.net:2181,zk2-ag4kaf.q
     
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwMTYzMDAxNCwtOTI0NTYwOTY0LC0xNT
-IxNTI3NTgyLDEzODkzMzMwNTksMTk2MTczNDk0NiwxODIzMTgw
-NzE2LC0xMDc0MzUyMzU3LC0xNTcxMDkxNzE5XX0=
+eyJoaXN0b3J5IjpbLTIwNDAxNDQ4NzksLTkyNDU2MDk2NCwtMT
+UyMTUyNzU4MiwxMzg5MzMzMDU5LDE5NjE3MzQ5NDYsMTgyMzE4
+MDcxNiwtMTA3NDM1MjM1NywtMTU3MTA5MTcxOV19
 -->
