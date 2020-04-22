@@ -1,10 +1,9 @@
 ## Configure the Confluent Schema Registry
 
-> Note :  The below steps need to be repeatred for both the 
+> Note :  The below steps need to be repeated for both edge nodes on the cluster. 
 
 
-- To run the HDInsight worker in distributed mode one needs to look at two important files 
-
+- To run the HDInsight worker in **distributed mode** one needs to look at two important files 
 
   - `connect-distributed.properties` : Located at /usr/hdp/current/kafka-broker/bin/
 
@@ -12,6 +11,7 @@
 
 
 - Create the config storage topic 
+
 
 
 - Create the offset storage topic
@@ -35,7 +35,7 @@
     
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyNDU2MDk2NCwtMTUyMTUyNzU4MiwxMz
-g5MzMzMDU5LDE5NjE3MzQ5NDYsMTgyMzE4MDcxNiwtMTA3NDM1
-MjM1NywtMTU3MTA5MTcxOV19
+eyJoaXN0b3J5IjpbLTI4MTA5MjMyNywtOTI0NTYwOTY0LC0xNT
+IxNTI3NTgyLDEzODkzMzMwNTksMTk2MTczNDk0NiwxODIzMTgw
+NzE2LC0xMDc0MzUyMzU3LC0xNTcxMDkxNzE5XX0=
 -->
