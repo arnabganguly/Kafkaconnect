@@ -51,16 +51,20 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
   - `connect-distributed.sh` : Located at /usr/hdp/current/kafka-broker/conf/
 
 
-- Create the **Offset Storage Topic** with a name of your choice . Here we use *agconnect-offsets*
+- Create the **Offset Storage*** topic with a name of your choice . Here we use *agconnect-offsets*
 ```
 /usr/hdp/current/kafka-broker/bin/kafka-topics.sh --create --replication-factor 3 --partitions 8 --topic agconnect-offsets --zookeeper $KAFKAZKHOSTS
 ```
 
-- Create the **Config Storage Topic** with a name of your choice. Here we use *agconnects-configs* 
+- Create the **Config Storage*** topic with a name of your choice. Here we use *agconnect-configs* 
 ```
 /usr/hdp/current/kafka-broker/bin/kafka-topics.sh --create --replication-factor 3 --partitions 8 --topic agconnect-configs --zookeeper $KAFKAZKHOSTS
 ```
+- Create the **Status** topic with a name of your choice. Here we use *agconnect-status* 
+```
+/usr/hdp/current/kafka-broker/bin/kafka-topics.sh --create --replication-factor 3 --partitions 8 --topic agconnect-status --zookeeper $KAFKAZKHOSTS
 
+```
     
 - In the  `connect-distributed.properties`  file, define the topics that will store the connector state, task configuration state, and connector offset state.
 
@@ -80,7 +84,7 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
     
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzUxMjQwMTQzLC05MjQ1NjA5NjQsLTE1Mj
-E1Mjc1ODIsMTM4OTMzMzA1OSwxOTYxNzM0OTQ2LDE4MjMxODA3
-MTYsLTEwNzQzNTIzNTcsLTE1NzEwOTE3MTldfQ==
+eyJoaXN0b3J5IjpbLTgzNzg1NjYzNCwtOTI0NTYwOTY0LC0xNT
+IxNTI3NTgyLDEzODkzMzMwNTksMTk2MTczNDk0NiwxODIzMTgw
+NzE2LC0xMDc0MzUyMzU3LC0xNTcxMDkxNzE5XX0=
 -->
