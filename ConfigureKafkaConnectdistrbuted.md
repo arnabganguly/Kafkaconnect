@@ -42,6 +42,14 @@ echo $KAFKABROKERS
 wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhdseyy1netdbyklgqj5y1ud.cx.internal.cloudapp.net:9092
 ```
 
+
+### Acquire the Zookeeper and Kafka broker data 
+
+
+
+
+
+
 ### Configure the nodes for Kafka Connect in Distributed mode
 
 
@@ -120,7 +128,7 @@ plugin.path=/usr/hdp/current/kafka-broker/connectors/jcustenborder-kafka-connect
     
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODcwNjc5NjQzLC05MjQ1NjA5NjQsLTE1Mj
-E1Mjc1ODIsMTM4OTMzMzA1OSwxOTYxNzM0OTQ2LDE4MjMxODA3
-MTYsLTEwNzQzNTIzNTcsLTE1NzEwOTE3MTldfQ==
+eyJoaXN0b3J5IjpbLTIwNDM4MjQzNzcsLTkyNDU2MDk2NCwtMT
+UyMTUyNzU4MiwxMzg5MzMzMDU5LDE5NjE3MzQ5NDYsMTgyMzE4
+MDcxNiwtMTA3NDM1MjM1NywtMTU3MTA5MTcxOV19
 -->
