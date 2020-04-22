@@ -50,6 +50,7 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
 
   - `connect-distributed.sh` : Located at /usr/hdp/current/kafka-broker/conf/
 
+#### Create the topics you will need 
 
 - Create the **Offset Storage** topic with a name of your choice . Here we use *agconnect-offsets*
 ```
@@ -65,10 +66,12 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
 /usr/hdp/current/kafka-broker/bin/kafka-topics.sh --create --replication-factor 3 --partitions 8 --topic agconnect-status --zookeeper $KAFKAZKHOSTS
 ```
 
-- Create the Topic for storing Twitter Messages. Here we use
+- Create the Topic for storing Twitter Messages. Here we use *twitterstatus*
 ```
-/usr/hdp/current/kafka-broker/bin/kafka-topics.sh --create --replication-factor 3 --partitions 8 --topic twitter1 --zookeeper $KAFKAZKHOSTS
+/usr/hdp/current/kafka-broker/bin/kafka-topics.sh --create --replication-factor 3 --partitions 8 --topic twitterstatus --zookeeper $KAFKAZKHOSTS
 ```
+
+#### Configure Kafka Connect  
 
     
 - In the  `connect-distributed.properties`  file, define the topics that will store the connector state, task configuration state, and connector offset state.
@@ -89,7 +92,7 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
     
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTU2MzQ3ODEsLTkyNDU2MDk2NCwtMT
-UyMTUyNzU4MiwxMzg5MzMzMDU5LDE5NjE3MzQ5NDYsMTgyMzE4
-MDcxNiwtMTA3NDM1MjM1NywtMTU3MTA5MTcxOV19
+eyJoaXN0b3J5IjpbMTI5Njk3MTM2MSwtOTI0NTYwOTY0LC0xNT
+IxNTI3NTgyLDEzODkzMzMwNTksMTk2MTczNDk0NiwxODIzMTgw
+NzE2LC0xMDc0MzUyMzU3LC0xNTcxMDkxNzE5XX0=
 -->
