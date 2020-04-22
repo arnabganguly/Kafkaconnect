@@ -3,8 +3,10 @@
 > Note :  The below steps need to be repeated for both edge nodes on the cluster. 
 
 - Acquire the Zookeeper and Kafka broker data 
-
-
+  - Set up password variable. Replace `PASSWORD` with the cluster login password, then enter the command
+```
+export password='PASSWORD' 
+```
 
 
 - To run the HDInsight worker in **distributed mode** one needs to look at two important files 
@@ -39,7 +41,7 @@
     
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzMzOTE2NywtOTI0NTYwOTY0LC0xNTIxNT
-I3NTgyLDEzODkzMzMwNTksMTk2MTczNDk0NiwxODIzMTgwNzE2
-LC0xMDc0MzUyMzU3LC0xNTcxMDkxNzE5XX0=
+eyJoaXN0b3J5IjpbMTMxNjMxMTY5OCwtOTI0NTYwOTY0LC0xNT
+IxNTI3NTgyLDEzODkzMzMwNTksMTk2MTczNDk0NiwxODIzMTgw
+NzE2LC0xMDc0MzUyMzU3LC0xNTcxMDkxNzE5XX0=
 -->
