@@ -2,6 +2,10 @@
 
 > Note :  The below steps need to be repeated for both edge nodes on the cluster. 
 
+- Acquire the Zookeeper and Kafka broker data 
+
+
+
 
 - To run the HDInsight worker in **distributed mode** one needs to look at two important files 
 
@@ -35,7 +39,7 @@
     
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4MTA5MjMyNywtOTI0NTYwOTY0LC0xNT
-IxNTI3NTgyLDEzODkzMzMwNTksMTk2MTczNDk0NiwxODIzMTgw
-NzE2LC0xMDc0MzUyMzU3LC0xNTcxMDkxNzE5XX0=
+eyJoaXN0b3J5IjpbNzMzOTE2NywtOTI0NTYwOTY0LC0xNTIxNT
+I3NTgyLDEzODkzMzMwNTksMTk2MTczNDk0NiwxODIzMTgwNzE2
+LC0xMDc0MzUyMzU3LC0xNTcxMDkxNzE5XX0=
 -->
