@@ -44,11 +44,6 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
 
 ### Configure the nodes for Kafka Connect in Distributed mode
 
-- To run Kafka Connect in **distributed mode** one needs to look at two important files 
-
-  - `connect-distributed.properties` : Located at /usr/hdp/current/kafka-broker/bin/
-
-  - `connect-distributed.sh` : Located at /usr/hdp/current/kafka-broker/conf/
 
 #### Create the topics you will need 
 
@@ -71,10 +66,23 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
 /usr/hdp/current/kafka-broker/bin/kafka-topics.sh --create --replication-factor 3 --partitions 8 --topic twitterstatus --zookeeper $KAFKAZKHOSTS
 ```
 
-#### Configure Kafka Connect  
+#### Configure Kafka Connect 
+
+ - To run Kafka Connect in **distributed mode** one needs to look at two important files. 
+
+  - `connect-distributed.properties` : Located at /usr/hdp/current/kafka-broker/bin/
+
+  - `connect-distributed.sh` : Located at /usr/hdp/current/kafka-broker/conf/
 
     
 - In the  `connect-distributed.properties`  file, define the topics that will store the connector state, task configuration state, and connector offset state.
+
+
+
+
+
+
+
 
 - In distributed mode, the workers need to be able to discover each other and have shared storage for connector configuration and offset data. In addition to the usual worker settings, ensure you have configured the following for the cluster:
     
@@ -92,7 +100,7 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
     
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5Njk3MTM2MSwtOTI0NTYwOTY0LC0xNT
+eyJoaXN0b3J5IjpbLTM0ODg1OTY5OSwtOTI0NTYwOTY0LC0xNT
 IxNTI3NTgyLDEzODkzMzMwNTksMTk2MTczNDk0NiwxODIzMTgw
 NzE2LC0xMDc0MzUyMzU3LC0xNTcxMDkxNzE5XX0=
 -->
