@@ -1,6 +1,5 @@
-## Configure the Confluent Schema Registry
+## Configure Kafka Connect in Distributed Mode
 
-> Note :  The below steps need to be repeated for both edge nodes on the cluster. 
 
 ### Acquire the Zookeeper and Kafka broker data 
 
@@ -43,7 +42,7 @@ echo $KAFKABROKERS
 wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhdseyy1netdbyklgqj5y1ud.cx.internal.cloudapp.net:9092
 ```
 
-
+### Configure the nodes for Kafka Connect in Distributed mode
 
 - To run the HDInsight worker in **distributed mode** one needs to look at two important files 
 
@@ -77,7 +76,7 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
     
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDAxNDQ4NzksLTkyNDU2MDk2NCwtMT
+eyJoaXN0b3J5IjpbLTE1NTg3ODcyMjEsLTkyNDU2MDk2NCwtMT
 UyMTUyNzU4MiwxMzg5MzMzMDU5LDE5NjE3MzQ5NDYsMTgyMzE4
 MDcxNiwtMTA3NDM1MjM1NywtMTU3MTA5MTcxOV19
 -->
