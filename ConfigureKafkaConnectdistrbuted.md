@@ -44,7 +44,7 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
 
 ### Configure the nodes for Kafka Connect in Distributed mode
 
-- To run the HDInsight worker in **distributed mode** one needs to look at two important files 
+- To run Kafka Connect in **distributed mode** one needs to look at two important files 
 
   - `connect-distributed.properties` : Located at /usr/hdp/current/kafka-broker/bin/
 
@@ -76,7 +76,7 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
     
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTg3ODcyMjEsLTkyNDU2MDk2NCwtMT
+eyJoaXN0b3J5IjpbLTExMDk2MTMxMTIsLTkyNDU2MDk2NCwtMT
 UyMTUyNzU4MiwxMzg5MzMzMDU5LDE5NjE3MzQ5NDYsMTgyMzE4
 MDcxNiwtMTA3NDM1MjM1NywtMTU3MTA5MTcxOV19
 -->
