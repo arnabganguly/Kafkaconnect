@@ -106,6 +106,8 @@ status.storage.partitions=5
 offset.flush.interval.ms=10000
 
 rest.port=8083
+
+plugin.path=/usr/hdp/current/kafka-broker/connectors/jcustenborder-kafka-connect-twitter-0.3.33,/usr/hdp/current/kafka-broker/connectors/confluentinc-kafka-connect-azure-blob-storage-1.3.2
 ```
 
 - Start Kafka Connect in Distributed mode on Edge Node 1 , `connect-distributed.properties`
@@ -118,7 +120,7 @@ rest.port=8083
     
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzMTE1OTQyNywtOTI0NTYwOTY0LC0xNT
-IxNTI3NTgyLDEzODkzMzMwNTksMTk2MTczNDk0NiwxODIzMTgw
-NzE2LC0xMDc0MzUyMzU3LC0xNTcxMDkxNzE5XX0=
+eyJoaXN0b3J5IjpbODcwNjc5NjQzLC05MjQ1NjA5NjQsLTE1Mj
+E1Mjc1ODIsMTM4OTMzMzA1OSwxOTYxNzM0OTQ2LDE4MjMxODA3
+MTYsLTEwNzQzNTIzNTcsLTE1NzEwOTE3MTldfQ==
 -->
