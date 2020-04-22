@@ -48,7 +48,8 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
 
 ### Deploy the Kafka Connect Plugins
 
-- Download the l
+- Download the relevant Kafka Plugins from the [Confluent Hub](https://www.confluent.io/hub/)
+     - 
 
 
 
@@ -133,8 +134,8 @@ plugin.path=/usr/hdp/current/kafka-broker/connectors/jcustenborder-kafka-connect
     
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTkwMjA1MzcsLTIwNDM4MjQzNzcsLTkyND
-U2MDk2NCwtMTUyMTUyNzU4MiwxMzg5MzMzMDU5LDE5NjE3MzQ5
-NDYsMTgyMzE4MDcxNiwtMTA3NDM1MjM1NywtMTU3MTA5MTcxOV
-19
+eyJoaXN0b3J5IjpbLTE1MDgzMjE1MywtMjA0MzgyNDM3NywtOT
+I0NTYwOTY0LC0xNTIxNTI3NTgyLDEzODkzMzMwNTksMTk2MTcz
+NDk0NiwxODIzMTgwNzE2LC0xMDc0MzUyMzU3LC0xNTcxMDkxNz
+E5XX0=
 -->
