@@ -75,8 +75,7 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
   - `connect-distributed.sh` : Located at /usr/hdp/current/kafka-broker/conf/
 
     
-- In the  `connect-distributed.properties`  file, define the topics that will store the connector state, task configuration state, and connector offset state. Se th
-
+- In the  `connect-distributed.properties`  file, define the topics that will store the connector state, task configuration state, and connector offset state. Modify the parameters in `connect-distributed.properties`  file as shown below. Note that we use some of the topics we created 
 
 ```
 key.converter.schemas.enable=true
@@ -89,17 +88,13 @@ offset.storage.partitions=25
 config.storage.topic=agconnect-configs
 config.storage.replication.factor=3
 
-
 status.storage.topic=agconnect-status
 status.storage.replication.factor=3
 status.storage.partitions=5
 
-
 offset.flush.interval.ms=10000
 
-
 rest.port=8083
-
 ```
 
 
@@ -120,7 +115,7 @@ rest.port=8083
     
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0NTAxMzYzMCwtOTI0NTYwOTY0LC0xNT
+eyJoaXN0b3J5IjpbMTE3NzcyNjM1MywtOTI0NTYwOTY0LC0xNT
 IxNTI3NTgyLDEzODkzMzMwNTksMTk2MTczNDk0NiwxODIzMTgw
 NzE2LC0xMDc0MzUyMzU3LC0xNTcxMDkxNzE5XX0=
 -->
