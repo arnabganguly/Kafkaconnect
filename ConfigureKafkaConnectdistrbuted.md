@@ -113,10 +113,12 @@ rest.port=8083
  ```
     sudo  /usr/hdp/current/kafka-broker/bin/connect-distributed.sh  /usr/hdp/current/kafka-broker/conf/connect-distributed.properties
  ```
+
+- Log into the second edge node and 
     
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDE5NzYxNjIzLC05MjQ1NjA5NjQsLTE1Mj
-E1Mjc1ODIsMTM4OTMzMzA1OSwxOTYxNzM0OTQ2LDE4MjMxODA3
-MTYsLTEwNzQzNTIzNTcsLTE1NzEwOTE3MTldfQ==
+eyJoaXN0b3J5IjpbMTIzMTE1OTQyNywtOTI0NTYwOTY0LC0xNT
+IxNTI3NTgyLDEzODkzMzMwNTksMTk2MTczNDk0NiwxODIzMTgw
+NzE2LC0xMDc0MzUyMzU3LC0xNTcxMDkxNzE5XX0=
 -->
