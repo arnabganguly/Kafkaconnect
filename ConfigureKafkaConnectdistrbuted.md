@@ -5,13 +5,15 @@
 - Acquire the Zookeeper and Kafka broker data 
 
   - Set up password variable. Replace `PASSWORD` with the cluster login password, then enter the command
-     ```
-     export password='PASSWORD' 
+ ```
+ export password='PASSWORD' 
     ```
    - Extract the correctly cased cluster name
-     ```      ```
-     export password='PASSWORD' 
-      ```
+
+```
+export clusterName=$(curl -u admin:$password -sS -G "http://headnodehost:8080/api/v1/clusters" | jq -r '.items[].Clusters.cluster_name')
+```
+
 - To run the HDInsight worker in **distributed mode** one needs to look at two important files 
 
   - `connect-distributed.properties` : Located at /usr/hdp/current/kafka-broker/bin/
@@ -44,7 +46,7 @@
     
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczNjE5OTg4LC05MjQ1NjA5NjQsLTE1Mj
-E1Mjc1ODIsMTM4OTMzMzA1OSwxOTYxNzM0OTQ2LDE4MjMxODA3
-MTYsLTEwNzQzNTIzNTcsLTE1NzEwOTE3MTldfQ==
+eyJoaXN0b3J5IjpbLTE0MjA4NDUyMSwtOTI0NTYwOTY0LC0xNT
+IxNTI3NTgyLDEzODkzMzMwNTksMTk2MTczNDk0NiwxODIzMTgw
+NzE2LC0xMDc0MzUyMzU3LC0xNTcxMDkxNzE5XX0=
 -->
