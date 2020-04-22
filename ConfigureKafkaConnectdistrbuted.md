@@ -75,6 +75,17 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
   - `connect-distributed.sh` : Located at /usr/hdp/current/kafka-broker/conf/
 
     
+
+
+
+- In distributed mode, the workers need to be able to discover each other and have shared storage for connector configuration and offset data. In addition to the usual worker settings, ensure you have configured the following for the cluster:
+    
+    - `group.id` : ID that uniquely identifies the cluster these workers belong to. Ensure this is unique for all groups that work with a cluster.
+    -   `config.storage.topic`: Topic to store the connector and task configuration state in.
+    -   `offset.storage.topic`: Topic to store the connector offset state in. 
+    -   `rest.port`: Port where the REST interface listens for HTTP requests. 
+
+
 - In the  `connect-distributed.properties`  file, define the topics that will store the connector state, task configuration state, and connector offset state. Modify the parameters in `connect-distributed.properties`  file as shown below. Note that we use some of the topics we created earlier. 
 
 ```
@@ -97,25 +108,15 @@ offset.flush.interval.ms=10000
 rest.port=8083
 ```
 
-
-
-- In distributed mode, the workers need to be able to discover each other and have shared storage for connector configuration and offset data. In addition to the usual worker settings, ensure you have configured the following for the cluster:
+- Start Kafka Connect in Distributed mode on Edge Node 1 , `connect-distributed.properties`
     
-    - `group.id` : ID that uniquely identifies the cluster these workers belong to. Ensure this is unique for all groups that work with a cluster.
-    -   `config.storage.topic`: Topic to store the connector and task configuration state in.
-    -   `offset.storage.topic`: Topic to store the connector offset state in. 
-    -   `rest.port`: Port where the REST interface listens for HTTP requests. 
-
-    
-4.  To run the distributed worker command, `connect-distributed.properties`
-    
-      ```
+ ```
     sudo  /usr/hdp/current/kafka-broker/bin/connect-distributed.sh  /usr/hdp/current/kafka-broker/conf/connect-distributed.properties
-    ```
+ ```
     
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4NjkxNDQ0NSwtOTI0NTYwOTY0LC0xNT
-IxNTI3NTgyLDEzODkzMzMwNTksMTk2MTczNDk0NiwxODIzMTgw
-NzE2LC0xMDc0MzUyMzU3LC0xNTcxMDkxNzE5XX0=
+eyJoaXN0b3J5IjpbNDE5NzYxNjIzLC05MjQ1NjA5NjQsLTE1Mj
+E1Mjc1ODIsMTM4OTMzMzA1OSwxOTYxNzM0OTQ2LDE4MjMxODA3
+MTYsLTEwNzQzNTIzNTcsLTE1NzEwOTE3MTldfQ==
 -->
