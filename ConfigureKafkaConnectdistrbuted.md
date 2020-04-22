@@ -19,8 +19,16 @@ export clusterName=$(curl -u admin:$password -sS -G "http://headnodehost:8080/ap
 ```
 export KAFKAZKHOSTS=$(curl -sS -u admin:$password -G https://$clusterName.azurehdinsight.net/api/v1/clusters/$clusterName/services/ZOOKEEPER/components/ZOOKEEPER_SERVER | jq -r '["\(.host_components[].HostRoles.host_name):2181"] | join(",")' | cut -d',' -f1,2);
 ```
+- Validate the content of the `KAFKAZKHOSTS` variable
+```
+echo  $KAFKAZKHOSTS
+```
+- Zookeeper values appear in the below format . Make a note of these values as they will be used later
+```
+zk1-ag4kaf.q2hwzr1xkxjuvobkaagmjjkhta.gx.internal.cloudapp.net:2181,zk2-ag4kaf.q2hwzr1xkxjuvobkaagmjjkhta.gx.internal.cloudapp.net:2181
+```
 
-
+- 
 
 - To run the HDInsight worker in **distributed mode** one needs to look at two important files 
 
@@ -54,7 +62,7 @@ export KAFKAZKHOSTS=$(curl -sS -u admin:$password -G https://$clusterName.azureh
     
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTM3NDM2MywtOTI0NTYwOTY0LC0xNT
+eyJoaXN0b3J5IjpbLTkwMTYzMDAxNCwtOTI0NTYwOTY0LC0xNT
 IxNTI3NTgyLDEzODkzMzMwNTksMTk2MTczNDk0NiwxODIzMTgw
 NzE2LC0xMDc0MzUyMzU3LC0xNTcxMDkxNzE5XX0=
 -->
