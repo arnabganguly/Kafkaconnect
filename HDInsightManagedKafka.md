@@ -62,12 +62,12 @@ sshuser@ed10-ag4kac:~$ ssh ed12-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cl
 
 - In the next section we would configure the Confluent Kafka Schema Registry that we installed on the edge node.  
 
-Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectdistrbuted1.md)  
+Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectdistributed1.md)  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM4NjcxNzI3LC0yMDM5NzI1MzQ0LDE5OD
-AzNzQxODYsMTA3ODM5NDQ2MSwtMjA3NTE3NTE5NCwtMTY1Mzcx
-MzQ3OSwtNDIyNzcxNTMsLTE5ODEzNTkxOSwxMzQzMTIyMjQ0LD
-k3MjM0ODkxNCwxNzg0MjQ4MzI2LC0xMDgxOTQ5NDM3LC0zNzY2
-NDEwMTksLTE5NDY1OTgwMDIsMTIzOTYyNTAzNSwxNjc0NDE1ND
-YzXX0=
+eyJoaXN0b3J5IjpbLTUwODI0NTE5OCwtMjAzOTcyNTM0NCwxOT
+gwMzc0MTg2LDEwNzgzOTQ0NjEsLTIwNzUxNzUxOTQsLTE2NTM3
+MTM0NzksLTQyMjc3MTUzLC0xOTgxMzU5MTksMTM0MzEyMjI0NC
+w5NzIzNDg5MTQsMTc4NDI0ODMyNiwtMTA4MTk0OTQzNywtMzc2
+NjQxMDE5LC0xOTQ2NTk4MDAyLDEyMzk2MjUwMzUsMTY3NDQxNT
+Q2M119
 -->
