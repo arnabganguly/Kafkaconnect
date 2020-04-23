@@ -50,20 +50,21 @@ ed12-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net
 
 ![HDInsight Kafka Schema Registry](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic6.png)
 
-- In this lab you will need to log into ed12 as well. To do that simply ssh into ed12 from ed10 
- 
-
-
 
 - Using an SSH client of your choice ssh into the edge node using the **sshuser** and **password** that you set in the custom ARM script. 
 
-- 
+> Note:  In this lab you will need to make config changes in bit edge nodes and hence will need to log into ed12 as well. To do that simply ssh into ed12 edge node from ed10 edge node  
+
+```
+ssh  ed12-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net
+```
+
 
 - In the next section we would configure the Confluent Kafka Schema Registry that we installed on the edge node.  
 
 Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectdistrbuted.md)  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1MDM2OTI1MSwxOTgwMzc0MTg2LDEwNz
+eyJoaXN0b3J5IjpbLTI1NTc2MzcxMSwxOTgwMzc0MTg2LDEwNz
 gzOTQ0NjEsLTIwNzUxNzUxOTQsLTE2NTM3MTM0NzksLTQyMjc3
 MTUzLC0xOTgxMzU5MTksMTM0MzEyMjI0NCw5NzIzNDg5MTQsMT
 c4NDI0ODMyNiwtMTA4MTk0OTQzNywtMzc2NjQxMDE5LC0xOTQ2
