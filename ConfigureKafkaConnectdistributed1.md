@@ -143,10 +143,10 @@ plugin.path=/usr/hdp/current/kafka-broker/connectors/jcustenborder-kafka-connect
     sudo  /usr/hdp/current/kafka-broker/bin/connect-distributed.sh  /usr/hdp/current/kafka-broker/conf/connect-distributed.properties
  ```
 
-- Repeat the same steps for other edge node to start Kafka Connect in 
+- Repeat the same steps for other edge node to start Kafka Connect in distributed mode
     
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4NTQ3MTE4MiwxMjU5MTMyMTQwLC05ND
-IwODI0NjRdfQ==
+eyJoaXN0b3J5IjpbLTIwOTI0MzExNTQsMTI1OTEzMjE0MCwtOT
+QyMDgyNDY0XX0=
 -->
