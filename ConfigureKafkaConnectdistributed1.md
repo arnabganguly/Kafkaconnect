@@ -103,6 +103,8 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
 - In the  `connect-distributed.properties`  file, define the topics that will store the connector state, task configuration state, and connector offset state. Modify the parameters in `connect-distributed.properties`  file as shown below. Note that we use some of the topics we created earlier. 
 
 ```
+group.id=agconnect-cluster
+
 key.converter.schemas.enable=true
 value.converter.schemas.enable=true
 
@@ -134,5 +136,5 @@ plugin.path=/usr/hdp/current/kafka-broker/connectors/jcustenborder-kafka-connect
     
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjU4MzE0MTAsLTk0MjA4MjQ2NF19
+eyJoaXN0b3J5IjpbLTk1Nzc5MDkyLC05NDIwODI0NjRdfQ==
 -->
