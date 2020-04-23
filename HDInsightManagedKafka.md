@@ -28,7 +28,7 @@ In this section we would deploy an HDInsight Managed Kafka  cluster with two Edg
 
 - Wait till the deployment completes and you get the *Your Deployment is Complete* message and then click on  **Go to resource**.
 
-![HDInsight Kafka Schema Registry](https://github.com/arnabganguly/Kafkaschemaregistry/blob/master/images/Pic3.png)
+![HDInsight Kafka Schema Registry](https://github.com/arnabganguly/Kafkaschemaregistry/blob/master/images/pic3.png)
 
 - On the Resource group explore the various components created as part of the Deployment . Click on the HDInsight Cluster to open the cluster page. 
 
@@ -44,9 +44,9 @@ In this section we would deploy an HDInsight Managed Kafka  cluster with two Edg
 
 Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectdistrbuted.md)  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3ODM5NDQ2MSwtMjA3NTE3NTE5NCwtMT
-Y1MzcxMzQ3OSwtNDIyNzcxNTMsLTE5ODEzNTkxOSwxMzQzMTIy
-MjQ0LDk3MjM0ODkxNCwxNzg0MjQ4MzI2LC0xMDgxOTQ5NDM3LC
-0zNzY2NDEwMTksLTE5NDY1OTgwMDIsMTIzOTYyNTAzNSwxNjc0
-NDE1NDYzXX0=
+eyJoaXN0b3J5IjpbMTI4NjgwNjA3NywxMDc4Mzk0NDYxLC0yMD
+c1MTc1MTk0LC0xNjUzNzEzNDc5LC00MjI3NzE1MywtMTk4MTM1
+OTE5LDEzNDMxMjIyNDQsOTcyMzQ4OTE0LDE3ODQyNDgzMjYsLT
+EwODE5NDk0MzcsLTM3NjY0MTAxOSwtMTk0NjU5ODAwMiwxMjM5
+NjI1MDM1LDE2NzQ0MTU0NjNdfQ==
 -->
