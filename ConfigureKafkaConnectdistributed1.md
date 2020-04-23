@@ -78,7 +78,7 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
      <br />
      <br />
      
-     > Note: **All the below steps needs to be repeated for both ed10 and ed12 edge nodes**
+     > Note: **The below step needs to be repeated for both ed10 and ed12 edge nodes**
      -  Create a new folder path on the edge node
   ```
      sudo mkdir /usr/hdp/current/kafka-broker/connectors
@@ -87,10 +87,10 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
 - Using WINSCP or any other SCP tool of your choice upload the Kafka Connect Plugins into folder path created in the last step
 
 
+- Transfer the files to ed12 using the below command. Make sure that folders have the right permissions for this operation.  
+```rsync -r /usr/hdp/current/kafka-broker/connectors/ sshuser@ed12-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:/usr/hdp/current/kafka-broker/connectors/```
 
-
-- Transfer the files to ed12 using the below command 
-rsync -r /usr/hdp/current/kafka-broker/connectors/ sshuser@ed12-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:/usr/hdp/current/kafka-broker/connectors/
+ > Note: **The below steps needs to be repeated for both ed10 and ed12 edge nodes**
 
 #### Configure Kafka Connect 
 
@@ -151,6 +151,6 @@ plugin.path=/usr/hdp/current/kafka-broker/connectors/jcustenborder-kafka-connect
     
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzNjkyMjkzNSwxMjU5MTMyMTQwLC05ND
-IwODI0NjRdfQ==
+eyJoaXN0b3J5IjpbNDk5MjI2MzEwLDEyNTkxMzIxNDAsLTk0Mj
+A4MjQ2NF19
 -->
