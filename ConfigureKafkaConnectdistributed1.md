@@ -42,21 +42,6 @@ echo $KAFKABROKERS
 wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhdseyy1netdbyklgqj5y1ud.cx.internal.cloudapp.net:9092
 ```
 
-### Deploy the Kafka Connect Plugins
-
-- Download the relevant Kafka Plugins from the [Confluent Hub](https://www.confluent.io/hub/) to your local desktop 
-     - [Kafka Connect plugin for streaming data from Twitter to Kafka](https://www.confluent.io/hub/jcustenborder/kafka-connect-twitter).
-     - [Azure Blob Storage Sink Connector](https://www.confluent.io/hub/confluentinc/kafka-connect-azure-blob-storage)
-     
-     <br />
-     <br />
-     
-     > Note: The below step needs to be repeated for both the Edge nodes
-     -  Create a new folder path on both  Edge node 1 ( Repeat for Edge node 2) 
-  ```
-     sudo mkdir /usr/hdp/current/kafka-broker/connectors
-     ``` 
-     
 
 ### Configure the nodes for Kafka Connect in Distributed mode
 
@@ -81,6 +66,22 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
 ```
 /usr/hdp/current/kafka-broker/bin/kafka-topics.sh --create --replication-factor 3 --partitions 8 --topic twitterstatus --zookeeper $KAFKAZKHOSTS
 ```
+
+### Deploy the Kafka Connect Plugins
+
+- Download the relevant Kafka Plugins from the [Confluent Hub](https://www.confluent.io/hub/) to your local desktop 
+     - [Kafka Connect plugin for streaming data from Twitter to Kafka](https://www.confluent.io/hub/jcustenborder/kafka-connect-twitter).
+     - [Azure Blob Storage Sink Connector](https://www.confluent.io/hub/confluentinc/kafka-connect-azure-blob-storage)
+     
+     <br />
+     <br />
+     
+     > Note: The below step needs to be repeated for both the Edge nodes
+     -  Create a new folder path on both  Edge node 1 ( Repeat for Edge node 2) 
+  ```
+     sudo mkdir /usr/hdp/current/kafka-broker/connectors
+     ``` 
+
 
 #### Configure Kafka Connect 
 
@@ -133,5 +134,5 @@ plugin.path=/usr/hdp/current/kafka-broker/connectors/jcustenborder-kafka-connect
     
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxMTc4NjI0NCwtOTQyMDgyNDY0XX0=
+eyJoaXN0b3J5IjpbODAwMTAzNzYsLTk0MjA4MjQ2NF19
 -->
