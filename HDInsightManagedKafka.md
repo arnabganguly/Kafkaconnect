@@ -46,11 +46,12 @@ ed12-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net
 ![HDInsight Kafka Schema Registry](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic7.png)
 
 
-- On the HDInsight cluster page click on the SSH+Cluster login blade on the left and get the hostname of the edge node that was deployed.
+- On the HDInsight cluster page click on the SSH+Cluster login blade on the left and get the hostname of the edge node that was deployed. You will see that now you have logged into edge node ``ed10``
 
 ![HDInsight Kafka Schema Registry](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic6.png)
 
-
+- In this lab you will need to log into ed12 as well. To do that simply ssh into ed12 from ed10 
+ 
 
 
 
@@ -62,9 +63,9 @@ ed12-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net
 
 Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectdistrbuted.md)  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4MDM3NDE4NiwxMDc4Mzk0NDYxLC0yMD
-c1MTc1MTk0LC0xNjUzNzEzNDc5LC00MjI3NzE1MywtMTk4MTM1
-OTE5LDEzNDMxMjIyNDQsOTcyMzQ4OTE0LDE3ODQyNDgzMjYsLT
-EwODE5NDk0MzcsLTM3NjY0MTAxOSwtMTk0NjU5ODAwMiwxMjM5
-NjI1MDM1LDE2NzQ0MTU0NjNdfQ==
+eyJoaXN0b3J5IjpbMTA1MDM2OTI1MSwxOTgwMzc0MTg2LDEwNz
+gzOTQ0NjEsLTIwNzUxNzUxOTQsLTE2NTM3MTM0NzksLTQyMjc3
+MTUzLC0xOTgxMzU5MTksMTM0MzEyMjI0NCw5NzIzNDg5MTQsMT
+c4NDI0ODMyNiwtMTA4MTk0OTQzNywtMzc2NjQxMDE5LC0xOTQ2
+NTk4MDAyLDEyMzk2MjUwMzUsMTY3NDQxNTQ2M119
 -->
