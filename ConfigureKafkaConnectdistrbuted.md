@@ -42,10 +42,6 @@ echo $KAFKABROKERS
 wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhdseyy1netdbyklgqj5y1ud.cx.internal.cloudapp.net:9092
 ```
 
-
-
-
-
 ### Deploy the Kafka Connect Plugins
 
 - Download the relevant Kafka Plugins from the [Confluent Hub](https://www.confluent.io/hub/) to your local desktop 
@@ -58,10 +54,6 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
      sudo mkdir /usr/hdp/current/kafka-broker/connectors
      ``` 
      
-
-
-
-
 
 ### Configure the nodes for Kafka Connect in Distributed mode
 
@@ -141,8 +133,8 @@ plugin.path=/usr/hdp/current/kafka-broker/connectors/jcustenborder-kafka-connect
     
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5MzI0ODQ3MCwtMjA0MzgyNDM3NywtOT
-I0NTYwOTY0LC0xNTIxNTI3NTgyLDEzODkzMzMwNTksMTk2MTcz
-NDk0NiwxODIzMTgwNzE2LC0xMDc0MzUyMzU3LC0xNTcxMDkxNz
-E5XX0=
+eyJoaXN0b3J5IjpbMjA4NDI5NDM1OCwxNzkzMjQ4NDcwLC0yMD
+QzODI0Mzc3LC05MjQ1NjA5NjQsLTE1MjE1Mjc1ODIsMTM4OTMz
+MzA1OSwxOTYxNzM0OTQ2LDE4MjMxODA3MTYsLTEwNzQzNTIzNT
+csLTE1NzEwOTE3MTldfQ==
 -->
