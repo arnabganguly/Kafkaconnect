@@ -151,13 +151,18 @@ plugin.path=/usr/hdp/current/kafka-broker/connectors/jcustenborder-kafka-connect
     
 #### Kafka Connect REST API 
 
-- Use the below REST API call to verify of Kafka Connect is working as expected 
+- Use the below REST API calls from any edge node to verify of Kafka Connect is working as expected on both the nodes  
 
 ```
- curl -s http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:8083/ |jq
- ```
+curl -s http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:8083/ |jq
+
+curl -s http://ed12-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:8083/ |jq
+```
+- If Kafka Connect is working as expected each of the REST API calls will return a output like below 
+```
+
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzgyNDQyNDU3LDQ5OTIyNjMxMCwxMjU5MT
-MyMTQwLC05NDIwODI0NjRdfQ==
+eyJoaXN0b3J5IjpbLTExNjk3MjQzOTcsNDk5MjI2MzEwLDEyNT
+kxMzIxNDAsLTk0MjA4MjQ2NF19
 -->
