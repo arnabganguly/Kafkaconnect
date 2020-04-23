@@ -149,8 +149,15 @@ plugin.path=/usr/hdp/current/kafka-broker/connectors/jcustenborder-kafka-connect
 
 - Repeat the same steps for other edge node to start Kafka Connect in distributed mode
     
+#### Kafka Connect REST API 
 
+- Use the below REST API call to verify of Kafka Connect is working as expected 
+
+```
+ curl -s http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:8083/ |jq
+ ```
+ 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk5MjI2MzEwLDEyNTkxMzIxNDAsLTk0Mj
-A4MjQ2NF19
+eyJoaXN0b3J5IjpbMzgyNDQyNDU3LDQ5OTIyNjMxMCwxMjU5MT
+MyMTQwLC05NDIwODI0NjRdfQ==
 -->
