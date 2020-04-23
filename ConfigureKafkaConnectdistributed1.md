@@ -88,9 +88,6 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
   - `connect-distributed.sh` : Located at /usr/hdp/current/kafka-broker/conf/
 
     
-
-
-
 - In distributed mode, the workers need to be able to discover each other and have shared storage for connector configuration and offset data. In addition to the usual worker settings, ensure you have configured the following for the cluster:
     
     - `group.id` : ID that uniquely identifies the cluster these workers belong to. Ensure this is unique for all groups that work with a cluster.
@@ -133,5 +130,5 @@ plugin.path=/usr/hdp/current/kafka-broker/connectors/jcustenborder-kafka-connect
     
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4NDI5NDM1OF19
+eyJoaXN0b3J5IjpbLTk0MjA4MjQ2NF19
 -->
