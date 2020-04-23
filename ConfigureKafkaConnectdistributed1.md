@@ -48,6 +48,9 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
      - [Kafka Connect plugin for streaming data from Twitter to Kafka](https://www.confluent.io/hub/jcustenborder/kafka-connect-twitter).
      - [Azure Blob Storage Sink Connector](https://www.confluent.io/hub/confluentinc/kafka-connect-azure-blob-storage)
      
+     <br />
+     <br />
+     
      > Note: The below step needs to be repeated for both the Edge nodes
      -  Create a new folder path on both  Edge node 1 ( Repeat for Edge node 2) 
   ```
@@ -130,5 +133,5 @@ plugin.path=/usr/hdp/current/kafka-broker/connectors/jcustenborder-kafka-connect
     
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0MjA4MjQ2NF19
+eyJoaXN0b3J5IjpbMTQxMTc4NjI0NCwtOTQyMDgyNDY0XX0=
 -->
