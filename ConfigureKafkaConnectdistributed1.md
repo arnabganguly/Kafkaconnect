@@ -158,7 +158,7 @@ curl -s http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:8
 
 curl -s http://ed12-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:8083/ |jq
 ```
-- If Kafka Connect is working as expected each of the REST API calls will return a output like below 
+- If Kafka Connect is working as expected each of the REST API calls will return an output like below 
 ```
 {
   "version": "2.1.0.3.1.2.1-1",
@@ -168,6 +168,6 @@ curl -s http://ed12-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:8
  ```
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMjAyNTY0Miw0OTkyMjYzMTAsMTI1OT
-EzMjE0MCwtOTQyMDgyNDY0XX0=
+eyJoaXN0b3J5IjpbLTE1ODYxMzM5ODAsNDk5MjI2MzEwLDEyNT
+kxMzIxNDAsLTk0MjA4MjQ2NF19
 -->
