@@ -80,8 +80,9 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
      -  Create a new folder path on the edge node
   ```
      sudo mkdir /usr/hdp/current/kafka-broker/connectors
+     sudo chmod 777 
      ``` 
-
+- Using WINSCP or any other SCP tool of your choice upload the Kafka Connect Plugin into folder path created earlier
 
 #### Configure Kafka Connect 
 
@@ -139,5 +140,5 @@ plugin.path=/usr/hdp/current/kafka-broker/connectors/jcustenborder-kafka-connect
     
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzMDgyMzg4MCwtOTQyMDgyNDY0XX0=
+eyJoaXN0b3J5IjpbLTMwMjQ4NzI0LC05NDIwODI0NjRdfQ==
 -->
