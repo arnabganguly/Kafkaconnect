@@ -160,9 +160,14 @@ curl -s http://ed12-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:8
 ```
 - If Kafka Connect is working as expected each of the REST API calls will return a output like below 
 ```
-
+{
+  "version": "2.1.0.3.1.2.1-1",
+  "commit": "ded5eefdb4f63651",
+  "kafka_cluster_id": "W0HIh8naTgip7Taju7G7fg"
+}
+ ```
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjk3MjQzOTcsNDk5MjI2MzEwLDEyNT
-kxMzIxNDAsLTk0MjA4MjQ2NF19
+eyJoaXN0b3J5IjpbLTgwMjAyNTY0Miw0OTkyMjYzMTAsMTI1OT
+EzMjE0MCwtOTQyMDgyNDY0XX0=
 -->
