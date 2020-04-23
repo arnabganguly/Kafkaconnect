@@ -88,6 +88,10 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
 
 
 
+
+- Transfer the files to ed12 using the below command 
+rsync -r /usr/hdp/current/kafka-broker/connectors/ sshuser@ed12-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:/usr/hdp/current/kafka-broker/connectors/
+
 #### Configure Kafka Connect 
 
  - To run Kafka Connect in **distributed mode** one needs to look at two important files. 
@@ -147,6 +151,6 @@ plugin.path=/usr/hdp/current/kafka-broker/connectors/jcustenborder-kafka-connect
     
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTI0MzExNTQsMTI1OTEzMjE0MCwtOT
-QyMDgyNDY0XX0=
+eyJoaXN0b3J5IjpbLTYzNjkyMjkzNSwxMjU5MTMyMTQwLC05ND
+IwODI0NjRdfQ==
 -->
