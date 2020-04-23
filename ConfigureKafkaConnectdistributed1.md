@@ -106,7 +106,7 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
     -  `plugin.path`: Path for the Kafka Connect Plugins 
 
 - Edit the `connect-distributed.properties` file 
-`` sudo vi 
+``` sudo vi /usr/hdp/current/kafka-broker/conf/connect-distributed.properties ```
 
 - In the  `connect-distributed.properties`  file, define the topics that will store the connector state, task configuration state, and connector offset state. Modify the parameters in `connect-distributed.properties`  file as shown below. Note that we use some of the topics we created earlier. 
 
@@ -147,6 +147,6 @@ plugin.path=/usr/hdp/current/kafka-broker/connectors/jcustenborder-kafka-connect
     
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwMDg1MTA5NCwxMjU5MTMyMTQwLC05ND
+eyJoaXN0b3J5IjpbLTIzMzIyMTA4MiwxMjU5MTMyMTQwLC05ND
 IwODI0NjRdfQ==
 -->
