@@ -72,6 +72,8 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
 - Download the relevant Kafka Plugins from the [Confluent Hub](https://www.confluent.io/hub/) to your local desktop 
      - [Kafka Connect plugin for streaming data from Twitter to Kafka](https://www.confluent.io/hub/jcustenborder/kafka-connect-twitter).
      - [Azure Blob Storage Sink Connector](https://www.confluent.io/hub/confluentinc/kafka-connect-azure-blob-storage)
+- Unzip the files to create the folder structures
+
      
      <br />
      <br />
@@ -82,7 +84,9 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
      sudo mkdir /usr/hdp/current/kafka-broker/connectors
      sudo chmod 777 /usr/hdp/current/kafka-broker/connectors 
      ``` 
-- Using WINSCP or any other SCP tool of your choice upload the Kafka Connect Plugin into folder path created earlier
+- Using WINSCP or any other SCP tool of your choice upload the Kafka Connect Plugins into folder path created earlier
+
+
 
 #### Configure Kafka Connect 
 
@@ -140,5 +144,5 @@ plugin.path=/usr/hdp/current/kafka-broker/connectors/jcustenborder-kafka-connect
     
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzNjEwOTUyMCwtOTQyMDgyNDY0XX0=
+eyJoaXN0b3J5IjpbMTI1OTEzMjE0MCwtOTQyMDgyNDY0XX0=
 -->
