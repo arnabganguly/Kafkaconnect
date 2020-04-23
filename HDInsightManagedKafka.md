@@ -36,19 +36,30 @@ In this section we would deploy an HDInsight Managed Kafka  cluster with two Edg
 
 ![HDInsight Kafka Schema Registry](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic5.png)
 
+- Log into Ambari to get the Hostnames of the edge nodes 
+
+
+
+
 - On the HDInsight cluster page click on the SSH+Cluster login blade on the left and get the hostname of the edge node that was deployed.
 
 ![HDInsight Kafka Schema Registry](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic6.png)
 
+
+
+
+
 - Using an SSH client of your choice ssh into the edge node using the **sshuser** and **password** that you set in the custom ARM script. 
+
+- 
 
 - In the next section we would configure the Confluent Kafka Schema Registry that we installed on the edge node.  
 
 Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectdistrbuted.md)  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc1Mzc3OTM1LDEwNzgzOTQ0NjEsLTIwNz
-UxNzUxOTQsLTE2NTM3MTM0NzksLTQyMjc3MTUzLC0xOTgxMzU5
-MTksMTM0MzEyMjI0NCw5NzIzNDg5MTQsMTc4NDI0ODMyNiwtMT
-A4MTk0OTQzNywtMzc2NjQxMDE5LC0xOTQ2NTk4MDAyLDEyMzk2
-MjUwMzUsMTY3NDQxNTQ2M119
+eyJoaXN0b3J5IjpbMTg4OTM0NTk2MywxMDc4Mzk0NDYxLC0yMD
+c1MTc1MTk0LC0xNjUzNzEzNDc5LC00MjI3NzE1MywtMTk4MTM1
+OTE5LDEzNDMxMjIyNDQsOTcyMzQ4OTE0LDE3ODQyNDgzMjYsLT
+EwODE5NDk0MzcsLTM3NjY0MTAxOSwtMTk0NjU5ODAwMiwxMjM5
+NjI1MDM1LDE2NzQ0MTU0NjNdfQ==
 -->
