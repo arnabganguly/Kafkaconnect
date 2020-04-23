@@ -94,7 +94,7 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
     
 - In distributed mode, the workers need to be able to discover each other and have shared storage for connector configuration and offset data. In addition to the usual worker settings, ensure you have configured the following for the cluster:
     
-    - `group.id` : ID that uniquely identifies the cluster these workers belong to. Ensure this is unique for all groups that work with a cluster.
+    - `group.id` : ID that uniquely identifies the cluster these workers belong to. Make sure this value is not changed between the edge nodes.
     -   `config.storage.topic`: Topic to store the connector and task configuration state in.
     -   `offset.storage.topic`: Topic to store the connector offset state in. 
     -   `rest.port`: Port where the REST interface listens for HTTP requests. 
@@ -104,6 +104,9 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
 
 ```
 group.id=agconnect-cluster
+
+key.converter=org.apache.kafka.connect.json.JsonConverter
+value.converter=org.apache.kafka.connect.json.JsonConverter
 
 key.converter.schemas.enable=true
 value.converter.schemas.enable=true
@@ -136,5 +139,5 @@ plugin.path=/usr/hdp/current/kafka-broker/connectors/jcustenborder-kafka-connect
     
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1Nzc5MDkyLC05NDIwODI0NjRdfQ==
+eyJoaXN0b3J5IjpbMTYzMDgyMzg4MCwtOTQyMDgyNDY0XX0=
 -->
