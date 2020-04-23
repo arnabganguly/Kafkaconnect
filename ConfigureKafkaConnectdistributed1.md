@@ -137,16 +137,16 @@ rest.port=8083
 plugin.path=/usr/hdp/current/kafka-broker/connectors/jcustenborder-kafka-connect-twitter-0.3.33,/usr/hdp/current/kafka-broker/connectors/confluentinc-kafka-connect-azure-blob-storage-1.3.2
 ```
 
-- Start Kafka Connect in Distributed mode on Edge Node 1 , `connect-distributed.properties`
+- Start Kafka Connect in Distributed mode on Edge Node , `connect-distributed.properties`
     
  ```
     sudo  /usr/hdp/current/kafka-broker/bin/connect-distributed.sh  /usr/hdp/current/kafka-broker/conf/connect-distributed.properties
  ```
 
-- Log into the second edge node and 
+- Repeat the same steps for other edge node to start Kafka Connect in 
     
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTUwMTg4NzEsMTI1OTEzMjE0MCwtOT
-QyMDgyNDY0XX0=
+eyJoaXN0b3J5IjpbMTA4NTQ3MTE4MiwxMjU5MTMyMTQwLC05ND
+IwODI0NjRdfQ==
 -->
