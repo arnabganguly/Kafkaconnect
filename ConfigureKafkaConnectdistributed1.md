@@ -77,7 +77,7 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
      <br />
      
      > Note: **All the below steps needs to be repeated for both ed10 and ed12 Edge nodes**
-     -  Create a new folder path on both  Edge node 1 ( Repeat for Edge node 2) 
+     -  Create a new folder path on both  ed10 ( repeat for ed12) 
   ```
      sudo mkdir /usr/hdp/current/kafka-broker/connectors
      ``` 
@@ -134,5 +134,5 @@ plugin.path=/usr/hdp/current/kafka-broker/connectors/jcustenborder-kafka-connect
     
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0NTYzNjA1MCwtOTQyMDgyNDY0XX0=
+eyJoaXN0b3J5IjpbLTEyMTQxNDU0MTcsLTk0MjA4MjQ2NF19
 -->
