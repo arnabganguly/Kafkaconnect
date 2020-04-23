@@ -97,7 +97,7 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
   - `connect-distributed.sh` : Located at /usr/hdp/current/kafka-broker/bin/
 
     
-- In distributed mode, the workers need to be able to discover each other and have shared storage for connector configuration and offset data. Below are some of important parameters we would need to configur
+- In distributed mode, the workers need to be able to discover each other and have shared storage for connector configuration and offset data. Below are some of important parameters we would need to configure. 
     
     - `group.id` : ID that uniquely identifies the cluster these workers belong to. Make sure this value is not changed between the edge nodes.
     -   `config.storage.topic`: Topic to store the connector and task configuration state in.
@@ -105,6 +105,8 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
     -   `rest.port`: Port where the REST interface listens for HTTP requests. 
     -  `plugin.path`: Path for the Kafka Connect Plugins 
 
+- Edit the `connect-distributed.properties` file 
+`` sudo vi 
 
 - In the  `connect-distributed.properties`  file, define the topics that will store the connector state, task configuration state, and connector offset state. Modify the parameters in `connect-distributed.properties`  file as shown below. Note that we use some of the topics we created earlier. 
 
@@ -145,6 +147,6 @@ plugin.path=/usr/hdp/current/kafka-broker/connectors/jcustenborder-kafka-connect
     
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5OTkzMTc5MiwxMjU5MTMyMTQwLC05ND
+eyJoaXN0b3J5IjpbLTkwMDg1MTA5NCwxMjU5MTMyMTQwLC05ND
 IwODI0NjRdfQ==
 -->
