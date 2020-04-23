@@ -56,7 +56,7 @@ ed12-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net
 > Note:  In this lab you will need to make config changes in both the edge nodes ed10 and ed12 . To log into ed12 simply ssh into ed12 from ed10 
 
 ```
-ssh  ed12-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net
+sshuser@ed10-ag4kac:~$ ssh ed12-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net
 ```
 
 
@@ -64,9 +64,10 @@ ssh  ed12-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net
 
 Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectdistrbuted1.md)  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzk3MjUzNDQsMTk4MDM3NDE4NiwxMD
-c4Mzk0NDYxLC0yMDc1MTc1MTk0LC0xNjUzNzEzNDc5LC00MjI3
-NzE1MywtMTk4MTM1OTE5LDEzNDMxMjIyNDQsOTcyMzQ4OTE0LD
-E3ODQyNDgzMjYsLTEwODE5NDk0MzcsLTM3NjY0MTAxOSwtMTk0
-NjU5ODAwMiwxMjM5NjI1MDM1LDE2NzQ0MTU0NjNdfQ==
+eyJoaXN0b3J5IjpbNTM4NjcxNzI3LC0yMDM5NzI1MzQ0LDE5OD
+AzNzQxODYsMTA3ODM5NDQ2MSwtMjA3NTE3NTE5NCwtMTY1Mzcx
+MzQ3OSwtNDIyNzcxNTMsLTE5ODEzNTkxOSwxMzQzMTIyMjQ0LD
+k3MjM0ODkxNCwxNzg0MjQ4MzI2LC0xMDgxOTQ5NDM3LC0zNzY2
+NDEwMTksLTE5NDY1OTgwMDIsMTIzOTYyNTAzNSwxNjc0NDE1ND
+YzXX0=
 -->
