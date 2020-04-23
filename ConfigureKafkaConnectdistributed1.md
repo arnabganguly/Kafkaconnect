@@ -87,9 +87,9 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
 
  - To run Kafka Connect in **distributed mode** one needs to look at two important files. 
 
-  - `connect-distributed.properties` : Located at /usr/hdp/current/kafka-broker/bin/
+  - `connect-distributed.properties` : Located at /usr/hdp/current/kafka-broker/bin/conf
 
-  - `connect-distributed.sh` : Located at /usr/hdp/current/kafka-broker/conf/
+  - `connect-distributed.sh` : Located at /usr/hdp/current/kafka-broker/bin/
 
     
 - In distributed mode, the workers need to be able to discover each other and have shared storage for connector configuration and offset data. In addition to the usual worker settings, ensure you have configured the following for the cluster:
@@ -134,5 +134,5 @@ plugin.path=/usr/hdp/current/kafka-broker/connectors/jcustenborder-kafka-connect
     
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1OTcyMTUzMSwtOTQyMDgyNDY0XX0=
+eyJoaXN0b3J5IjpbLTEyNjU4MzE0MTAsLTk0MjA4MjQ2NF19
 -->
