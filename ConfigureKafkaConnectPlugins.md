@@ -13,11 +13,12 @@ In this section we would configure the Kafka Connect Plugins that we dowloaded e
  - Submit the form by clicking the **Create your Twitter Application**
  - Copy the below information from the screen for later use in your properties file.
 ```
-"twitter.oauth.consumerSecret"
-"twitter.oauth.accessToken"
-"twitter.oauth.consumerKey"
-"twitter.oauth.accessTokenSecret"
+twitter.oauth.consumerKey
+"twitter.oauth.consumerSecret
+twitter.oauth.accessToken
+twitter.oauth.accessTokenSecret"
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2NTY1ODIxNiw2NTk4NDc4MjldfQ==
+eyJoaXN0b3J5IjpbLTExNzcyODkyMjAsMTE2NTY1ODIxNiw2NT
+k4NDc4MjldfQ==
 -->
