@@ -16,8 +16,8 @@ In this section we would configure the Kafka Connect Plugins that we dowloaded e
 "twitter.oauth.consumerSecret"
 "twitter.oauth.accessToken"
 "twitter.oauth.consumerKey"
-"twitter.oauth.accessTokenSecret":"Efb8bmhX5JAJpPwAdFBN38N9xumur0MdECE6Te8KEdODr", 
+"twitter.oauth.accessTokenSecret"
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzU1NTc1NzMsNjU5ODQ3ODI5XX0=
+eyJoaXN0b3J5IjpbMTE2NTY1ODIxNiw2NTk4NDc4MjldfQ==
 -->
