@@ -21,14 +21,13 @@ twitter.oauth.accessTokenSecret"
 
 **Update the Kafka Connect plugin for Twitter properties file** 
 
-- Create a new properties file called `twitter.properties` at the below location 
+- Navigate to the connectors folder and create a new properties file called `twitter.properties` 
 ```
 cd /usr/hdp/current/kafka-broker/connectors/
-touch 
+sudo vi twitter.properties
 ```
-
-- 
+- Create a new 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4NjA2OTM0OCwxMTY1NjU4MjE2LDY1OT
-g0NzgyOV19
+eyJoaXN0b3J5IjpbMjI2MzM4MTU4LDExNjU2NTgyMTYsNjU5OD
+Q3ODI5XX0=
 -->
