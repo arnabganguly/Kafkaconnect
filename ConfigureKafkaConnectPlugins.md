@@ -18,7 +18,11 @@ twitter.oauth.consumerKey
 twitter.oauth.accessToken
 twitter.oauth.accessTokenSecret"
 ```
+
+**Update the Kafka Connect plugin for Twitter properties file** 
+
+- 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzcyODkyMjAsMTE2NTY1ODIxNiw2NT
-k4NDc4MjldfQ==
+eyJoaXN0b3J5IjpbNjM4Njg5NDU1LDExNjU2NTgyMTYsNjU5OD
+Q3ODI5XX0=
 -->
