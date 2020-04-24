@@ -1,8 +1,8 @@
 ## Configure Kafka Connect in Distributed Mode
 
-### Configure the 
+### Configure the Kafka Conn
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0NjY1MDkyNV19
+eyJoaXN0b3J5IjpbLTEzODgxODM1NDVdfQ==
 -->
