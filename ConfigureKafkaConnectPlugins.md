@@ -11,8 +11,13 @@ In this section we would configure the Kafka Connect Plugins that we dowloaded e
  - Enter your Application Name, Description and your website address. You can leave the callback URL empty.
  - Accept the TOS, and solve the CAPTCHA.
  - Submit the form by clicking the **Create your Twitter Application**
- - Copy the consumer key (API key) and consumer secret from the screen into your application
-
+ - Copy the below information from the screen for later use in your properties file.
+```
+"twitter.oauth.consumerSecret"
+"twitter.oauth.accessToken"
+"twitter.oauth.consumerKey"
+"twitter.oauth.accessTokenSecret":"Efb8bmhX5JAJpPwAdFBN38N9xumur0MdECE6Te8KEdODr", 
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzMjA1NjU5Miw2NTk4NDc4MjldfQ==
+eyJoaXN0b3J5IjpbLTExNzU1NTc1NzMsNjU5ODQ3ODI5XX0=
 -->
