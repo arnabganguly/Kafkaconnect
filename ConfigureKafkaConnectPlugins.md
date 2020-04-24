@@ -21,8 +21,13 @@ twitter.oauth.accessTokenSecret"
 
 **Update the Kafka Connect plugin for Twitter properties file** 
 
+- The configuration file is located in the Connect Plugin download located at 
+```
+/usr/hdp/current/kafka-broker/connectors/jcustenborder-kafka-connect-twitter-0.3.33
+```
+
 - 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM4Njg5NDU1LDExNjU2NTgyMTYsNjU5OD
-Q3ODI5XX0=
+eyJoaXN0b3J5IjpbLTE4Mjk0OTU1MjYsMTE2NTY1ODIxNiw2NT
+k4NDc4MjldfQ==
 -->
