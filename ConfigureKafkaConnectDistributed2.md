@@ -77,10 +77,17 @@ BODY
 ![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic17.png)
 
 
-- Use the Kafka REST API to check if the connector `Kafka-to-Blob`was created 
+- Use the Kafka REST API to check if the connector `Kafka-to-Blob`was created. You should see both the source and sink connectors.  
+
+```
+curl -X GET http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:8083/connectors
+["local-file-source","Twitter-to-Kafka","Kafka-to-Blob"]
 ```
 
+![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic18.png)
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTQ3MTcyMzMsMTAwMzUwMDc2MywtMT
-YwNTk3MzMwNSwxMTc4NzY3NDY1XX0=
+eyJoaXN0b3J5IjpbLTEwNTMyODczNSwxMDAzNTAwNzYzLC0xNj
+A1OTczMzA1LDExNzg3Njc0NjVdfQ==
 -->
