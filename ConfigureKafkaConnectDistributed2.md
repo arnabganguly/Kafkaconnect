@@ -16,7 +16,7 @@ curl -X POST http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.
           "twitter.oauth.consumerSecret":"CZug3RPR01ns5DvBH8LNPvLzHWxgvXOQ97hSFByJ6x393vagFC",
           "twitter.oauth.accessToken":"1022650746-Ujs8mXTAfiQlqgnkspGYNLu2ImYwwCXAm99DwVX",
           "twitter.oauth.accessTokenSecret":"Efb8bmhX5JAJpPwAdFBN38N9xumur0MdECE6Te8KEdODr",
-          "filter.keywords":"COVID19",
+          "filter.keywords":"<keyword>",
           "process.deletes":false
       }
   }
@@ -27,8 +27,11 @@ BODY
 
 ![HDInsight Kafka Schema Registry](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic15.png)
 
-- One way to test th
+- One way to test is to check of Twitter Messages with the keywords are being ingested is to start a console producer in a different session 
+
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5ODI4NjQyOSwtMTYwNTk3MzMwNSwxMT
-c4NzY3NDY1XX0=
+eyJoaXN0b3J5IjpbLTE0NzY3OTA1NDUsLTE2MDU5NzMzMDUsMT
+E3ODc2NzQ2NV19
 -->
