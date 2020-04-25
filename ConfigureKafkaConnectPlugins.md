@@ -40,9 +40,9 @@ sudo vi twitter.properties
 "twitter.oauth.accessTokenSecret":"<twitter.oauth.accessTokenSecret>",
 "filter.keywords":"keyword1,keyword2 ,...",
 "process.deletes":false
-          ```
+```
           
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDgxODE0NzUsLTUyMTQ4MzIzOCwyMj
-YzMzgxNTgsMTE2NTY1ODIxNiw2NTk4NDc4MjldfQ==
+eyJoaXN0b3J5IjpbMTY2MTI4NzI2MSwtNTIxNDgzMjM4LDIyNj
+MzODE1OCwxMTY1NjU4MjE2LDY1OTg0NzgyOV19
 -->
