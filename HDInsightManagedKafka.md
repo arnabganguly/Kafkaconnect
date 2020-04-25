@@ -50,7 +50,7 @@ ed12-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net
 
 - On the HDInsight cluster page click on the SSH+Cluster login blade on the left and get the hostname of the edge node that was deployed. 
 
-
+![HDInsight Kafka Schema Registry](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic10.png)
 
 
 - Using an SSH client of your choice ssh into the edge node using the **sshuser** and **password** that you set in the custom ARM script. You will notice that you have logged into edge node ``ed10``
@@ -66,10 +66,10 @@ sshuser@ed10-ag4kac:~$ ssh ed12-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cl
 
 Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectdistributed1.md)  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0NDM1MTMyNCwtNTA4MjQ1MTk4LC0yMD
-M5NzI1MzQ0LDE5ODAzNzQxODYsMTA3ODM5NDQ2MSwtMjA3NTE3
-NTE5NCwtMTY1MzcxMzQ3OSwtNDIyNzcxNTMsLTE5ODEzNTkxOS
-wxMzQzMTIyMjQ0LDk3MjM0ODkxNCwxNzg0MjQ4MzI2LC0xMDgx
-OTQ5NDM3LC0zNzY2NDEwMTksLTE5NDY1OTgwMDIsMTIzOTYyNT
-AzNSwxNjc0NDE1NDYzXX0=
+eyJoaXN0b3J5IjpbNTU3NTY3MDMsLTUwODI0NTE5OCwtMjAzOT
+cyNTM0NCwxOTgwMzc0MTg2LDEwNzgzOTQ0NjEsLTIwNzUxNzUx
+OTQsLTE2NTM3MTM0NzksLTQyMjc3MTUzLC0xOTgxMzU5MTksMT
+M0MzEyMjI0NCw5NzIzNDg5MTQsMTc4NDI0ODMyNiwtMTA4MTk0
+OTQzNywtMzc2NjQxMDE5LC0xOTQ2NTk4MDAyLDEyMzk2MjUwMz
+UsMTY3NDQxNTQ2M119
 -->
