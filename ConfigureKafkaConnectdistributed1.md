@@ -74,6 +74,7 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
      - [Azure Blob Storage Sink Connector](https://www.confluent.io/hub/confluentinc/kafka-connect-azure-blob-storage)
 - Unzip the files to create the folder structures
 
+     ![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic9.png)
      
      <br />
      <br />
@@ -181,7 +182,7 @@ curl -s http://<edge-node-FQDN>:8083/ |jq
    Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectPlugins.md)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzA0ODg0MjgsLTExODQyNzY2MzUsOD
+eyJoaXN0b3J5IjpbLTE1MTMwNDc4OTUsLTExODQyNzY2MzUsOD
 E0MDA4MTY3LDE1NjM4MDE3MSwtMTU4NjEzMzk4MCw0OTkyMjYz
 MTAsMTI1OTEzMjE0MCwtOTQyMDgyNDY0XX0=
 -->
