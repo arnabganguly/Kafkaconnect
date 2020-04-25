@@ -25,7 +25,9 @@ curl -X POST http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.
   }
 BODY 
 ```
+- If the connector is created , you will see a notification like below.
 
+![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic15.png)
 
 - Use the Kafka REST API to check if the connector `Twitter-to-Kafka`was created 
 
@@ -36,11 +38,8 @@ curl -X GET http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.n
 
 ![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic16.png)
 
-- If the connector is created and the tasks are started , you will see a notification like below.
 
-![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic15.png)
-
-- One way to test if Twitter Messages with the keywords are being ingested is to start a console consumer in a different session and start consuming messages from topic *twitterstatus* defined earlier . 
+- One way to test if Twitter Messages with the keywords are being ingested is to start a console consumer in a different session and start consuming messages from topic *twitterstatus* . 
 
 ```
 /usr/hdp/current/kafka-broker/bin/kafka-console-consumer.sh --bootstrap-server $KAFKAZKHOSTS --topic twitterstatus 
@@ -76,7 +75,10 @@ BODY
 - If the connector is created and the tasks are started , you will see a notification like below.
 
 ![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic17.png)
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwMzE5MDMwMiwxMDAzNTAwNzYzLC0xNj
-A1OTczMzA1LDExNzg3Njc0NjVdfQ==
+eyJoaXN0b3J5IjpbLTEzMDkwMTA5NzYsMTAwMzUwMDc2MywtMT
+YwNTk3MzMwNSwxMTc4NzY3NDY1XX0=
 -->
