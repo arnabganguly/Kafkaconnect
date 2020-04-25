@@ -26,24 +26,26 @@ curl -X POST http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.
 BODY 
 ```
 
-- If the connector is created and the tasks are started , you will see a notification like below.
 
-![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic15.png)
-
-- One way to test if Twitter Messages with the keywords are being ingested is to start a console consumer in a different session and start consuming messages from topic *twitterstatus* defined earlier  . 
-
-```
-/usr/hdp/current/kafka-broker/bin/kafka-console-consumer.sh --bootstrap-server $KAFKAZKHOSTS --topic twitterstatus 
-```
-- If everything is working , you should see a stream of relevant Twitter Messages on the console with specified keywords.  
-
-
-- Use the Kafka REST API to check if the connector was created 
+- Use the Kafka REST API to check if the connector `Twitter-to-Kafka`was created 
 
  ```
 curl -X GET http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:8083/connectors
 ["local-file-source","Twitter-to-Kafka"]
 ```
+
+![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic16.png)
+
+- If the connector is created and the tasks are started , you will see a notification like below.
+
+![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic15.png)
+
+- One way to test if Twitter Messages with the keywords are being ingested is to start a console consumer in a different session and start consuming messages from topic *twitterstatus* defined earlier . 
+
+```
+/usr/hdp/current/kafka-broker/bin/kafka-console-consumer.sh --bootstrap-server $KAFKAZKHOSTS --topic twitterstatus 
+```
+- If everything is working , you should see a stream of relevant Twitter Messages on the console with specified keywords.  
 
 
 ### Sink Task 
@@ -75,6 +77,6 @@ BODY
 
 ![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic17.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc5MDQwMTI5LDEwMDM1MDA3NjMsLTE2MD
-U5NzMzMDUsMTE3ODc2NzQ2NV19
+eyJoaXN0b3J5IjpbMTEwMzE5MDMwMiwxMDAzNTAwNzYzLC0xNj
+A1OTczMzA1LDExNzg3Njc0NjVdfQ==
 -->
