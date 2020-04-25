@@ -58,16 +58,16 @@ connector.class=io.confluent.connect.azure.blob.AzureBlobStorageSinkConnector
 tasks.max=1
 topics=twitterstatus
 flush.size=3
-azblob.account.name=<blobaccount>
-azblob.account.key=rpKsNogrKqdxtqy/D6NiK5RHljnsHKVKuqvxo/OGGi3216UgCkKqUo+c/HdzOghntbY0FXtpT7PZwrPU3Jl+wQ==
-azblob.container.name=confluent-kafka-connect-azure-blob-storage-testing
+azblob.account.name=<Azure Blob account Name>
+azblob.account.key=<security key>
+azblob.container.name=<container name>
 format.class=io.confluent.connect.azure.blob.format.avro.AvroFormat
-confluent.topic.bootstrap.servers=wn0-agkafk.pnxq3nmdbrcuzghegbgntsvsvc.gx.internal.cloudapp.net:9092,wn1-agkafk.pnxq3nmdbrcuzghegbgntsvsvc.gx.internal.cloudapp.net:9092,wn2-agkafk.pnxq3nmdbrcuzghegbgntsvsvc.gx.internal.cloudapp.net:9092
+confluent.topic.bootstrap.servers=<Enter contents of $KAFKAHOSTS>
 confluent.topic.replication.factor=3
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxNTE2ODUzNiwxNDg1OTEzOTE0LC01Mj
-E0ODMyMzgsMjI2MzM4MTU4LDExNjU2NTgyMTYsNjU5ODQ3ODI5
-XX0=
+eyJoaXN0b3J5IjpbMzA4OTMyODExLDE0ODU5MTM5MTQsLTUyMT
+Q4MzIzOCwyMjYzMzgxNTgsMTE2NTY1ODIxNiw2NTk4NDc4Mjld
+fQ==
 -->
