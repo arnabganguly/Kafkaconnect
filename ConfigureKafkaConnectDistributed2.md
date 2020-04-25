@@ -44,7 +44,9 @@ curl -X GET http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.n
 ```
 /usr/hdp/current/kafka-broker/bin/kafka-console-consumer.sh --bootstrap-server $KAFKAZKHOSTS --topic twitterstatus 
 ```
-- If everything is working , you should see a stream of relevant Twitter Messages on the console with specified keywords.  
+- If everything is working , you should see a stream of relevant Twitter Messages on the console with specified keywords. 
+
+-  
 
 
 ### Sink Task 
@@ -91,7 +93,10 @@ curl -X GET http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.n
 ![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic19.png)
 
  ![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic20.png)
+
+
+- In this section we saw how the source and sink connectors were created . In the next section , we will explore some Kafka REST API's to control Kafka Connect.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2NjI3MDk2LDEwMDM1MDA3NjMsLTE2MD
-U5NzMzMDUsMTE3ODc2NzQ2NV19
+eyJoaXN0b3J5IjpbMTIwNjA3MzA3MSwxMDAzNTAwNzYzLC0xNj
+A1OTczMzA1LDExNzg3Njc0NjVdfQ==
 -->
