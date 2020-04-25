@@ -173,10 +173,10 @@ curl -s http://<edge-node-FQDN>:8083/ |jq
  
  - In the next section we would use Kafka REST API's to start separate connector instances for running **Source Tasks** and **Sink Tasks**.
  
-   Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectDistributed2.md)
+   Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectPlugins.md)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODQyNzY2MzUsODE0MDA4MTY3LDE1Nj
-M4MDE3MSwtMTU4NjEzMzk4MCw0OTkyMjYzMTAsMTI1OTEzMjE0
-MCwtOTQyMDgyNDY0XX0=
+eyJoaXN0b3J5IjpbLTE0NjA5ODUxOTYsLTExODQyNzY2MzUsOD
+E0MDA4MTY3LDE1NjM4MDE3MSwtMTU4NjEzMzk4MCw0OTkyMjYz
+MTAsMTI1OTEzMjE0MCwtOTQyMDgyNDY0XX0=
 -->
