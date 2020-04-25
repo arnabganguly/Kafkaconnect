@@ -36,7 +36,7 @@ In this section we would deploy an HDInsight Managed Kafka  cluster with two Edg
 
 ![HDInsight Kafka Schema Registry](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic5.png)
 
-- Log into Ambari to get the Hostnames of the edge nodes . They should appear in the below format 
+- Log into Ambari to get the Hostnames(FQDN) of the edge nodes . They should appear in the below format 
 
 ```
 ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net
@@ -64,10 +64,10 @@ sshuser@ed10-ag4kac:~$ ssh ed12-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cl
 
 Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectdistributed1.md)  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwODI0NTE5OCwtMjAzOTcyNTM0NCwxOT
-gwMzc0MTg2LDEwNzgzOTQ0NjEsLTIwNzUxNzUxOTQsLTE2NTM3
-MTM0NzksLTQyMjc3MTUzLC0xOTgxMzU5MTksMTM0MzEyMjI0NC
-w5NzIzNDg5MTQsMTc4NDI0ODMyNiwtMTA4MTk0OTQzNywtMzc2
-NjQxMDE5LC0xOTQ2NTk4MDAyLDEyMzk2MjUwMzUsMTY3NDQxNT
-Q2M119
+eyJoaXN0b3J5IjpbODQ2Mjg4Mjk0LC01MDgyNDUxOTgsLTIwMz
+k3MjUzNDQsMTk4MDM3NDE4NiwxMDc4Mzk0NDYxLC0yMDc1MTc1
+MTk0LC0xNjUzNzEzNDc5LC00MjI3NzE1MywtMTk4MTM1OTE5LD
+EzNDMxMjIyNDQsOTcyMzQ4OTE0LDE3ODQyNDgzMjYsLTEwODE5
+NDk0MzcsLTM3NjY0MTAxOSwtMTk0NjU5ODAwMiwxMjM5NjI1MD
+M1LDE2NzQ0MTU0NjNdfQ==
 -->
