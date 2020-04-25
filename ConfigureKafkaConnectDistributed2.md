@@ -52,9 +52,9 @@ curl -X POST http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.
           "tasks.max": 1,
           "topics":"twitterstatus",
           "flush.size":3,
-          "azblob.account.name":"agkafkasink",
-          "azblob.account.key":"XjJCDk6VoyiQbeEiBtHm2pIuDE3puYVPPprahXTR4xdsZWSYexSZPt8COgMKBbHAKkPvvMdT+nPSpIry7F8rYQ==",
-          "azblob.container.name":"confluent-kafka-connect-azure-blob-storage-testing",
+          "azblob.account.name":"<Storage Account Name>",
+          "azblob.account.key":"<Storage-accesss-key>",
+          "azblob.container.name":"<Container Name>",
           "format.class":"io.confluent.connect.azure.blob.format.avro.AvroFormat",
           "confluent.topic.bootstrap.servers":"wn0-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:9092,wn1-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:9092",   
           "confluent.topic.replication.factor":3
@@ -62,7 +62,8 @@ curl -X POST http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.
       }
   }
 BODY
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5ODM0Njk0MywtMTYwNTk3MzMwNSwxMT
+eyJoaXN0b3J5IjpbMTc4MzgwMjk2NCwtMTYwNTk3MzMwNSwxMT
 c4NzY3NDY1XX0=
 -->
