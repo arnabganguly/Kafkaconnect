@@ -1,5 +1,8 @@
 ## Start source tasks and sink tasks 
 
+
+### Source Task
+
 - From any edge node run the below to create a new connector and start tasks. Note that the number of tasks can be increased as per the size of your cluster. 
 ```
 curl -X POST http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:8083/connectors -H "Content-Type: application/json" -d @- <<BODY
@@ -35,7 +38,31 @@ BODY
 - If everything is working , you should see a stream of relevant Twitter Messages on the console with specified keywords.  
 
 
+### Sink Task 
+
+
+- From any edge node run the below to create a new connector and start tasks. Note that the number of tasks can be increased as per the size of your cluster. 
+
+```
+curl -X POST http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:8083/connectors -H "Content-Type: application/json" -d @- <<BODY
+  {
+      "name": "Kafka-to-Blob",
+      "config": {
+          "connector.class": "io.confluent.connect.azure.blob.AzureBlobStorageSinkConnector",
+          "tasks.max": 1,
+          "topics":"twitterstatus",
+          "flush.size":3,
+          "azblob.account.name":"agkafkasink",
+          "azblob.account.key":"XjJCDk6VoyiQbeEiBtHm2pIuDE3puYVPPprahXTR4xdsZWSYexSZPt8COgMKBbHAKkPvvMdT+nPSpIry7F8rYQ==",
+          "azblob.container.name":"confluent-kafka-connect-azure-blob-storage-testing",
+          "format.class":"io.confluent.connect.azure.blob.format.avro.AvroFormat",
+          "confluent.topic.bootstrap.servers":"wn0-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:9092,wn1-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:9092",   
+          "confluent.topic.replication.factor":3
+
+      }
+  }
+BODY
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDI4NTEwOTksLTE2MDU5NzMzMDUsMT
-E3ODc2NzQ2NV19
+eyJoaXN0b3J5IjpbMTk5ODM0Njk0MywtMTYwNTk3MzMwNSwxMT
+c4NzY3NDY1XX0=
 -->
