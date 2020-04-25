@@ -16,9 +16,9 @@ curl -X POST http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.
           "kafka.delete.topic":"twitterdelete",        
           "topic": "twitter1",   
           "twitter.oauth.consumerKey":"<twitter.oauth.consumerKey>",
-          "twitter.oauth.consumerSecret":"twitter.oauth.consumerSecret",
-          "twitter.oauth.accessToken":"1022650746-Ujs8mXTAfiQlqgnkspGYNLu2ImYwwCXAm99DwVX",
-          "twitter.oauth.accessTokenSecret":"Efb8bmhX5JAJpPwAdFBN38N9xumur0MdECE6Te8KEdODr",
+          "twitter.oauth.consumerSecret":"<twitter.oauth.consumerSecret>",
+          "twitter.oauth.accessToken":"<twitter.oauth.accessToken>",
+          "twitter.oauth.accessTokenSecret":"<twitter.oauth.accessTokenSecret>",
           "filter.keywords":"<keyword>",
           "process.deletes":false
       }
@@ -64,6 +64,6 @@ curl -X POST http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.
 BODY
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2Nzg5MDc0MiwtMTYwNTk3MzMwNSwxMT
+eyJoaXN0b3J5IjpbMTAwMzUwMDc2MywtMTYwNTk3MzMwNSwxMT
 c4NzY3NDY1XX0=
 -->
