@@ -86,6 +86,10 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
      ``` 
 - Using WINSCP or any other SCP tool of your choice upload the Kafka Connect Plugins into folder path created in the last step
 
+![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic11.png)
+
+
+![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic12.png)
 
 - Transfer the files to ed12 using the below command. Make sure that folders have the right permissions for this operation.  
 ```rsync -r /usr/hdp/current/kafka-broker/connectors/ sshuser@<edge-node12-FQDN>:/usr/hdp/current/kafka-broker/connectors/```
@@ -177,7 +181,7 @@ curl -s http://<edge-node-FQDN>:8083/ |jq
    Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectPlugins.md)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1MjU1NjU2OSwtMTE4NDI3NjYzNSw4MT
-QwMDgxNjcsMTU2MzgwMTcxLC0xNTg2MTMzOTgwLDQ5OTIyNjMx
-MCwxMjU5MTMyMTQwLC05NDIwODI0NjRdfQ==
+eyJoaXN0b3J5IjpbLTIxMzA0ODg0MjgsLTExODQyNzY2MzUsOD
+E0MDA4MTY3LDE1NjM4MDE3MSwtMTU4NjEzMzk4MCw0OTkyMjYz
+MTAsMTI1OTEzMjE0MCwtOTQyMDgyNDY0XX0=
 -->
