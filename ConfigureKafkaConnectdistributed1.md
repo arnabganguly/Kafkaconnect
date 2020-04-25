@@ -169,8 +169,9 @@ curl -s http://ed12-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:8
  
  - In this section we started **Kafka Connect in Distributed Mode** along side an HDInsight cluster. 
  
- - In the nxt section we would use Kafka REST API's to start 
+ - In the next section we would use Kafka REST API's to start separate connector instances for **Source Tasks** and **Sink Tasks**
+ - 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjk0NTkwMjEsLTE1ODYxMzM5ODAsND
-k5MjI2MzEwLDEyNTkxMzIxNDAsLTk0MjA4MjQ2NF19
+eyJoaXN0b3J5IjpbMTU2MzgwMTcxLC0xNTg2MTMzOTgwLDQ5OT
+IyNjMxMCwxMjU5MTMyMTQwLC05NDIwODI0NjRdfQ==
 -->
