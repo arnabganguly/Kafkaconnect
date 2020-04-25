@@ -32,17 +32,21 @@ curl -X GET http://<edge-node-FQDN>:8083/connectors/<connector-name>/tasks
 curl -X POST http://<edge-node-FQDN>:8083/connectors/<connector-name>/restart
 ```
 
-- Delete a connectore 
-curl -X DELETE http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:8083/connectors/connector1/
-
-
-curl -X PUT http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:8083/connectors/connector1/pause
-
+- Delete a connector
+``` 
+curl -X DELETE http://<edge-node-FQDN>:8083/connectors/<connector-name>/
+```
+- Pause a connector
+```
+curl -X PUT http://<edge-node-FQDN>:8083/connectors/<connector-name>/pause
+```
+- Resume a connector
+```
 curl -X PUT http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:8083/connectors/blob-sink/resume
 
 
 
 curl -X PUT http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:8083/connectors/connector1/resume 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTc2MTAxMjVdfQ==
+eyJoaXN0b3J5IjpbMTU1ODYwOTMzXX0=
 -->
