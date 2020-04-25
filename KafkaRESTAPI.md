@@ -42,9 +42,10 @@ curl -X PUT http://<edge-node-FQDN>:8083/connectors/<connector-name>/pause
 ```
 - Resume a connector
 ```
-curl -X PUT http://<edge-node-FQDN>:8083/connectors/blob-sink/resume
+curl -X PUT http://<edge-node-FQDN>:8083/connectors/<connector-name>/resume
 ```
 
+-  Please review the document 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3NTg5MDY2XX0=
+eyJoaXN0b3J5IjpbLTE2MzczOTMxMDFdfQ==
 -->
