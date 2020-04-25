@@ -104,7 +104,9 @@ curl -X GET http://<edge-node-FQDN>:8083/connectors
 
 
 - In this section we saw how the source and sink connectors were created . In the next section , we will explore some Kafka REST API's to control Kafka Connect.  
+
+Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/KafkaRESTAPI.md)  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxMjkzOTgwMSwxMDAzNTAwNzYzLC0xNj
-A1OTczMzA1LDExNzg3Njc0NjVdfQ==
+eyJoaXN0b3J5IjpbLTY3NjM0NjcxNywtNDEyOTM5ODAxLDEwMD
+M1MDA3NjMsLTE2MDU5NzMzMDUsMTE3ODc2NzQ2NV19
 -->
