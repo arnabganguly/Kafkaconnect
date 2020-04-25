@@ -25,15 +25,17 @@ BODY
 
 - If the connector is created and the tasks are started , you will see a notification like below.
 
-![HDInsight Kafka Schema Registry](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic15.png)
+![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic15.png)
 
 - One way to test if Twitter Messages with the keywords are being ingested is to start a console consumer in a different session and start consuming messages from topic *twitterstatus* defined earlier  . 
 
 ```
 /usr/hdp/current/kafka-broker/bin/kafka-console-consumer.sh --bootstrap-server $KAFKAZKHOSTS --topic twitterstatus 
 ```
-- If everything is working , you should see a stream of Twitter Messages on the console wi
+- If everything is working , you should see a stream of relevant Twitter Messages on the console with specified keywords.  
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjAyMzc1NDAyLC0xNjA1OTczMzA1LDExNz
-g3Njc0NjVdfQ==
+eyJoaXN0b3J5IjpbLTE1MDI4NTEwOTksLTE2MDU5NzMzMDUsMT
+E3ODc2NzQ2NV19
 -->
