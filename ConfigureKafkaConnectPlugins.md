@@ -62,12 +62,14 @@ azblob.account.name=<Azure Blob account Name>
 azblob.account.key=<security key>
 azblob.container.name=<container name>
 format.class=io.confluent.connect.azure.blob.format.avro.AvroFormat
-confluent.topic.bootstrap.servers=<Enter contents of $KAFKAHOSTS>
+confluent.topic.bootstrap.servers=<Enter the full contents of $KAFKAZKHOSTS>
 confluent.topic.replication.factor=3
 ```
 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDgzNDY5NzksMTQ4NTkxMzkxNCwtNT
-IxNDgzMjM4LDIyNjMzODE1OCwxMTY1NjU4MjE2LDY1OTg0Nzgy
-OV19
+eyJoaXN0b3J5IjpbMTU3MjI2MjQzOCwxNDg1OTEzOTE0LC01Mj
+E0ODMyMzgsMjI2MzM4MTU4LDExNjU2NTgyMTYsNjU5ODQ3ODI5
+XX0=
 -->
