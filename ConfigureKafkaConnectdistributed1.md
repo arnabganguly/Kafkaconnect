@@ -151,7 +151,7 @@ plugin.path=/usr/hdp/current/kafka-broker/connectors/jcustenborder-kafka-connect
     
 #### Kafka Connect REST API 
 
-> Note : In distributed mode, the REST API is the primary interface to the Connect cluster. Requests can be made from any edge node and the  REST API automatically forwards requests.
+> Note : In distributed mode, the REST API is the primary interface to the Connect cluster. Requests can be made from any edge node and the  REST API automatically forwards requests. By default REST API for Kafka Connect runs on port 8083 but is configurable in connector properties
 
 - Use the below REST API calls from any edge node to verify of Kafka Connect is working as expected on both the nodes  
 
@@ -174,7 +174,7 @@ curl -s http://ed12-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:8
  - In the next section we would use Kafka REST API's to start separate connector instances for running **Source Tasks** and **Sink Tasks**.
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU5OTc0NDk0LDE1NjM4MDE3MSwtMTU4Nj
+eyJoaXN0b3J5IjpbODE0MDA4MTY3LDE1NjM4MDE3MSwtMTU4Nj
 EzMzk4MCw0OTkyMjYzMTAsMTI1OTEzMjE0MCwtOTQyMDgyNDY0
 XX0=
 -->
