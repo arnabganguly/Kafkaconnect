@@ -26,7 +26,7 @@ twitter.oauth.accessTokenSecret
 cd /usr/hdp/current/kafka-broker/connectors/
 sudo vi twitter.properties
 ```
-- Create the below properties file 
+- Insert the below Twitter Connect plugin properties into the properties file 
 ```
 "name": "connector1",
 "connector.class": "com.github.jcustenborder.kafka.connect.twitter.TwitterSourceConnector",
@@ -44,11 +44,16 @@ sudo vi twitter.properties
        
   ### Kafka Connect plugin for Azure blob storage sink connector 
 
-- Create a regular Blob storage account on Azure  and note the access keys 
+- Create a regular Blob storage account on Azure and note the storage access keys 
 
-
+- Navigate to the 'connectors' folder and create a new properties file called `blob.properties` 
+```
+cd /usr/hdp/current/kafka-broker/connectors/
+sudo vi blob.properties
+```
+- Insert the below A Connect plugin properties into the properties file
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDc3MDU4MzQsMTQ4NTkxMzkxNCwtNT
-IxNDgzMjM4LDIyNjMzODE1OCwxMTY1NjU4MjE2LDY1OTg0Nzgy
-OV19
+eyJoaXN0b3J5IjpbMTM0NjU1MjYzMywxNDg1OTEzOTE0LC01Mj
+E0ODMyMzgsMjI2MzM4MTU4LDExNjU2NTgyMTYsNjU5ODQ3ODI5
+XX0=
 -->
