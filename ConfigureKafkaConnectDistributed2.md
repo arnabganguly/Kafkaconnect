@@ -1,6 +1,6 @@
 ## Start source tasks and sink tasks 
 
-- From any edge node run the below and create a new connector. 
+- From any edge node run the below to create a new connector. 
 ```
 curl -X POST http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:8083/connectors -H "Content-Type: application/json" -d @- <<BODY
   {
@@ -23,5 +23,5 @@ curl -X POST http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.
 BODY 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwODkzOTYyNCwxMTc4NzY3NDY1XX0=
+eyJoaXN0b3J5IjpbLTE4NzMyMDEwMDgsMTE3ODc2NzQ2NV19
 -->
