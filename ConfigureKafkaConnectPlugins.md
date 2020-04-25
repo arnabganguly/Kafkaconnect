@@ -42,7 +42,7 @@ sudo vi twitter.properties
 "process.deletes":false
 ```
        
-  ### Kafka Connect plugin for Azure blob storage sink connector 
+  ### Kafka Connect plugin for Azure Blob Storage Sink connector 
 
 - Create a regular Blob storage account on Azure and note the storage access keys 
 
@@ -51,9 +51,23 @@ sudo vi twitter.properties
 cd /usr/hdp/current/kafka-broker/connectors/
 sudo vi blob.properties
 ```
-- Insert the below A Connect plugin properties into the properties file
+- Insert the below Azure Blob Storage Sink plugin properties into the properties file
+```
+name=blob-sink
+connector.class=io.confluent.connect.azure.blob.AzureBlobStorageSinkConnector
+tasks.max=1
+topics=twitterstatus
+flush.size=3
+azblob.account.name=<blobaccount>
+azblob.account.key=rpKsNogrKqdxtqy/D6NiK5RHljnsHKVKuqvxo/OGGi3216UgCkKqUo+c/HdzOghntbY0FXtpT7PZwrPU3Jl+wQ==
+azblob.container.name=confluent-kafka-connect-azure-blob-storage-testing
+format.class=io.confluent.connect.azure.blob.format.avro.AvroFormat
+confluent.topic.bootstrap.servers=wn0-agkafk.pnxq3nmdbrcuzghegbgntsvsvc.gx.internal.cloudapp.net:9092,wn1-agkafk.pnxq3nmdbrcuzghegbgntsvsvc.gx.internal.cloudapp.net:9092,wn2-agkafk.pnxq3nmdbrcuzghegbgntsvsvc.gx.internal.cloudapp.net:9092
+confluent.topic.replication.factor=3
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0NjU1MjYzMywxNDg1OTEzOTE0LC01Mj
+eyJoaXN0b3J5IjpbLTQxNTE2ODUzNiwxNDg1OTEzOTE0LC01Mj
 E0ODMyMzgsMjI2MzM4MTU4LDExNjU2NTgyMTYsNjU5ODQ3ODI5
 XX0=
 -->
