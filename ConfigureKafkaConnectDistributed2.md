@@ -38,6 +38,9 @@ BODY
 - If everything is working , you should see a stream of relevant Twitter Messages on the console with specified keywords.  
 
 
+- Use the re
+
+
 ### Sink Task 
 
 
@@ -63,7 +66,10 @@ curl -X POST http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.
   }
 BODY
 ```
+- If the connector is created and the tasks are started , you will see a notification like below.
+
+![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic17.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzkyNTQ4MjIxLDEwMDM1MDA3NjMsLTE2MD
-U5NzMzMDUsMTE3ODc2NzQ2NV19
+eyJoaXN0b3J5IjpbNzg2NzYzNzYsMTAwMzUwMDc2MywtMTYwNT
+k3MzMwNSwxMTc4NzY3NDY1XX0=
 -->
