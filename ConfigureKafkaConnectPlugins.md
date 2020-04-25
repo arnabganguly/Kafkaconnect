@@ -26,8 +26,23 @@ twitter.oauth.accessTokenSecret"
 cd /usr/hdp/current/kafka-broker/connectors/
 sudo vi twitter.properties
 ```
-- Create a new 
+- Create the below properties file 
+```
+          "name": "connector1",
+          "connector.class": "com.github.jcustenborder.kafka.connect.twitter.TwitterSourceConnector",
+          "tasks.max": 1,
+          "kafka.status.topic":"twitterstatus",
+          "kafka.delete.topic":"twitterdelete",        
+          "topic": "twitter1",   
+          "twitter.oauth.consumerKey":"LgKBFENGxiPepLt11Cql36T2r",
+          "twitter.oauth.consumerSecret":"CZug3RPR01ns5DvBH8LNPvLzHWxgvXOQ97hSFByJ6x393vagFC",
+          "twitter.oauth.accessToken":"1022650746-Ujs8mXTAfiQlqgnkspGYNLu2ImYwwCXAm99DwVX",
+          "twitter.oauth.accessTokenSecret":"Efb8bmhX5JAJpPwAdFBN38N9xumur0MdECE6Te8KEdODr",
+          "filter.keywords":"COVID19",
+          "process.deletes":false
+          ```
+          
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyMTQ4MzIzOCwyMjYzMzgxNTgsMTE2NT
-Y1ODIxNiw2NTk4NDc4MjldfQ==
+eyJoaXN0b3J5IjpbNDc5ODYyNjczLC01MjE0ODMyMzgsMjI2Mz
+M4MTU4LDExNjU2NTgyMTYsNjU5ODQ3ODI5XX0=
 -->
