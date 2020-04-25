@@ -156,9 +156,9 @@ plugin.path=/usr/hdp/current/kafka-broker/connectors/jcustenborder-kafka-connect
 - Use the below REST API calls from any edge node to verify of Kafka Connect is working as expected on both the nodes  
 
 ```
-curl -s http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:8083/ |jq
+curl -s http://<edge-node-FQDN>:8083/ |jq
 
-curl -s http://ed12-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:8083/ |jq
+curl -s http://<edge-node-FQDN>:8083/ |jq
 ```
 - If Kafka Connect is working as expected each of the REST API calls will return an output like below 
 ```
@@ -174,7 +174,7 @@ curl -s http://ed12-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:8
  - In the next section we would use Kafka REST API's to start separate connector instances for running **Source Tasks** and **Sink Tasks**.
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODE0MDA4MTY3LDE1NjM4MDE3MSwtMTU4Nj
-EzMzk4MCw0OTkyMjYzMTAsMTI1OTEzMjE0MCwtOTQyMDgyNDY0
-XX0=
+eyJoaXN0b3J5IjpbMTQ3Njg0MzY4Nyw4MTQwMDgxNjcsMTU2Mz
+gwMTcxLC0xNTg2MTMzOTgwLDQ5OTIyNjMxMCwxMjU5MTMyMTQw
+LC05NDIwODI0NjRdfQ==
 -->
