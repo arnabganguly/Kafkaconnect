@@ -88,7 +88,7 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
 
 
 - Transfer the files to ed12 using the below command. Make sure that folders have the right permissions for this operation.  
-```rsync -r /usr/hdp/current/kafka-broker/connectors/ sshuser@ed12-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:/usr/hdp/current/kafka-broker/connectors/```
+```rsync -r /usr/hdp/current/kafka-broker/connectors/ sshuser@<edge-node12-FQDN>:/usr/hdp/current/kafka-broker/connectors/```
 
  > Note: **The below steps needs to be repeated for both ed10 and ed12 edge nodes**
 
@@ -174,7 +174,7 @@ curl -s http://<edge-node-FQDN>:8083/ |jq
  - In the next section we would use Kafka REST API's to start separate connector instances for running **Source Tasks** and **Sink Tasks**.
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3Njg0MzY4Nyw4MTQwMDgxNjcsMTU2Mz
-gwMTcxLC0xNTg2MTMzOTgwLDQ5OTIyNjMxMCwxMjU5MTMyMTQw
-LC05NDIwODI0NjRdfQ==
+eyJoaXN0b3J5IjpbOTA4NDI3OTQ2LDgxNDAwODE2NywxNTYzOD
+AxNzEsLTE1ODYxMzM5ODAsNDk5MjI2MzEwLDEyNTkxMzIxNDAs
+LTk0MjA4MjQ2NF19
 -->
