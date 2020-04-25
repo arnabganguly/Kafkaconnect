@@ -52,9 +52,9 @@ curl -X POST http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.
           "tasks.max": 1,
           "topics":"twitterstatus",
           "flush.size":3,
-          "azblob.account.name":"<Storage Account Name>",
+          "azblob.account.name":"<Storage-account-name>",
           "azblob.account.key":"<Storage-accesss-key>",
-          "azblob.container.name":"<Container Name>",
+          "azblob.container.name":"<Container-name>",
           "format.class":"io.confluent.connect.azure.blob.format.avro.AvroFormat",
           "confluent.topic.bootstrap.servers":"wn0-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:9092,wn1-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:9092",   
           "confluent.topic.replication.factor":3
@@ -64,6 +64,6 @@ curl -X POST http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.
 BODY
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4MzgwMjk2NCwtMTYwNTk3MzMwNSwxMT
-c4NzY3NDY1XX0=
+eyJoaXN0b3J5IjpbLTcyMDAzNjAzLC0xNjA1OTczMzA1LDExNz
+g3Njc0NjVdfQ==
 -->
