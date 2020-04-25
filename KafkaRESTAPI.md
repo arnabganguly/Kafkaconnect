@@ -45,7 +45,7 @@ curl -X PUT http://<edge-node-FQDN>:8083/connectors/<connector-name>/pause
 curl -X PUT http://<edge-node-FQDN>:8083/connectors/<connector-name>/resume
 ```
 
--  Please review the document 
+-  Refer [Apache Kafka documentation](https://kafka.apache.org/documentation/#connect_rest) to get exhaustive list of REST API functions
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzczOTMxMDFdfQ==
+eyJoaXN0b3J5IjpbOTA1MDgyMDA2LC0xNjM3MzkzMTAxXX0=
 -->
