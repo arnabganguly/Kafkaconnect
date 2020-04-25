@@ -144,10 +144,10 @@ plugin.path=/usr/hdp/current/kafka-broker/connectors/jcustenborder-kafka-connect
 - Start Kafka Connect in distributed mode in the background on the Edge Node . 
     
  ```
- nohup   sudo  /usr/hdp/current/kafka-broker/bin/connect-distributed.sh  /usr/hdp/current/kafka-broker/conf/connect-distributed.properties &
+ nohup  sudo  /usr/hdp/current/kafka-broker/bin/connect-distributed.sh  /usr/hdp/current/kafka-broker/conf/connect-distributed.properties &
  ```
 
-- Repeat the same steps for other edge node to start Kafka Connect in distributed mode
+- Repeat the same steps on other edge node to start Kafka Connect in distributed mode
     
 #### Kafka Connect REST API 
 
@@ -169,12 +169,12 @@ curl -s http://ed12-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:8
 }
  ```
  
- - In this section we started **Kafka Connect in distributed mode** along side an HDInsight cluster. 
+ - In this section we started **Kafka Connect in distributed mode** alongside an HDInsight cluster and verified it using the Kafka REST API. 
  
  - In the next section we would use Kafka REST API's to start separate connector instances for running **Source Tasks** and **Sink Tasks**.
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1OTQxMjY3OSwxNTYzODAxNzEsLTE1OD
-YxMzM5ODAsNDk5MjI2MzEwLDEyNTkxMzIxNDAsLTk0MjA4MjQ2
-NF19
+eyJoaXN0b3J5IjpbNDU5OTc0NDk0LDE1NjM4MDE3MSwtMTU4Nj
+EzMzk4MCw0OTkyMjYzMTAsMTI1OTEzMjE0MCwtOTQyMDgyNDY0
+XX0=
 -->
