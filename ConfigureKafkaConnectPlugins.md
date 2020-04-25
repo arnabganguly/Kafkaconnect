@@ -44,7 +44,7 @@ sudo vi twitter.properties
        
   ### Kafka Connect plugin for Azure Blob Storage Sink connector 
 
-- Create a regular Blob storage account on Azure and note the storage access keys 
+- Create a regular [Azure Blob storage account and a container](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal) on Azure and note the storage access keys 
 
 - Navigate to the 'connectors' folder and create a new properties file called `blob.properties` 
 ```
@@ -67,7 +67,7 @@ confluent.topic.replication.factor=3
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzA4OTMyODExLDE0ODU5MTM5MTQsLTUyMT
-Q4MzIzOCwyMjYzMzgxNTgsMTE2NTY1ODIxNiw2NTk4NDc4Mjld
-fQ==
+eyJoaXN0b3J5IjpbLTE1MDgzNDY5NzksMTQ4NTkxMzkxNCwtNT
+IxNDgzMjM4LDIyNjMzODE1OCwxMTY1NjU4MjE2LDY1OTg0Nzgy
+OV19
 -->
