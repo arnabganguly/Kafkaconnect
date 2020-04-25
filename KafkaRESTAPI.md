@@ -42,11 +42,9 @@ curl -X PUT http://<edge-node-FQDN>:8083/connectors/<connector-name>/pause
 ```
 - Resume a connector
 ```
-curl -X PUT http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:8083/connectors/blob-sink/resume
+curl -X PUT http://<edge-node-FQDN>:8083/connectors/blob-sink/resume
+```
 
-
-
-curl -X PUT http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:8083/connectors/connector1/resume 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1ODYwOTMzXX0=
+eyJoaXN0b3J5IjpbLTU3NTg5MDY2XX0=
 -->
