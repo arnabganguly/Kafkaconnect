@@ -14,9 +14,9 @@ In this section we would configure the Kafka Connect Plugins that we dowloaded e
  - Copy the below information from the screen for later use in your properties file.
 ```
 twitter.oauth.consumerKey
-"twitter.oauth.consumerSecret
+twitter.oauth.consumerSecret
 twitter.oauth.accessToken
-twitter.oauth.accessTokenSecret"
+twitter.oauth.accessTokenSecret
 ```
 
 **Update the Kafka Connect plugin for Twitter properties file** 
@@ -34,15 +34,15 @@ sudo vi twitter.properties
 "kafka.status.topic":"twitterstatus",
 "kafka.delete.topic":"twitterdelete",        
 "topic": "twitter1",   
-"twitter.oauth.consumerKey":"xxxababc",
-"twitter.oauth.consumerSecret":"CZug3RPR01ns5DvBH8LNPvLzHWxgvXOQ97hSFByJ6x393vagFC",
-"twitter.oauth.accessToken":"1022650746-Ujs8mXTAfiQlqgnkspGYNLu2ImYwwCXAm99DwVX",
-"twitter.oauth.accessTokenSecret":"Efb8bmhX5JAJpPwAdFBN38N9xumur0MdECE6Te8KEdODr",
-"filter.keywords":"COVID19",
+"twitter.oauth.consumerKey":"<twitter.oauth.consumerKey>",
+"twitter.oauth.consumerSecret":"<twitter.oauth.consumerSecret>",
+"twitter.oauth.accessToken":"<twitter.oauth.accessToken>",
+"twitter.oauth.accessTokenSecret":"<twitter.oauth.accessTokenSecret>",
+"filter.keywords":"keyword1,keyword2 ,...",
 "process.deletes":false
           ```
           
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTk2NDM2MDcsLTUyMTQ4MzIzOCwyMj
+eyJoaXN0b3J5IjpbLTEyMDgxODE0NzUsLTUyMTQ4MzIzOCwyMj
 YzMzgxNTgsMTE2NTY1ODIxNiw2NTk4NDc4MjldfQ==
 -->
