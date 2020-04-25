@@ -72,13 +72,15 @@ curl -X POST http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.
   }
 BODY
 ```
-- If the connector is created and the tasks are started , you will see a notification like below.
+- If the connector is created  , you will see a notification like below.
 
 ![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic17.png)
 
 
+- Use the Kafka REST API to check if the connector `Kafka-to-Blob`was created 
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDkwMTA5NzYsMTAwMzUwMDc2MywtMT
+eyJoaXN0b3J5IjpbLTEyNTQ3MTcyMzMsMTAwMzUwMDc2MywtMT
 YwNTk3MzMwNSwxMTc4NzY3NDY1XX0=
 -->
