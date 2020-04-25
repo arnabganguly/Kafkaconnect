@@ -5,7 +5,7 @@
 
 - From any edge node run the below to create a new connector and start tasks. Note that the number of tasks can be increased as per the size of your cluster. 
 ```
-curl -X POST http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:8083/connectors -H "Content-Type: application/json" -d @- <<BODY
+curl -X POST http://<edge-node-FQDN>:8083/connectors -H "Content-Type: application/json" -d @- <<BODY
   {
       "name": "connector1",
       "config": {
@@ -58,7 +58,7 @@ curl -X PUT http://<edge-node-FQDN>:8083/connectors/Twitter-to-Kafka/pause
 - From any edge node run the below to create a new connector and start tasks. Note that the number of tasks can be increased as per the size of your cluster. 
 
 ```
-curl -X POST http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:8083/connectors -H "Content-Type: application/json" -d @- <<BODY
+curl -X POST http://<edge-node-FQDN>:8083/connectors -H "Content-Type: application/json" -d @- <<BODY
   {
       "name": "Kafka-to-Blob",
       "config": {
@@ -85,7 +85,7 @@ BODY
 - Use the Kafka REST API to check if the connector `Kafka-to-Blob`was created. You should see both the source and sink connectors.  
 
 ```
-curl -X GET http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:8083/connectors
+curl -X GET http://<edge-node-FQDN>:8083/connectors
 ["local-file-source","Twitter-to-Kafka","Kafka-to-Blob"]
 ```
 
@@ -100,6 +100,6 @@ curl -X GET http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.n
 
 - In this section we saw how the source and sink connectors were created . In the next section , we will explore some Kafka REST API's to control Kafka Connect.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzkwNjk4MzQsMTAwMzUwMDc2MywtMT
-YwNTk3MzMwNSwxMTc4NzY3NDY1XX0=
+eyJoaXN0b3J5IjpbLTE3ODg3MDMzOCwxMDAzNTAwNzYzLC0xNj
+A1OTczMzA1LDExNzg3Njc0NjVdfQ==
 -->
