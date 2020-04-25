@@ -27,11 +27,13 @@ BODY
 
 ![HDInsight Kafka Schema Registry](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic15.png)
 
-- One way to test is to check of Twitter Messages with the keywords are being ingested is to start a console producer in a different session 
+- One way to test is to check of Twitter Messages with the keywords are being ingested is to start a console producer in a different session. 
 
 ```
-
+/usr/hdp/current/kafka-broker/bin/kafka-console-consumer.sh --bootstrap-server $KAFKAZKHOSTS --topic twitterstatus
+ 
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzY3OTA1NDUsLTE2MDU5NzMzMDUsMT
-E3ODc2NzQ2NV19
+eyJoaXN0b3J5IjpbMjkyNDA0ODAxLC0xNjA1OTczMzA1LDExNz
+g3Njc0NjVdfQ==
 -->
