@@ -66,10 +66,10 @@ confluent.topic.bootstrap.servers=<Enter the full contents of $KAFKAZKHOSTS>
 confluent.topic.replication.factor=3
 ```
 
-
+Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectdistributed1.md)  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3MjI2MjQzOCwxNDg1OTEzOTE0LC01Mj
-E0ODMyMzgsMjI2MzM4MTU4LDExNjU2NTgyMTYsNjU5ODQ3ODI5
-XX0=
+eyJoaXN0b3J5IjpbMzc5ODQyNDQyLDE0ODU5MTM5MTQsLTUyMT
+Q4MzIzOCwyMjYzMzgxNTgsMTE2NTY1ODIxNiw2NTk4NDc4Mjld
+fQ==
 -->
