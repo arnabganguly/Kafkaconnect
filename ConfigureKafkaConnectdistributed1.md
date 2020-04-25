@@ -169,6 +169,7 @@ curl -s http://<edge-node-FQDN>:8083/ |jq
 }
  ```
  
+![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic14.png)
  - In this section we started **Kafka Connect in distributed mode** alongside an HDInsight cluster and verified it using the Kafka REST API. 
  
  - In the next section we would use Kafka REST API's to start separate connector instances for running **Source Tasks** and **Sink Tasks**.
@@ -176,7 +177,7 @@ curl -s http://<edge-node-FQDN>:8083/ |jq
    Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectPlugins.md)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjA5ODUxOTYsLTExODQyNzY2MzUsOD
-E0MDA4MTY3LDE1NjM4MDE3MSwtMTU4NjEzMzk4MCw0OTkyMjYz
-MTAsMTI1OTEzMjE0MCwtOTQyMDgyNDY0XX0=
+eyJoaXN0b3J5IjpbMTQ1MjU1NjU2OSwtMTE4NDI3NjYzNSw4MT
+QwMDgxNjcsMTU2MzgwMTcxLC0xNTg2MTMzOTgwLDQ5OTIyNjMx
+MCwxMjU5MTMyMTQwLC05NDIwODI0NjRdfQ==
 -->
