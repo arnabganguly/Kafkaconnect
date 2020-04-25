@@ -15,9 +15,14 @@ curl -s http://<edge-node-FQDN>:8083/ |jq
 curl -X GET http://<edge-node-FQDN>:8083/connector-plugins | jq
 ```
 - Get list of connectors in the cluster 
-curl -X GET http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:8083/connectors
+```
+curl -X GET http://<edge-node-FQDN>:8083/connectors
+```
 
-curl -X GET http://ed12-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:8083/connectors/Twitter-to-Kafka
+- Get Status of connector 
+```
+curl -X GET http://<edge-node-FQDN>:8083/connectors/<connector-name>
+```
 
 curl -X GET http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:8083/connectors/connector1/tasks
 
@@ -34,5 +39,5 @@ curl -X PUT http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.n
 
 curl -X PUT http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:8083/connectors/connector1/resume 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzODQzNzY3NF19
+eyJoaXN0b3J5IjpbMTc0OTY2MjgwMF19
 -->
