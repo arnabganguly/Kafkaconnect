@@ -38,7 +38,12 @@ BODY
 - If everything is working , you should see a stream of relevant Twitter Messages on the console with specified keywords.  
 
 
-- Use the re
+- Use the Kafka REST API to check if the connector was created 
+
+ ```
+curl -X GET http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:8083/connectors
+["local-file-source","Twitter-to-Kafka"]
+```
 
 
 ### Sink Task 
@@ -70,6 +75,6 @@ BODY
 
 ![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic17.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg2NzYzNzYsMTAwMzUwMDc2MywtMTYwNT
-k3MzMwNSwxMTc4NzY3NDY1XX0=
+eyJoaXN0b3J5IjpbNDc5MDQwMTI5LDEwMDM1MDA3NjMsLTE2MD
+U5NzMzMDUsMTE3ODc2NzQ2NV19
 -->
