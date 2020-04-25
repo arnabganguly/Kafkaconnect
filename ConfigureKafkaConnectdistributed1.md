@@ -141,7 +141,7 @@ rest.port=8083
 plugin.path=/usr/hdp/current/kafka-broker/connectors/jcustenborder-kafka-connect-twitter-0.3.33,/usr/hdp/current/kafka-broker/connectors/confluentinc-kafka-connect-azure-blob-storage-1.3.2
 ```
 
-- Start Kafka Connect in distributed mode in the background on the Edge Node , `connect-distributed.properties`
+- Start Kafka Connect in distributed mode in the background on the Edge Node . 
     
  ```
  nohup   sudo  /usr/hdp/current/kafka-broker/bin/connect-distributed.sh  /usr/hdp/current/kafka-broker/conf/connect-distributed.properties &
@@ -174,7 +174,7 @@ curl -s http://ed12-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:8
  - In the next section we would use Kafka REST API's to start separate connector instances for running **Source Tasks** and **Sink Tasks**.
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDMzNzc4NzYwLDE1NjM4MDE3MSwtMTU4Nj
-EzMzk4MCw0OTkyMjYzMTAsMTI1OTEzMjE0MCwtOTQyMDgyNDY0
-XX0=
+eyJoaXN0b3J5IjpbMTc1OTQxMjY3OSwxNTYzODAxNzEsLTE1OD
+YxMzM5ODAsNDk5MjI2MzEwLDEyNTkxMzIxNDAsLTk0MjA4MjQ2
+NF19
 -->
