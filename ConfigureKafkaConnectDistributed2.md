@@ -46,8 +46,11 @@ curl -X GET http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.n
 ```
 - If everything is working , you should see a stream of relevant Twitter Messages on the console with specified keywords. 
 
--  
+- Try pausing the tasks in the connector , this should also pause the Twitter Stream on the console producer.
 
+```
+curl -X PUT http://<edge-node-FQDN>:8083/connectors/Twitter-to-Kafka/pause 
+```
 
 ### Sink Task 
 
@@ -97,6 +100,6 @@ curl -X GET http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.n
 
 - In this section we saw how the source and sink connectors were created . In the next section , we will explore some Kafka REST API's to control Kafka Connect.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwNjA3MzA3MSwxMDAzNTAwNzYzLC0xNj
-A1OTczMzA1LDExNzg3Njc0NjVdfQ==
+eyJoaXN0b3J5IjpbLTEyNzkwNjk4MzQsMTAwMzUwMDc2MywtMT
+YwNTk3MzMwNSwxMTc4NzY3NDY1XX0=
 -->
