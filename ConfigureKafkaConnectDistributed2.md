@@ -88,10 +88,10 @@ curl -X GET http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.n
 
 - Authenticate into your Azure portal and navigate to the storage account to validate if Twitter Messages are being sent to the specific container. 
 
-- You sho
+![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic19.png)
 
- 
+ ![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic20.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4MzAxMjQxMiwxMDAzNTAwNzYzLC0xNj
-A1OTczMzA1LDExNzg3Njc0NjVdfQ==
+eyJoaXN0b3J5IjpbMTQ2NjI3MDk2LDEwMDM1MDA3NjMsLTE2MD
+U5NzMzMDUsMTE3ODc2NzQ2NV19
 -->
