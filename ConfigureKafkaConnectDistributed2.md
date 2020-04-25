@@ -56,7 +56,7 @@ curl -X POST http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.
           "azblob.account.key":"<Storage-accesss-key>",
           "azblob.container.name":"<Container-name>",
           "format.class":"io.confluent.connect.azure.blob.format.avro.AvroFormat",
-          "confluent.topic.bootstrap.servers":"wn0-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:9092,wn1-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:9092",   
+          "confluent.topic.bootstrap.servers":"Enter the full contents of $KAFKAZKHOSTS",   
           "confluent.topic.replication.factor":3
 
       }
@@ -64,6 +64,6 @@ curl -X POST http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.
 BODY
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwMzUwMDc2MywtMTYwNTk3MzMwNSwxMT
-c4NzY3NDY1XX0=
+eyJoaXN0b3J5IjpbNzkyNTQ4MjIxLDEwMDM1MDA3NjMsLTE2MD
+U5NzMzMDUsMTE3ODc2NzQ2NV19
 -->
