@@ -23,7 +23,12 @@ curl -X POST http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.
 BODY 
 ```
 
+- If the connector is created and the tasks are started , you will see a notification like below.
 
+![HDInsight Kafka Schema Registry](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic15.png)
+
+- One way to test th
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDU5NzMzMDUsMTE3ODc2NzQ2NV19
+eyJoaXN0b3J5IjpbMTQ5ODI4NjQyOSwtMTYwNTk3MzMwNSwxMT
+c4NzY3NDY1XX0=
 -->
