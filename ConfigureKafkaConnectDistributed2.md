@@ -1,6 +1,6 @@
 ## Start source tasks and sink tasks 
 
-- From any edge node run the below to create a new connector. 
+- From any edge node run the below to create a new connector and start tasks. Note that the number of tasks can be increased as per the size of your cluster. 
 ```
 curl -X POST http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net:8083/connectors -H "Content-Type: application/json" -d @- <<BODY
   {
@@ -8,7 +8,7 @@ curl -X POST http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.
       "config": {
           "name": "connector1",
           "connector.class": "com.github.jcustenborder.kafka.connect.twitter.TwitterSourceConnector",
-          "tasks.max": 1,
+          "tasks.max": 3,
           "kafka.status.topic":"twitterstatus",
           "kafka.delete.topic":"twitterdelete",        
           "topic": "twitter1",   
@@ -22,6 +22,8 @@ curl -X POST http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.
   }
 BODY 
 ```
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzMyMDEwMDgsMTE3ODc2NzQ2NV19
+eyJoaXN0b3J5IjpbLTE2MDU5NzMzMDUsMTE3ODc2NzQ2NV19
 -->
