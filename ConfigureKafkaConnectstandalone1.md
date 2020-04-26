@@ -79,7 +79,7 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
 <br>
 
 
-> Note : The reason we create two copies of the connect-standalone. Properties file is to separate the rest.port property to different ports. **If you do not do this , you will run into a rest.port conflict**. 
+> Note : The reason we create two copies of the connect-standalone. properties file is to separate the rest.port property to different ports. **If you do not do this , you will run into a rest.port conflict**. 
 
 <br>
 
@@ -198,6 +198,6 @@ confluent.topic.replication.factor=3
  
    Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectdistributed2.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTEwNjgyNjYsLTEwMzk1MjI5NjgsLT
+eyJoaXN0b3J5IjpbLTE4MzUyNDY5MjIsLTEwMzk1MjI5NjgsLT
 YzNjMwMTY0NCwtODQ3ODM4MzU0LC04OTkwMjc3ODFdfQ==
 -->
