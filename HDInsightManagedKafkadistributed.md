@@ -61,11 +61,9 @@ ed12-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net
 ```
 sshuser@ed10-ag4kac:~$ ssh ed12-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net
 ```
-
-
-- In the next section we would configure the Confluent Kafka Schema Registry that we installed on the edge node.  
+- In the next sections we would configure the Kafka Connect  distributed on both the edge nodes.  
 
 Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectdistributed1.md)  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDQwMjQwMTVdfQ==
+eyJoaXN0b3J5IjpbLTE2OTM3MDc3ODRdfQ==
 -->
