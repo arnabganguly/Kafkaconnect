@@ -1,6 +1,6 @@
 ## Start source tasks and sink tasks 
 
-- From the edge node, **create two separate sessions** and  run the below to create the new connectors and start tasks.  
+- From the edge node  run each of the below in a **separate session** to create new connectors and start tasks.  
 
 **Start Source connector** 
 ```
@@ -37,7 +37,7 @@ sudo /usr/hdp/current/kafka-broker/bin/connect-standalone.sh /usr/hdp/current/ka
 
 ![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic24.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODA0ODA5NTksNzY0NDE3NTA2LC0xMT
-M4MDMxNDA2LDYzNDMwMTgzNiwxODk3NzMwMjA2LDEwNzI1MDk5
-NTFdfQ==
+eyJoaXN0b3J5IjpbMTk0OTIzMzcyNCwtMTg4MDQ4MDk1OSw3Nj
+Q0MTc1MDYsLTExMzgwMzE0MDYsNjM0MzAxODM2LDE4OTc3MzAy
+MDYsMTA3MjUwOTk1MV19
 -->
