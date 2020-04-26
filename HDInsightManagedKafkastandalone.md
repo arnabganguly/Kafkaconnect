@@ -40,15 +40,15 @@ In this section we would deploy an HDInsight Managed Kafka  cluster with two edg
 
 ![HDInsight Kafka Schema Registry](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic10.png)
 
-- Using an SSH client of your choice ssh into the edge node using the **sshuser** and **password** that you set in the custom ARM script. You will notice that you have logged into edge node ``ed10``
+- Using an SSH client of your choice ssh into the edge node using the **sshuser** and **password** that you set in the custom ARM script. 
 
-> Note:  In this the Kafka Connect standalone mode you will need to make config changes on a single edge node ed10. 
+> Note:  In this the Kafka Connect standalone mode you will need to make config changes on a single edge node . 
 
 - - In the next sections we would configure the Kafka Connect  standalone on a single edge node.  
 
 Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectstandalone1.md)  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0NDk3Mzc4LDE3OTIyOTgzOTksLTIxND
-Q1MDU4NDMsMzA2MDk3NDgzLDExNjAxODg1ODhdfQ==
+eyJoaXN0b3J5IjpbLTExMDI0NzE1NjgsMTc5MjI5ODM5OSwtMj
+E0NDUwNTg0MywzMDYwOTc0ODMsMTE2MDE4ODU4OF19
 -->
