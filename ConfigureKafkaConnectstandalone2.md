@@ -36,8 +36,12 @@ sudo /usr/hdp/current/kafka-broker/bin/connect-standalone.sh /usr/hdp/current/ka
 - Messages from Twitter will written to the Azure Blob Store 
 
 ![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic24.png)
+
+- This ends the lab for Kafka Connector on Standalone mode. 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2NTQ3NTkwMywxOTQ5MjMzNzI0LC0xOD
-gwNDgwOTU5LDc2NDQxNzUwNiwtMTEzODAzMTQwNiw2MzQzMDE4
-MzYsMTg5NzczMDIwNiwxMDcyNTA5OTUxXX0=
+eyJoaXN0b3J5IjpbLTM2MzQ3OTI2NywtNjY1NDc1OTAzLDE5ND
+kyMzM3MjQsLTE4ODA0ODA5NTksNzY0NDE3NTA2LC0xMTM4MDMx
+NDA2LDYzNDMwMTgzNiwxODk3NzMwMjA2LDEwNzI1MDk5NTFdfQ
+==
 -->
