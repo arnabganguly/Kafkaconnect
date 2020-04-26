@@ -144,42 +144,15 @@ sudo vi twitter.properties
     
 - In standalone mode, the workers need to be able to discover each other and have shared storage for connector configuration and offset data. Below are some of important parameters we would need to configure. 
     
-    - `group.id` : ID that uniquely identifies the cluster these workers belong to. Make sure this value is not changed between the edge nodes.
-    -   `config.storage.topic`: Topic to store the connector and task configuration state in.
-    -   `offset.storage.topic`: Topic to store the connector offset state in. 
-    -   `rest.port`: Port where the REST interface listens for HTTP requests. 
-    -  `plugin.path`: Path for the Kafka Connect Plugins 
 
-- Edit the `connect-distributed.properties` file 
-``` sudo vi /usr/hdp/current/kafka-broker/conf/connect-distributed.properties ```
-
-- In the  `connect-distributed.properties`  file, define the topics that will store the connector state, task configuration state, and connector offset state. Uncomment and modify the parameters in `connect-distributed.properties`  file as shown below. Note that we use some of the topics we created earlier. 
 
 ```
-group.id=agconnect-cluster
-
-key.converter=org.apache.kafka.connect.json.JsonConverter
-value.converter=org.apache.kafka.connect.json.JsonConverter
-
 key.converter.schemas.enable=true
 value.converter.schemas.enable=true
-
-offset.storage.topic=agconnect-offsets
-offset.storage.replication.factor=3
-offset.storage.partitions=25
-
-config.storage.topic=agconnect-configs
-config.storage.replication.factor=3
-
-status.storage.topic=agconnect-status
-status.storage.replication.factor=3
-status.storage.partitions=5
-
+offset.storage.file.filename=/tmp/connect.offsets1
 offset.flush.interval.ms=10000
-
 rest.port=8083
-
-plugin.path=/usr/hdp/current/kafka-broker/connectors/jcustenborder-kafka-connect-twitter-0.3.33,/usr/hdp/current/kafka-broker/connectors/confluentinc-kafka-connect-azure-blob-storage-1.3.2
+plugin.path=/usr/local/share/kafka/connectors/jcustenborder-kafka-connect-twitter-0.3.33,/usr/local/share/kafka/connectors/confluentinc-kafka-connect-azure-blob-storage-1.3.2
 ```
 
 
@@ -212,5 +185,5 @@ confluent.topic.replication.factor=3
  
    Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectdistributed2.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0MTIxMjI2NiwtODk5MDI3NzgxXX0=
+eyJoaXN0b3J5IjpbMTY2MjA0NDA1MSwtODk5MDI3NzgxXX0=
 -->
