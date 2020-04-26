@@ -130,7 +130,7 @@ twitter.oauth.consumerSecret
 twitter.oauth.accessToken
 twitter.oauth.accessTokenSecret
 ```
-![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic13.png)
+![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic25.png)
 
 
 **Update the Kafka Connect plugin for Twitter properties file** 
@@ -184,7 +184,7 @@ confluent.topic.replication.factor=3
    Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectstandalone2.md)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2NzEzOTY4MiwtMTgwOTMyODE0NSwtMT
+eyJoaXN0b3J5IjpbLTQyMDY3NTc3NywtMTgwOTMyODE0NSwtMT
 AzOTUyMjk2OCwtNjM2MzAxNjQ0LC04NDc4MzgzNTQsLTg5OTAy
 Nzc4MV19
 -->
