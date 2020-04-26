@@ -30,22 +30,26 @@ Every connector spawns **tasks** which are then distributed across workers in th
 
 #### Distributed Mode 
 -  Two edge nodes on an HDInsight cluster will be used to demonstrate a distributed mode Kafka Connect setup. 
-(https://github.com/arnabganguly/Kafkaconnect/blob/master/HDInsightManagedKafkadistributed.md)** 
 
 
  - Scalability is achieved in Kafka Connect with the addition of more edges nodes to the HDInsight cluster [either at the time of creation](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-apps-use-edge-node#add-an-edge-node-when-creating-a-cluster) or [post creation](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-apps-use-edge-node#add-an-edge-node-to-an-existing-cluster). 
 
 - Since the number of edge nodes can be scaled up or down on an existing cluster , this functionality can be used to scale the size of the Kafka Connect cluster as well.
 
+-  Click to **[Start Lab on Kafka Connect in distributed mode](https://github.com/arnabganguly/Kafkaconnect/blob/master/HDInsightManagedKafkadistributed.md)** 
+
+
+### Kafka Connect Architecture  
+
 ![HDInsight Kafka Schema Registry](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic2.png)
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyNzc0Nzk3OSwtNjQyNDcxMzMxLDY2ND
-c5OTc1LDcyNTMyNjkyNCwxNDYwOTc0ODA0LDgwMTU4MjIyMiwx
-OTA1MDMwNzcsMTI2MjkwNzU2MywtMTg1NTU4MTQ2MywxNjM1Nz
-EzNzU1LC05NzA2MDkxOTUsMjAyMzI5ODA3MywtNDQwNTgzOTY3
-LC0xMjY2NzcwNTI1LDE0OTE1MzY2MSw2NTU4MzE5NDksODUyMz
-AxNDU1LDI3MDUzOTY2OV19
+eyJoaXN0b3J5IjpbLTE2ODAwMDUwNjYsLTY0MjQ3MTMzMSw2Nj
+Q3OTk3NSw3MjUzMjY5MjQsMTQ2MDk3NDgwNCw4MDE1ODIyMjIs
+MTkwNTAzMDc3LDEyNjI5MDc1NjMsLTE4NTU1ODE0NjMsMTYzNT
+cxMzc1NSwtOTcwNjA5MTk1LDIwMjMyOTgwNzMsLTQ0MDU4Mzk2
+NywtMTI2Njc3MDUyNSwxNDkxNTM2NjEsNjU1ODMxOTQ5LDg1Mj
+MwMTQ1NSwyNzA1Mzk2NjldfQ==
 -->
