@@ -98,6 +98,15 @@ plugin.path=/usr/hdp/current/kafka-broker/connectors/jcustenborder-kafka-connect
 - Copy the `connect-standalone.properties` to ``connect-standalone.properties-2` and edit the properties as below( Note the **changed rest.port** )  
 
 ```
+sudo cp /usr/hdp/current/kafka-broker/config/connect-standalone.properties /usr/hdp/current/kafka-broker/config/connect-standalone-1.properties
+
+sudo cp /usr/hdp/current/kafka-broker/config/connect-standalone.properties /usr/hdp/current/kafka-broker/config/connect-standalone-2.properties
+
+```
+
+
+
+```
 bootstrap.servers=<Enter the full contents of $KAFKAZKHOSTS>
 key.converter.schemas.enable=true
 value.converter.schemas.enable=true
@@ -198,6 +207,6 @@ confluent.topic.replication.factor=3
  
    Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectdistributed2.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzUyNDY5MjIsLTEwMzk1MjI5NjgsLT
+eyJoaXN0b3J5IjpbLTE2ODk1MDAxNzksLTEwMzk1MjI5NjgsLT
 YzNjMwMTY0NCwtODQ3ODM4MzU0LC04OTkwMjc3ODFdfQ==
 -->
