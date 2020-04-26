@@ -56,7 +56,7 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
 
 <br>
 
-> Note : The reason we create two copies of the connect-standalone. properties file belis to separate the rest.port property to different ports. **If you do not do this , you will run into a rest.port conflict** when you try creating the connectors. 
+> Note : The reason we create two copies of the connect-standalone. properties file below is to separate the rest.port property to different ports. **If you do not do this , you will run into a rest.port conflict** when you try creating the connectors. 
 
 <br>
 
@@ -106,7 +106,7 @@ plugin.path=/usr/hdp/current/kafka-broker/connectors/jcustenborder-kafka-connect
      sudo mkdir /usr/hdp/current/kafka-broker/connectors
      sudo chmod 777 /usr/hdp/current/kafka-broker/connectors 
      ``` 
-- Using WINSCP or any other SCP tool of your choice upload the Kafka Connect Plugins into folder path created in the last step
+- Using WINSCP or any other SCP tool of your choice upload the Kafka Connect plugins into folder path created in the last step
 
 ![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic11.png)
 
@@ -184,7 +184,7 @@ confluent.topic.replication.factor=3
    Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectstandalone2.md)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxMDU5OTUwMiwtMTgwOTMyODE0NSwtMT
+eyJoaXN0b3J5IjpbLTU2NzEzOTY4MiwtMTgwOTMyODE0NSwtMT
 AzOTUyMjk2OCwtNjM2MzAxNjQ0LC04NDc4MzgzNTQsLTg5OTAy
 Nzc4MV19
 -->
