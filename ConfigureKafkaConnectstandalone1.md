@@ -141,11 +141,8 @@ sudo vi twitter.properties
 
   - `connect-standalone.sh` : Located at /usr/hdp/current/kafka-broker/bin/
 
+- Open the `connect-standalone.properties` in edit mode and populate the properties as shows below. 
     
-- In standalone mode, the workers need to be able to discover each other and have shared storage for connector configuration and offset data. Below are some of important parameters we would need to configure. 
-    
-
-
 ```
 key.converter.schemas.enable=true
 value.converter.schemas.enable=true
@@ -155,10 +152,7 @@ rest.port=8083
 plugin.path=/usr/local/share/kafka/connectors/jcustenborder-kafka-connect-twitter-0.3.33,/usr/local/share/kafka/connectors/confluentinc-kafka-connect-azure-blob-storage-1.3.2
 ```
 
-
-
- 
-  ### Kafka Connect plugin for Azure Blob Storage Sink connector 
+### Kafka Connect plugin for Azure Blob Storage Sink connector 
 
 - Create a regular [Azure Blob storage account and a container](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal) on Azure and note the storage access keys 
 
@@ -185,5 +179,5 @@ confluent.topic.replication.factor=3
  
    Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectdistributed2.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2MjA0NDA1MSwtODk5MDI3NzgxXX0=
+eyJoaXN0b3J5IjpbMjAxNjYzMDg4LC04OTkwMjc3ODFdfQ==
 -->
