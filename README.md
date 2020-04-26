@@ -32,7 +32,7 @@ Every connector spawns **tasks** which are then distributed across workers in th
 - This lab explores ways to use **Kafka Connect** on an HDInsight Managed Kafka Cluster in both **Standalone Mode** and **Distributed Mode**. - The connect cluster in both the setups would ingest messages from twitter and  write them to an Azure Storage Blob. 
 
 #### Standalone Mode 
-- Single edge node on the HDInsight cluster will used to demonstrate a standalone mode Kafka Connect setup. 
+- A single edge node on the HDInsight cluster will used to demonstrate  Kafka Connect in standalone mode. 
 - Click to **[Start Lab on Kafka Connect in standalone mode](https://github.com/arnabganguly/Kafkaconnect/blob/master/HDInsightManagedKafkastandalone.md)**
 
 #### Distributed Mode 
@@ -48,10 +48,10 @@ Every connector spawns **tasks** which are then distributed across workers in th
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyNTEwNDg3NCwtNzM1NjY0NjgsLTY0Mj
-Q3MTMzMSw2NjQ3OTk3NSw3MjUzMjY5MjQsMTQ2MDk3NDgwNCw4
-MDE1ODIyMjIsMTkwNTAzMDc3LDEyNjI5MDc1NjMsLTE4NTU1OD
-E0NjMsMTYzNTcxMzc1NSwtOTcwNjA5MTk1LDIwMjMyOTgwNzMs
-LTQ0MDU4Mzk2NywtMTI2Njc3MDUyNSwxNDkxNTM2NjEsNjU1OD
-MxOTQ5LDg1MjMwMTQ1NSwyNzA1Mzk2NjldfQ==
+eyJoaXN0b3J5IjpbLTIwNjg1OTg4MTIsLTczNTY2NDY4LC02ND
+I0NzEzMzEsNjY0Nzk5NzUsNzI1MzI2OTI0LDE0NjA5NzQ4MDQs
+ODAxNTgyMjIyLDE5MDUwMzA3NywxMjYyOTA3NTYzLC0xODU1NT
+gxNDYzLDE2MzU3MTM3NTUsLTk3MDYwOTE5NSwyMDIzMjk4MDcz
+LC00NDA1ODM5NjcsLTEyNjY3NzA1MjUsMTQ5MTUzNjYxLDY1NT
+gzMTk0OSw4NTIzMDE0NTUsMjcwNTM5NjY5XX0=
 -->
