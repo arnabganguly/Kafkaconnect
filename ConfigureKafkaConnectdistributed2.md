@@ -7,9 +7,9 @@
 ```
 curl -X POST http://<edge-node-FQDN>:8083/connectors -H "Content-Type: application/json" -d @- <<BODY
   {
-      "name": "connector1",
+      "name": "Twitter-to-Kafka",
       "config": {
-          "name": "connector1",
+          "name": "Twitter-to-Kafka",
           "connector.class": "com.github.jcustenborder.kafka.connect.twitter.TwitterSourceConnector",
           "tasks.max": 3,
           "kafka.status.topic":"twitterstatus",
@@ -107,5 +107,5 @@ curl -X GET http://<edge-node-FQDN>:8083/connectors
 
 Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/KafkaRESTAPI.md)  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk4ODQxNjk5XX0=
+eyJoaXN0b3J5IjpbMTY0OTY2MDcyNyw0OTg4NDE2OTldfQ==
 -->
