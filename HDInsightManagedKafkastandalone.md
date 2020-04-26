@@ -59,10 +59,10 @@ ed12-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net
 
 - - In the next sections we would configure the Kafka Connect  standalone on a single edge node.  
 
-Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectdistributed1.md)  
+Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectstandalone1.md)  
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDcwMzI2NywzMDYwOTc0ODMsMTE2MD
-E4ODU4OF19
+eyJoaXN0b3J5IjpbLTIxNDQ1MDU4NDMsMzA2MDk3NDgzLDExNj
+AxODg1ODhdfQ==
 -->
