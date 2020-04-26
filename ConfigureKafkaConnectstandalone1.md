@@ -44,31 +44,9 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
 ```
 
 
-### Configure the nodes for Kafka Connect in Distributed mode
+### Configure Kafka Connect in standalone mode
 
 
-#### Create the topics you will need 
-
-- Create the **Offset Storage** topic with a name of your choice . Here we use *agconnect-offsets*
-```
-/usr/hdp/current/kafka-broker/bin/kafka-topics.sh --create --replication-factor 3 --partitions 8 --topic agconnect-offsets --zookeeper $KAFKAZKHOSTS
-```
-
-- Create the **Config Storage** topic with a name of your choice. Here we use *agconnect-configs* 
-```
-/usr/hdp/current/kafka-broker/bin/kafka-topics.sh --create --replication-factor 3 --partitions 8 --topic agconnect-configs --zookeeper $KAFKAZKHOSTS
-```
-- Create the **Status** topic with a name of your choice. Here we use *agconnect-status* 
-```
-/usr/hdp/current/kafka-broker/bin/kafka-topics.sh --create --replication-factor 3 --partitions 8 --topic agconnect-status --zookeeper $KAFKAZKHOSTS
-```
-
-- Create the Topic for storing Twitter Messages. Here we use *twitterstatus*
-```
-/usr/hdp/current/kafka-broker/bin/kafka-topics.sh --create --replication-factor 3 --partitions 8 --topic twitterstatus --zookeeper $KAFKAZKHOSTS
-```
-
-#### Configure Kafka Connect in standalone mode 
 
  - To run Kafka Connect in **standalone mode** one needs to look at two important files. 
 
@@ -78,7 +56,7 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
 
 <br>
 
-> Note : The reason we create two copies of the connect-standalone. properties file is to separate the rest.port property to different ports. **If you do not do this , you will run into a rest.port conflict** when you try creating the connectors. 
+> Note : The reason we create two copies of the connect-standalone. properties file belis to separate the rest.port property to different ports. **If you do not do this , you will run into a rest.port conflict** when you try creating the connectors. 
 
 <br>
 
@@ -206,6 +184,7 @@ confluent.topic.replication.factor=3
    Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectstandalone2.md)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDkzMjgxNDUsLTEwMzk1MjI5NjgsLT
-YzNjMwMTY0NCwtODQ3ODM4MzU0LC04OTkwMjc3ODFdfQ==
+eyJoaXN0b3J5IjpbLTkxMDU5OTUwMiwtMTgwOTMyODE0NSwtMT
+AzOTUyMjk2OCwtNjM2MzAxNjQ0LC04NDc4MzgzNTQsLTg5OTAy
+Nzc4MV19
 -->
