@@ -119,7 +119,7 @@ sudo vi twitter.properties
 ```
 - Insert the below Twitter Connect plugin properties into the properties file 
 ```
-"name": "connector1",
+"name": "Twitter-to-Kafka",
 "connector.class": "com.github.jcustenborder.kafka.connect.twitter.TwitterSourceConnector",
 "tasks.max": 1,
 "kafka.status.topic":"twitterstatus",
@@ -180,6 +180,6 @@ confluent.topic.replication.factor=3
  
    Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectdistributed2.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzNjMwMTY0NCwtODQ3ODM4MzU0LC04OT
-kwMjc3ODFdfQ==
+eyJoaXN0b3J5IjpbLTQ1NDY1NzYyLC02MzYzMDE2NDQsLTg0Nz
+gzODM1NCwtODk5MDI3NzgxXX0=
 -->
