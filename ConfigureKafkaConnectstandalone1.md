@@ -79,12 +79,17 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
 <br>
 
 
-> Note : The reason we create two copies of the connect-standalone. properties file is to separate the rest.port property to different ports. **If you do not do this , you will run into a rest.port conflict**. 
+> Note : The reason we create two copies of the connect-standalone. properties file is to separate the rest.port property to different ports. **If you do not do this , you will run into a rest.port conflict** when you try creating the connectors. 
 
 <br>
 
 - Copy the`connect-standalone.properties` to `connect-standalone.properties-1`  and populate the properties as shows below. 
-    
+
+```
+sudo cp /usr/hdp/current/kafka-broker/config/connect-standalone.properties /usr/hdp/current/kafka-broker/config/connect-standalone-1.properties
+```
+ 
+   
 ```
 bootstrap.servers=<Enter the full contents of $KAFKAZKHOSTS>
 key.converter.schemas.enable=true
@@ -98,14 +103,8 @@ plugin.path=/usr/hdp/current/kafka-broker/connectors/jcustenborder-kafka-connect
 - Copy the `connect-standalone.properties` to ``connect-standalone.properties-2` and edit the properties as below( Note the **changed rest.port** )  
 
 ```
-sudo cp /usr/hdp/current/kafka-broker/config/connect-standalone.properties /usr/hdp/current/kafka-broker/config/connect-standalone-1.properties
-
 sudo cp /usr/hdp/current/kafka-broker/config/connect-standalone.properties /usr/hdp/current/kafka-broker/config/connect-standalone-2.properties
-
 ```
-
-
-
 ```
 bootstrap.servers=<Enter the full contents of $KAFKAZKHOSTS>
 key.converter.schemas.enable=true
@@ -207,6 +206,6 @@ confluent.topic.replication.factor=3
  
    Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectdistributed2.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODk1MDAxNzksLTEwMzk1MjI5NjgsLT
-YzNjMwMTY0NCwtODQ3ODM4MzU0LC04OTkwMjc3ODFdfQ==
+eyJoaXN0b3J5IjpbNTkyOTIzOTM3LC0xMDM5NTIyOTY4LC02Mz
+YzMDE2NDQsLTg0NzgzODM1NCwtODk5MDI3NzgxXX0=
 -->
