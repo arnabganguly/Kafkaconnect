@@ -61,8 +61,7 @@ ed12-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net
 
 Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectstandalone1.md)  
 
-
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDQ1MDU4NDMsMzA2MDk3NDgzLDExNj
-AxODg1ODhdfQ==
+eyJoaXN0b3J5IjpbMTc5MjI5ODM5OSwtMjE0NDUwNTg0MywzMD
+YwOTc0ODMsMTE2MDE4ODU4OF19
 -->
