@@ -90,6 +90,7 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
 
 ![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic12.png)
 
+
 ### Kafka Connect plugin for streaming data from Twitter to Kafka 
 
 **Create a Twitter App and get the credentials** 
@@ -157,5 +158,5 @@ confluent.topic.replication.factor=3
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0Mjc2OTQ4MV19
+eyJoaXN0b3J5IjpbNjgxNDE5NDkzXX0=
 -->
