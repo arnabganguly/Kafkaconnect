@@ -1,4 +1,22 @@
-## Start source tasks and sink tasks 
+## Create connectors and start tasks
+
+**Create a Twitter App and get the credentials** 
+ - Go to
+   [https://dev.twitter.com/apps/new](https://dev.twitter.com/apps/new
+   "https://dev.twitter.com/apps/new") and log in, if necessary
+ - Enter your Application Name, Description and your website address. You can leave the callback URL empty.
+ - Accept the TOS, and solve the CAPTCHA.
+ - Submit the form by clicking the **Create your Twitter Application**
+ - Copy the below information from the screen for later use in your properties file.
+```
+twitter.oauth.consumerKey
+twitter.oauth.consumerSecret
+twitter.oauth.accessToken
+twitter.oauth.accessTokenSecret
+```
+![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic25.png)
+
+
 
 
 ### Source Task
@@ -59,6 +77,8 @@ curl -X PUT http://<edge-node-FQDN>:8083/connectors/Twitter-to-Kafka/resume
 
 ### Sink Task 
 
+- Create a regular [Azure Blob storage account and a container](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal) on Azure and note the storage access keys 
+
 
 - From any edge node run the below to create a new connector and start tasks. Note that the number of tasks can be increased as per the size of your cluster. 
 
@@ -107,5 +127,5 @@ curl -X GET http://<edge-node-FQDN>:8083/connectors
 
 Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/KafkaRESTAPI.md)  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0OTY2MDcyNyw0OTg4NDE2OTldfQ==
+eyJoaXN0b3J5IjpbLTcxMzg1MDU4MCw0OTg4NDE2OTldfQ==
 -->
