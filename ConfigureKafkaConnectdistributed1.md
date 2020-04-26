@@ -179,14 +179,32 @@ curl -s http://<edge-node-FQDN>:8083/ |jq
  
 ![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic14.png)
  - In this section we started **Kafka Connect in distributed mode** alongside an HDInsight cluster and verified it using the Kafka REST API. 
+
+**Create a Twitter App and get the credentials** 
+ - Go to
+   [https://dev.twitter.com/apps/new](https://dev.twitter.com/apps/new
+   "https://dev.twitter.com/apps/new") and log in, if necessary
+ - Enter your Application Name, Description and your website address. You can leave the callback URL empty.
+ - Accept the TOS, and solve the CAPTCHA.
+ - Submit the form by clicking the **Create your Twitter Application**
+ - Copy the below information from the screen for later use in your properties file.
+```
+twitter.oauth.consumerKey
+twitter.oauth.consumerSecret
+twitter.oauth.accessToken
+twitter.oauth.accessTokenSecret
+```
+![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic25.png)
+
+
  
  - In the next section we would use Kafka REST API's to start separate connector instances for running **Source Tasks** and **Sink Tasks**.
  
    Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectdistributed2.md)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzMDU4MTkwMyw1MTAwODY3NjgsLTE1MT
-MwNDc4OTUsLTExODQyNzY2MzUsODE0MDA4MTY3LDE1NjM4MDE3
-MSwtMTU4NjEzMzk4MCw0OTkyMjYzMTAsMTI1OTEzMjE0MCwtOT
-QyMDgyNDY0XX0=
+eyJoaXN0b3J5IjpbNDExNzcxMzk2LDEwMzA1ODE5MDMsNTEwMD
+g2NzY4LC0xNTEzMDQ3ODk1LC0xMTg0Mjc2NjM1LDgxNDAwODE2
+NywxNTYzODAxNzEsLTE1ODYxMzM5ODAsNDk5MjI2MzEwLDEyNT
+kxMzIxNDAsLTk0MjA4MjQ2NF19
 -->
