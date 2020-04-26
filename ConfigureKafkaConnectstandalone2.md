@@ -37,11 +37,11 @@ sudo /usr/hdp/current/kafka-broker/bin/connect-standalone.sh /usr/hdp/current/ka
 
 ![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic24.png)
 
-- This ends the lab for Kafka Connector on Standalone mode. 
+- This ends the lab for Kafka Connect on standalone mode. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2MzQ3OTI2NywtNjY1NDc1OTAzLDE5ND
-kyMzM3MjQsLTE4ODA0ODA5NTksNzY0NDE3NTA2LC0xMTM4MDMx
-NDA2LDYzNDMwMTgzNiwxODk3NzMwMjA2LDEwNzI1MDk5NTFdfQ
-==
+eyJoaXN0b3J5IjpbLTUzNzIyMzcxOCwtMzYzNDc5MjY3LC02Nj
+U0NzU5MDMsMTk0OTIzMzcyNCwtMTg4MDQ4MDk1OSw3NjQ0MTc1
+MDYsLTExMzgwMzE0MDYsNjM0MzAxODM2LDE4OTc3MzAyMDYsMT
+A3MjUwOTk1MV19
 -->
