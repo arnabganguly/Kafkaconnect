@@ -46,12 +46,12 @@ curl -X GET http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.n
 ```
 - If everything is working , you should see a stream of relevant Twitter Messages on the console with specified keywords. 
 
-- Try pausing the tasks in the connector , this should also pause the Twitter Stream on the console producer.
+- Try pausing the tasks in the connector , this should also **pause** the Twitter Stream on the console producer.
 
 ```
 curl -X PUT http://<edge-node-FQDN>:8083/connectors/Twitter-to-Kafka/pause 
 ```
-- Try resuming the tasks in the connector , this should also resume the Twitter Stream on the console producer.
+- Try resuming the tasks in the connector , this should also **resume** the Twitter Stream on the console producer.
 
 ```
 curl -X PUT http://<edge-node-FQDN>:8083/connectors/Twitter-to-Kafka/resume 
@@ -107,5 +107,5 @@ curl -X GET http://<edge-node-FQDN>:8083/connectors
 
 Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/KafkaRESTAPI.md)  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3NjM0NjcxN119
+eyJoaXN0b3J5IjpbNDk4ODQxNjk5XX0=
 -->
