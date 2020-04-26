@@ -165,7 +165,7 @@ sudo vi blob.properties
 ```
 - Insert the below Azure Blob Storage Sink plugin properties into the properties file
 ```
-name=blob-sink
+name=Kafka-to-Blob
 connector.class=io.confluent.connect.azure.blob.AzureBlobStorageSinkConnector
 tasks.max=1
 topics=twitterstatus
@@ -181,6 +181,6 @@ confluent.topic.replication.factor=3
  
    Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectdistributed2.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1NzIxMzMyNSwtNjM2MzAxNjQ0LC04ND
-c4MzgzNTQsLTg5OTAyNzc4MV19
+eyJoaXN0b3J5IjpbLTEwMzk1MjI5NjgsLTYzNjMwMTY0NCwtOD
+Q3ODM4MzU0LC04OTkwMjc3ODFdfQ==
 -->
