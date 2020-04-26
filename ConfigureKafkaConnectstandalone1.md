@@ -156,7 +156,9 @@ format.class=io.confluent.connect.azure.blob.format.avro.AvroFormat
 confluent.topic.bootstrap.servers=<Enter the full contents of $KAFKAZKHOSTS>
 confluent.topic.replication.factor=3
 ```
-
+ - In the next section we would use the command line to start separate connector instances for running **Source Tasks** and **Sink Tasks**.
+ 
+   Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectdistributed2.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjgxNDE5NDkzXX0=
+eyJoaXN0b3J5IjpbLTg5OTAyNzc4MV19
 -->
