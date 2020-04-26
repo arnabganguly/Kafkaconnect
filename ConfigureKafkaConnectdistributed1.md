@@ -154,7 +154,7 @@ plugin.path=/usr/hdp/current/kafka-broker/connectors/jcustenborder-kafka-connect
 
 - Repeat the same steps on other edge node to start Kafka Connect in distributed mode
 
-> Note : A file *nohup.out* is created in the same folder from where it is executed. If you are interested in exploring to the startup logs simply *cat nohup.out*
+> Note : A file *nohup.out* is created in the same folder from where it is executed. If you are interested in exploring the startup logs simply *cat nohup.out*
 
     
 #### Kafka Connect REST API 
@@ -185,8 +185,8 @@ curl -s http://<edge-node-FQDN>:8083/ |jq
    Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectdistributed2.md)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTU5NzUzNzAsNTEwMDg2NzY4LC0xNT
-EzMDQ3ODk1LC0xMTg0Mjc2NjM1LDgxNDAwODE2NywxNTYzODAx
-NzEsLTE1ODYxMzM5ODAsNDk5MjI2MzEwLDEyNTkxMzIxNDAsLT
-k0MjA4MjQ2NF19
+eyJoaXN0b3J5IjpbMTAzMDU4MTkwMyw1MTAwODY3NjgsLTE1MT
+MwNDc4OTUsLTExODQyNzY2MzUsODE0MDA4MTY3LDE1NjM4MDE3
+MSwtMTU4NjEzMzk4MCw0OTkyMjYzMTAsMTI1OTEzMjE0MCwtOT
+QyMDgyNDY0XX0=
 -->
