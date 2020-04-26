@@ -203,8 +203,9 @@ confluent.topic.replication.factor=3
 ```
  - In the next section we would use the command line to start separate connector instances for running **Source Tasks** and **Sink Tasks**.
  
-   Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectdistributed2.md)
+   Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectstandalone2.md)
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwMDc5NjgxNSwtMTAzOTUyMjk2OCwtNj
-M2MzAxNjQ0LC04NDc4MzgzNTQsLTg5OTAyNzc4MV19
+eyJoaXN0b3J5IjpbLTE4MDkzMjgxNDUsLTEwMzk1MjI5NjgsLT
+YzNjMwMTY0NCwtODQ3ODM4MzU0LC04OTkwMjc3ODFdfQ==
 -->
