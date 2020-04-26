@@ -36,23 +36,9 @@ In this section we would deploy an HDInsight Managed Kafka  cluster with two Edg
 
 ![HDInsight Kafka Schema Registry](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic5.png)
 
-- Log into Ambari from the cluster page to get the Hostnames(FQDN) of the edge nodes . They should appear in the below format 
-
-```
-ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net
-ed12-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net
-```
-
-![HDInsight Kafka Schema Registry](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic6.png)
-
-
-![HDInsight Kafka Schema Registry](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic7.png)
-
-
 - On the HDInsight cluster page click on the SSH+Cluster login blade on the left and get the hostname of the edge node that was deployed. 
 
 ![HDInsight Kafka Schema Registry](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic10.png)
-
 
 - Using an SSH client of your choice ssh into the edge node using the **sshuser** and **password** that you set in the custom ARM script. You will notice that you have logged into edge node ``ed10``
 
@@ -69,5 +55,5 @@ Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/Config
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2MDE4ODU4OF19
+eyJoaXN0b3J5IjpbMzk0NTY5MzQ4LDExNjAxODg1ODhdfQ==
 -->
