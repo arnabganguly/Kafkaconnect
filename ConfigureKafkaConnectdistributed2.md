@@ -79,7 +79,6 @@ curl -X PUT http://<edge-node-FQDN>:8083/connectors/Twitter-to-Kafka/resume
 
 - Create a regular [Azure Blob storage account and a container](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal) on Azure and note the storage access keys 
 
-
 - From any edge node run the below to create a new connector and start tasks. Note that the number of tasks can be increased as per the size of your cluster. 
 
 ```
@@ -127,5 +126,5 @@ curl -X GET http://<edge-node-FQDN>:8083/connectors
 
 Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/KafkaRESTAPI.md)  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMzg1MDU4MCw0OTg4NDE2OTldfQ==
+eyJoaXN0b3J5IjpbLTQwMTY3OTgxMCw0OTg4NDE2OTldfQ==
 -->
