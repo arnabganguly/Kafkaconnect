@@ -56,12 +56,7 @@ ed12-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net
 
 - Using an SSH client of your choice ssh into the edge node using the **sshuser** and **password** that you set in the custom ARM script. You will notice that you have logged into edge node ``ed10``
 
-> Note:  In this the standalone mode you will need to make config changes in a single edge node ed10. 
-
-```
-sshuser@ed10-ag4kac:~$ ssh ed12-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net
-```
-
+> Note:  In this the Kafka Connect standalone mode you will need to make config changes on a single edge node ed10. 
 
 - In the next section we would configure the Confluent Kafka Schema Registry that we installed on the edge node.  
 
@@ -69,5 +64,5 @@ Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/Config
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODMzNDcxNDIsMTE2MDE4ODU4OF19
+eyJoaXN0b3J5IjpbMzA2MDk3NDgzLDExNjAxODg1ODhdfQ==
 -->
