@@ -76,6 +76,8 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
 
   - `connect-standalone.sh` : Located at /usr/hdp/current/kafka-broker/bin/
 
+> Note : The reason we create two copies of the connect-standalone.properties file is to separate the rest.port property to different ports. 
+
 - Open the `connect-standalone.properties` in edit mode and populate the properties as shows below. 
     
 ```
@@ -84,12 +86,21 @@ key.converter.schemas.enable=true
 value.converter.schemas.enable=true
 offset.storage.file.filename=/tmp/connect.offsets1
 offset.flush.interval.ms=10000
-rest.port=8083
+rest.port=8084
 plugin.path=/usr/hdp/current/kafka-broker/connectors/jcustenborder-kafka-connect-twitter-0.3.33,/usr/hdp/current/kafka-broker/connectors/confluentinc-kafka-connect-azure-blob-storage-1.3.2
 ```
 
 - Copy the `connect-standalone.properties` to ``connect-standalone.properties-2` and edit the properties as below
-
+```
+```
+bootstrap.servers=<Enter the full contents of $KAFKAZKHOSTS>
+key.converter.schemas.enable=true
+value.converter.schemas.enable=true
+offset.storage.file.filename=/tmp/connect.offsets1
+offset.flush.interval.ms=10000
+rest.port=8085
+plugin.path=/usr/hdp/current/kafka-broker/connectors/jcustenborder-kafka-connect-twitter-0.3.33,/usr/hdp/current/kafka-broker/connectors/confluentinc-kafka-connect-azure-blob-storage-1.3.2
+```
 
 
 
@@ -186,6 +197,6 @@ confluent.topic.replication.factor=3
  
    Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectdistributed2.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjU3NTYyMSwtMTAzOTUyMjk2OCwtNj
-M2MzAxNjQ0LC04NDc4MzgzNTQsLTg5OTAyNzc4MV19
+eyJoaXN0b3J5IjpbLTQ5NDEyMDE3LC0xMDM5NTIyOTY4LC02Mz
+YzMDE2NDQsLTg0NzgzODM1NCwtODk5MDI3NzgxXX0=
 -->
