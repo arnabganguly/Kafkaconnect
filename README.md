@@ -39,17 +39,17 @@ Every connector spawns **tasks** which are then distributed across workers in th
 -  Click to **[Start Lab on Kafka Connect in distributed mode](https://github.com/arnabganguly/Kafkaconnect/blob/master/HDInsightManagedKafkadistributed.md)** 
 
 
-### Kafka Connect Architecture  
+
 
 ![HDInsight Kafka Schema Registry](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic2.png)
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODAwMDUwNjYsLTY0MjQ3MTMzMSw2Nj
-Q3OTk3NSw3MjUzMjY5MjQsMTQ2MDk3NDgwNCw4MDE1ODIyMjIs
-MTkwNTAzMDc3LDEyNjI5MDc1NjMsLTE4NTU1ODE0NjMsMTYzNT
-cxMzc1NSwtOTcwNjA5MTk1LDIwMjMyOTgwNzMsLTQ0MDU4Mzk2
-NywtMTI2Njc3MDUyNSwxNDkxNTM2NjEsNjU1ODMxOTQ5LDg1Mj
-MwMTQ1NSwyNzA1Mzk2NjldfQ==
+eyJoaXN0b3J5IjpbMTY0OTQ5MTA5NCwtNjQyNDcxMzMxLDY2ND
+c5OTc1LDcyNTMyNjkyNCwxNDYwOTc0ODA0LDgwMTU4MjIyMiwx
+OTA1MDMwNzcsMTI2MjkwNzU2MywtMTg1NTU4MTQ2MywxNjM1Nz
+EzNzU1LC05NzA2MDkxOTUsMjAyMzI5ODA3MywtNDQwNTgzOTY3
+LC0xMjY2NzcwNTI1LDE0OTE1MzY2MSw2NTU4MzE5NDksODUyMz
+AxNDU1LDI3MDUzOTY2OV19
 -->
