@@ -102,10 +102,6 @@ rest.port=8085
 plugin.path=/usr/hdp/current/kafka-broker/connectors/jcustenborder-kafka-connect-twitter-0.3.33,/usr/hdp/current/kafka-broker/connectors/confluentinc-kafka-connect-azure-blob-storage-1.3.2
 ```
 
-
-
-
-
 ### Deploy the Kafka Connect Plugins
 
 - Download the relevant Kafka Plugins from the [Confluent Hub](https://www.confluent.io/hub/) to your local desktop 
@@ -197,6 +193,6 @@ confluent.topic.replication.factor=3
  
    Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectdistributed2.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTU5NzkzMTE2LC0xMDM5NTIyOTY4LC02Mz
-YzMDE2NDQsLTg0NzgzODM1NCwtODk5MDI3NzgxXX0=
+eyJoaXN0b3J5IjpbLTMzOTQ5ODg2MCwtMTAzOTUyMjk2OCwtNj
+M2MzAxNjQ0LC04NDc4MzgzNTQsLTg5OTAyNzc4MV19
 -->
