@@ -68,6 +68,27 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
 /usr/hdp/current/kafka-broker/bin/kafka-topics.sh --create --replication-factor 3 --partitions 8 --topic twitterstatus --zookeeper $KAFKAZKHOSTS
 ```
 
+#### Configure Kafka Connect in standalone mode 
+
+ - To run Kafka Connect in **standalone mode** one needs to look at two important files. 
+
+  - `connect-standalone.properties` : Located at /usr/hdp/current/kafka-broker/bin/conf
+
+  - `connect-standalone.sh` : Located at /usr/hdp/current/kafka-broker/bin/
+
+- Open the `connect-standalone.properties` in edit mode and populate the properties as shows below. 
+    
+```
+bootstrap.servers=<Enter the full contents of $KAFKAZKHOSTS>
+key.converter.schemas.enable=true
+value.converter.schemas.enable=true
+offset.storage.file.filename=/tmp/connect.offsets1
+offset.flush.interval.ms=10000
+rest.port=8083
+plugin.path=/usr/hdp/current/kafka-broker/connectors/jcustenborder-kafka-connect-twitter-0.3.33,/usr/hdp/current/kafka-broker/connectors/confluentinc-kafka-connect-azure-blob-storage-1.3.2
+```
+
+
 
 ### Deploy the Kafka Connect Plugins
 
@@ -91,7 +112,7 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
 ![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic12.png)
 
 
-### Kafka Connect plugin for streaming data from Twitter to Kafka 
+### Configure Kafka Connect plugin for streaming data from Twitter to Kafka 
 
 **Create a Twitter App and get the credentials** 
  - Go to
@@ -133,27 +154,7 @@ sudo vi twitter.properties
 "process.deletes":false
 ```
       
-#### Configure Kafka Connect 
-
- - To run Kafka Connect in **standalone mode** one needs to look at two important files. 
-
-  - `connect-standalone.properties` : Located at /usr/hdp/current/kafka-broker/bin/conf
-
-  - `connect-standalone.sh` : Located at /usr/hdp/current/kafka-broker/bin/
-
-- Open the `connect-standalone.properties` in edit mode and populate the properties as shows below. 
-    
-```
-bootstrap.servers=<Enter the full contents of $KAFKAZKHOSTS>
-key.converter.schemas.enable=true
-value.converter.schemas.enable=true
-offset.storage.file.filename=/tmp/connect.offsets1
-offset.flush.interval.ms=10000
-rest.port=8083
-plugin.path=/usr/hdp/current/kafka-broker/connectors/jcustenborder-kafka-connect-twitter-0.3.33,/usr/hdp/current/kafka-broker/connectors/confluentinc-kafka-connect-azure-blob-storage-1.3.2
-```
-
-### Kafka Connect plugin for Azure Blob Storage Sink connector 
+### Configure Kafka Connect plugin for Azure Blob Storage Sink connector 
 
 - Create a regular [Azure Blob storage account and a container](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal) on Azure and note the storage access keys 
 
@@ -180,6 +181,6 @@ confluent.topic.replication.factor=3
  
    Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectdistributed2.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1NDY1NzYyLC02MzYzMDE2NDQsLTg0Nz
-gzODM1NCwtODk5MDI3NzgxXX0=
+eyJoaXN0b3J5IjpbMjA1NzIxMzMyNSwtNjM2MzAxNjQ0LC04ND
+c4MzgzNTQsLTg5OTAyNzc4MV19
 -->
