@@ -1,6 +1,6 @@
 ## Start source tasks and sink tasks 
 
-- From the edge node run the below to create a new connector and start tasks. 
+- From the edge node, **create two separate sessions** and  run the below to create the new connectors and start tasks.  
 
 **Start Source connector** 
 ```
@@ -34,7 +34,7 @@ sudo /usr/hdp/current/kafka-broker/bin/connect-standalone.sh /usr/hdp/current/ka
 
 - Messages from Twitter will written to the Azure Blob Store 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQxNjIwNDIxLDc2NDQxNzUwNiwtMTEzOD
-AzMTQwNiw2MzQzMDE4MzYsMTg5NzczMDIwNiwxMDcyNTA5OTUx
-XX0=
+eyJoaXN0b3J5IjpbLTQxNTU3ODE4NSw3NjQ0MTc1MDYsLTExMz
+gwMzE0MDYsNjM0MzAxODM2LDE4OTc3MzAyMDYsMTA3MjUwOTk1
+MV19
 -->
