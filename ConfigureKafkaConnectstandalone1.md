@@ -149,7 +149,7 @@ value.converter.schemas.enable=true
 offset.storage.file.filename=/tmp/connect.offsets1
 offset.flush.interval.ms=10000
 rest.port=8083
-plugin.path=/usr/local/share/kafka/connectors/jcustenborder-kafka-connect-twitter-0.3.33,/usr/local/share/kafka/connectors/confluentinc-kafka-connect-azure-blob-storage-1.3.2
+plugin.path=//usr/hdp/current/kafka-broker/connectors/jcustenborder-kafka-connect-twitter-0.3.33,/usr/local/share/kafka/connectors/confluentinc-kafka-connect-azure-blob-storage-1.3.2
 ```
 
 ### Kafka Connect plugin for Azure Blob Storage Sink connector 
@@ -179,5 +179,5 @@ confluent.topic.replication.factor=3
  
    Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectdistributed2.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxNjYzMDg4LC04OTkwMjc3ODFdfQ==
+eyJoaXN0b3J5IjpbLTM4NTExMTUzMiwtODk5MDI3NzgxXX0=
 -->
