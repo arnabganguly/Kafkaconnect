@@ -11,11 +11,11 @@ sudo /usr/hdp/current/kafka-broker/bin/connect-standalone.sh /usr/hdp/current/ka
 ![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic21.png)
 
 
-- Messages ingestion from Twitter will start immediately thereafter 
+- Message ingestion from Twitter will start immediately thereafter 
 
 ![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic22.png)
 
-- One other to way to test if Twitter Messages with the keywords are indeed being ingested is to start a console consumer in a different session and start consuming messages from topic *twitterstatus* .In a new session , launch a console consumer. 
+- One other to way to test if Twitter Messages with the keywords are indeed being ingested is to start a console consumer in a fresh session and start consuming messages from topic *twitterstatus* .In a new session , launch a console consumer. 
 
 ```
 /usr/hdp/current/kafka-broker/bin/kafka-console-consumer.sh --bootstrap-server $KAFKAZKHOSTS --topic twitterstatus 
@@ -37,7 +37,7 @@ sudo /usr/hdp/current/kafka-broker/bin/connect-standalone.sh /usr/hdp/current/ka
 
 ![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic24.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0OTIzMzcyNCwtMTg4MDQ4MDk1OSw3Nj
-Q0MTc1MDYsLTExMzgwMzE0MDYsNjM0MzAxODM2LDE4OTc3MzAy
-MDYsMTA3MjUwOTk1MV19
+eyJoaXN0b3J5IjpbLTM3MDc4MjA4MCwxOTQ5MjMzNzI0LC0xOD
+gwNDgwOTU5LDc2NDQxNzUwNiwtMTEzODAzMTQwNiw2MzQzMDE4
+MzYsMTg5NzczMDIwNiwxMDcyNTA5OTUxXX0=
 -->
