@@ -47,8 +47,8 @@ In this section we would deploy an HDInsight Managed Kafka  cluster with two edg
 - In the next sections we would configure the Kafka Connect  standalone on a single edge node.  
 
 Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectstandalone1.md)  
-
+                                                  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyNDI1NjY1MCwxNzkyMjk4Mzk5LC0yMT
+eyJoaXN0b3J5IjpbMjA2MTY4MTAzNCwxNzkyMjk4Mzk5LC0yMT
 Q0NTA1ODQzLDMwNjA5NzQ4MywxMTYwMTg4NTg4XX0=
 -->
