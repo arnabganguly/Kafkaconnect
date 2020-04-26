@@ -36,17 +36,32 @@ In this section we would deploy an HDInsight Managed Kafka  cluster with two Edg
 
 ![HDInsight Kafka Schema Registry](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic5.png)
 
+- Log into Ambari from the cluster page to get the Hostnames(FQDN) of the edge nodes . They should appear in the below format 
+
+```
+ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net
+ed12-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net
+```
+
+![HDInsight Kafka Schema Registry](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic6.png)
+
+
+![HDInsight Kafka Schema Registry](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic7.png)
+
+
 - On the HDInsight cluster page click on the SSH+Cluster login blade on the left and get the hostname of the edge node that was deployed. 
 
 ![HDInsight Kafka Schema Registry](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic10.png)
 
+
 - Using an SSH client of your choice ssh into the edge node using the **sshuser** and **password** that you set in the custom ARM script. You will notice that you have logged into edge node ``ed10``
 
-> Note:  In this lab you will need to make config changes in both the edge nodes ed10 and ed12 . To log into ed12 simply ssh into ed12 from ed10 
+> Note:  In this the standalone mode you will need to make config changes in a single edge node ed10. 
 
 ```
 sshuser@ed10-ag4kac:~$ ssh ed12-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net
 ```
+
 
 - In the next section we would configure the Confluent Kafka Schema Registry that we installed on the edge node.  
 
@@ -54,5 +69,5 @@ Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/Config
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzY4MjUyODUwLDExNjAxODg1ODhdfQ==
+eyJoaXN0b3J5IjpbLTIwODMzNDcxNDIsMTE2MDE4ODU4OF19
 -->
