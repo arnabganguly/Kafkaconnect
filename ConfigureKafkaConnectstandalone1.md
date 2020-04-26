@@ -144,6 +144,7 @@ sudo vi twitter.properties
 - Open the `connect-standalone.properties` in edit mode and populate the properties as shows below. 
     
 ```
+bootstrap.servers=<Enter the full contents of $KAFKAZKHOSTS>
 key.converter.schemas.enable=true
 value.converter.schemas.enable=true
 offset.storage.file.filename=/tmp/connect.offsets1
@@ -179,5 +180,6 @@ confluent.topic.replication.factor=3
  
    Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectdistributed2.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0NzgzODM1NCwtODk5MDI3NzgxXX0=
+eyJoaXN0b3J5IjpbLTYzNjMwMTY0NCwtODQ3ODM4MzU0LC04OT
+kwMjc3ODFdfQ==
 -->
