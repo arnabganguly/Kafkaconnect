@@ -1,6 +1,6 @@
 ## Deploy a HDInsight Managed Kafka with a Kafka connect standalone
 
-In this section we would deploy an HDInsight Managed Kafka  cluster with two Edge Node inside a Virtual Network and then enable distributed Kafka Connect on those edge nodes.  
+In this section we would deploy an HDInsight Managed Kafka  cluster with two edge node inside a Virtual Network and then enable Kafka Connect in standalone mode on one of those edge nodes.  
 
 - Click on the Deploy to Azure Button to start the deployment process
 
@@ -36,19 +36,6 @@ In this section we would deploy an HDInsight Managed Kafka  cluster with two Edg
 
 ![HDInsight Kafka Schema Registry](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic5.png)
 
-- Log into Ambari from the cluster page to get the Hostnames(FQDN) of the edge nodes . They should appear in the below format 
-
-```
-ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net
-ed12-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net
-```
-
-![HDInsight Kafka Schema Registry](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic6.png)
-
-
-![HDInsight Kafka Schema Registry](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic7.png)
-
-
 - On the HDInsight cluster page click on the SSH+Cluster login blade on the left and get the hostname of the edge node that was deployed. 
 
 ![HDInsight Kafka Schema Registry](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic10.png)
@@ -62,6 +49,6 @@ ed12-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net
 Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectstandalone1.md)  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5MjI5ODM5OSwtMjE0NDUwNTg0MywzMD
-YwOTc0ODMsMTE2MDE4ODU4OF19
+eyJoaXN0b3J5IjpbLTk0NDk3Mzc4LDE3OTIyOTgzOTksLTIxND
+Q1MDU4NDMsMzA2MDk3NDgzLDExNjAxODg1ODhdfQ==
 -->
