@@ -15,7 +15,7 @@ sudo /usr/hdp/current/kafka-broker/bin/connect-standalone.sh /usr/hdp/current/ka
 
 ![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic21.png)
 
-- One way to test if Twitter Messages with the keywords are being ingested is to start a console consumer in a different session and start consuming messages from topic *twitterstatus* . 
+- One other to way to test if Twitter Messages with the keywords are indeed being ingested is to start a console consumer in a different session and start consuming messages from topic *twitterstatus* .In a new session , launch a console consumer. 
 
 ```
 /usr/hdp/current/kafka-broker/bin/kafka-console-consumer.sh --bootstrap-server $KAFKAZKHOSTS --topic twitterstatus 
@@ -31,10 +31,11 @@ sudo /usr/hdp/current/kafka-broker/bin/connect-standalone.sh /usr/hdp/current/ka
 
 - If the connector is created and tasks are started you will see the below notifications
 
+![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic22.png)
 
 - Messages from Twitter will written to the Azure Blob Store 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxNTU3ODE4NSw3NjQ0MTc1MDYsLTExMz
+eyJoaXN0b3J5IjpbLTMxOTU5NTE0OCw3NjQ0MTc1MDYsLTExMz
 gwMzE0MDYsNjM0MzAxODM2LDE4OTc3MzAyMDYsMTA3MjUwOTk1
 MV19
 -->
