@@ -139,10 +139,10 @@ sudo vi twitter.properties
 
   - `connect-standalone.properties` : Located at /usr/hdp/current/kafka-broker/bin/conf
 
-  - `connect-distributed.sh` : Located at /usr/hdp/current/kafka-broker/bin/
+  - `connect-standalone.sh` : Located at /usr/hdp/current/kafka-broker/bin/
 
     
-- In distributed mode, the workers need to be able to discover each other and have shared storage for connector configuration and offset data. Below are some of important parameters we would need to configure. 
+- In standalone mode, the workers need to be able to discover each other and have shared storage for connector configuration and offset data. Below are some of important parameters we would need to configure. 
     
     - `group.id` : ID that uniquely identifies the cluster these workers belong to. Make sure this value is not changed between the edge nodes.
     -   `config.storage.topic`: Topic to store the connector and task configuration state in.
@@ -212,5 +212,5 @@ confluent.topic.replication.factor=3
  
    Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectdistributed2.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzMTYwOTg3MiwtODk5MDI3NzgxXX0=
+eyJoaXN0b3J5IjpbLTg0MTIxMjI2NiwtODk5MDI3NzgxXX0=
 -->
