@@ -57,12 +57,12 @@ ed12-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net
 
 > Note:  In this the Kafka Connect standalone mode you will need to make config changes on a single edge node ed10. 
 
-- In the next section we would configure the Confluent Kafka Schema Registry that we installed on the edge node.  
+- - In the next sections we would configure the Kafka Connect  standalone on a single edge node.  
 
 Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectdistributed1.md)  
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzczNjIyNDcsMzA2MDk3NDgzLDExNj
-AxODg1ODhdfQ==
+eyJoaXN0b3J5IjpbLTE3MDcwMzI2NywzMDYwOTc0ODMsMTE2MD
+E4ODU4OF19
 -->
