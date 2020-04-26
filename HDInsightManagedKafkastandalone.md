@@ -1,6 +1,6 @@
 ## Deploy a HDInsight Managed Kafka with a Kafka connect standalone
 
-In this section we would deploy an HDInsight Managed Kafka  cluster with two edge node inside a Virtual Network and then enable Kafka Connect in standalone mode on one of those edge nodes.  
+In this section we would deploy an HDInsight Managed Kafka  cluster with two edge nodes inside a Virtual Network and then enable Kafka Connect in standalone mode on one of those edge nodes.  
 
 - Click on the Deploy to Azure Button to start the deployment process
 
@@ -49,6 +49,6 @@ In this section we would deploy an HDInsight Managed Kafka  cluster with two edg
 Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectstandalone1.md)  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDI0NzE1NjgsMTc5MjI5ODM5OSwtMj
+eyJoaXN0b3J5IjpbLTE4NDk2NTE1NjEsMTc5MjI5ODM5OSwtMj
 E0NDUwNTg0MywzMDYwOTc0ODMsMTE2MDE4ODU4OF19
 -->
