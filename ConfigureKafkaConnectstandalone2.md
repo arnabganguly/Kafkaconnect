@@ -3,6 +3,8 @@
 - From the edge node  run each of the below in a **separate session** to create new connectors and start tasks.  
 
 **Start Source connector** 
+- In a new session start the source connector
+
 ```
 sudo /usr/hdp/current/kafka-broker/bin/connect-standalone.sh /usr/hdp/current/kafka-broker/config/connect-standalone-1.properties /usr/hdp/current/kafka-broker/connectors/twitter.properties
 ```
@@ -11,7 +13,7 @@ sudo /usr/hdp/current/kafka-broker/bin/connect-standalone.sh /usr/hdp/current/ka
 ![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic21.png)
 
 
-- Message ingestion from Twitter will start immediately thereafter 
+- Message ingestion from Twitter will start immediately thereafter. 
 
 ![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic22.png)
 
@@ -25,6 +27,7 @@ sudo /usr/hdp/current/kafka-broker/bin/connect-standalone.sh /usr/hdp/current/ka
 
 **Start Sink Connector**
 
+- In a new session start the sink connector
 ```
 sudo /usr/hdp/current/kafka-broker/bin/connect-standalone.sh /usr/hdp/current/kafka-broker/config/connect-standalone-2.properties /usr/hdp/current/kafka-broker/connectors/blob.properties
 ```
@@ -40,7 +43,7 @@ sudo /usr/hdp/current/kafka-broker/bin/connect-standalone.sh /usr/hdp/current/ka
 - This ends the lab for Kafka Connect in standalone mode. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDAwMTExODAsLTM2MzQ3OTI2NywtNj
+eyJoaXN0b3J5IjpbLTE1NDA0MDM3MjIsLTM2MzQ3OTI2NywtNj
 Y1NDc1OTAzLDE5NDkyMzM3MjQsLTE4ODA0ODA5NTksNzY0NDE3
 NTA2LC0xMTM4MDMxNDA2LDYzNDMwMTgzNiwxODk3NzMwMjA2LD
 EwNzI1MDk5NTFdfQ==
