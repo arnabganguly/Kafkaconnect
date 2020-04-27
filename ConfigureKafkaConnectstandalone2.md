@@ -40,10 +40,18 @@ sudo /usr/hdp/current/kafka-broker/bin/connect-standalone.sh /usr/hdp/current/ka
 
 ![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic24.png)
 
+- Authenticate into your Azure portal and navigate to the storage account to validate if Twitter Messages are being sent to the specific container. 
+
+![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic19.png)
+
+ ![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic20.png)
+
+
+
 - This ends the lab for Kafka Connect in standalone mode. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDA0MDM3MjIsLTM2MzQ3OTI2NywtNj
+eyJoaXN0b3J5IjpbLTEwMDYwNDgzNDMsLTM2MzQ3OTI2NywtNj
 Y1NDc1OTAzLDE5NDkyMzM3MjQsLTE4ODA0ODA5NTksNzY0NDE3
 NTA2LC0xMTM4MDMxNDA2LDYzNDMwMTgzNiwxODk3NzMwMjA2LD
 EwNzI1MDk5NTFdfQ==
