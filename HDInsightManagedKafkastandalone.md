@@ -24,8 +24,6 @@ In this section we would deploy an HDInsight Managed Kafka  cluster with two edg
 
 - Check he box titled "*I agree to the terms and conditions stated above*" and click on **Purchase**. 
     
-![HDInsight Kafka Schema Registry]()
-
 - Wait till the deployment completes and you get the *Your Deployment is Complete* message and then click on  **Go to resource**.
 
 ![HDInsight Kafka Schema Registry](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic3.png)
@@ -49,6 +47,7 @@ In this section we would deploy an HDInsight Managed Kafka  cluster with two edg
 Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectstandalone1.md)  
                                                   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2MTY4MTAzNCwxNzkyMjk4Mzk5LC0yMT
-Q0NTA1ODQzLDMwNjA5NzQ4MywxMTYwMTg4NTg4XX0=
+eyJoaXN0b3J5IjpbLTE1NDk4MzIzMTIsMjA2MTY4MTAzNCwxNz
+kyMjk4Mzk5LC0yMTQ0NTA1ODQzLDMwNjA5NzQ4MywxMTYwMTg4
+NTg4XX0=
 -->
