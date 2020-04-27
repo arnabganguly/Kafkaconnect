@@ -57,7 +57,7 @@ curl -X GET http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.n
 ![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic16.png)
 
 
-- One way to test if Twitter Messages with the keywords are being ingested is to start a console consumer in a different session and start consuming messages from topic *twitterstatus* . 
+- One way to test if Twitter Messages with the keywords are being ingested is to start a console consumer in a different session and start consuming messages from the topic *twitterstatus* . 
 
 ```
 /usr/hdp/current/kafka-broker/bin/kafka-console-consumer.sh --bootstrap-server $KAFKAZKHOSTS --topic twitterstatus 
@@ -126,5 +126,6 @@ curl -X GET http://<edge-node-FQDN>:8083/connectors
 
 Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/KafkaRESTAPI.md)  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwMTY3OTgxMCw0OTg4NDE2OTldfQ==
+eyJoaXN0b3J5IjpbLTIxMjkwMDExMzcsLTQwMTY3OTgxMCw0OT
+g4NDE2OTldfQ==
 -->
