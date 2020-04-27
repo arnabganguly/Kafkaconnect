@@ -140,7 +140,7 @@ twitter.oauth.accessTokenSecret
 cd /usr/hdp/current/kafka-broker/connectors/
 sudo vi twitter.properties
 ```
-- Insert the below Twitter Connect plugin properties into the properties file. 
+- Insert the below Twitter Connect plugin properties into the properties file.  
 ```
 "name": "Twitter-to-Kafka",
 "connector.class": "com.github.jcustenborder.kafka.connect.twitter.TwitterSourceConnector",
@@ -160,7 +160,7 @@ sudo vi twitter.properties
 
 - Create a regular [Azure Blob storage account and a container](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal) on Azure and note the storage access keys 
 
-- Navigate to the 'connectors' folder and create a new properties file called `blob.properties` 
+- Navigate to the folder path `/usr/hdp/current/kafka-broker/connectors` and create a new properties file called `blob.properties` 
 ```
 cd /usr/hdp/current/kafka-broker/connectors/
 sudo vi blob.properties
@@ -184,7 +184,7 @@ confluent.topic.replication.factor=3
    Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectstandalone2.md)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODU3NDkwMjgwLDExNTEyOTU3OTIsLTE4MD
+eyJoaXN0b3J5IjpbMzQ5NDI3NTUzLDExNTEyOTU3OTIsLTE4MD
 kzMjgxNDUsLTEwMzk1MjI5NjgsLTYzNjMwMTY0NCwtODQ3ODM4
 MzU0LC04OTkwMjc3ODFdfQ==
 -->
