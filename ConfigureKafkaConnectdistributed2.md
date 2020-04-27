@@ -32,7 +32,6 @@ curl -X POST http://<edge-node-FQDN>:8083/connectors -H "Content-Type: applicati
           "tasks.max": 3,
           "kafka.status.topic":"twitterstatus",
           "kafka.delete.topic":"twitterdelete",        
-          "topic": "twitter1",   
           "twitter.oauth.consumerKey":"<twitter.oauth.consumerKey>",
           "twitter.oauth.consumerSecret":"<twitter.oauth.consumerSecret>",
           "twitter.oauth.accessToken":"<twitter.oauth.accessToken>",
@@ -126,6 +125,6 @@ curl -X GET http://<edge-node-FQDN>:8083/connectors
 
 Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/KafkaRESTAPI.md)  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjkwMDExMzcsLTQwMTY3OTgxMCw0OT
-g4NDE2OTldfQ==
+eyJoaXN0b3J5IjpbMTAzOTE0MDQ4LC0yMTI5MDAxMTM3LC00MD
+E2Nzk4MTAsNDk4ODQxNjk5XX0=
 -->
