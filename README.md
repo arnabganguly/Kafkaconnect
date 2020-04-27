@@ -36,7 +36,7 @@ Every connector spawns **tasks** which are then distributed across workers in th
 - Click to **[Start Lab on Kafka Connect in standalone mode](https://github.com/arnabganguly/Kafkaconnect/blob/master/HDInsightManagedKafkastandalone.md)**
 
 #### Distributed Mode 
--  Two edge nodes on an HDInsight cluster will be used to demonstrate a distributed mode Kafka Connect setup. 
+-  Two edge nodes on an HDInsight cluster will be used to demonstrate  Kafka Connect in distributed mode. 
 
  - Scalability is achieved in Kafka Connect with the addition of more edges nodes to the HDInsight cluster [either at the time of creation](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-apps-use-edge-node#add-an-edge-node-when-creating-a-cluster) or [post creation](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-apps-use-edge-node#add-an-edge-node-to-an-existing-cluster). 
 
@@ -48,11 +48,11 @@ Every connector spawns **tasks** which are then distributed across workers in th
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzgyODYzNzgsLTIwNjg1OTg4MTIsLT
-czNTY2NDY4LC02NDI0NzEzMzEsNjY0Nzk5NzUsNzI1MzI2OTI0
-LDE0NjA5NzQ4MDQsODAxNTgyMjIyLDE5MDUwMzA3NywxMjYyOT
-A3NTYzLC0xODU1NTgxNDYzLDE2MzU3MTM3NTUsLTk3MDYwOTE5
-NSwyMDIzMjk4MDczLC00NDA1ODM5NjcsLTEyNjY3NzA1MjUsMT
-Q5MTUzNjYxLDY1NTgzMTk0OSw4NTIzMDE0NTUsMjcwNTM5NjY5
-XX0=
+eyJoaXN0b3J5IjpbMTIxNDI0Mjc3MywtMjA2ODU5ODgxMiwtNz
+M1NjY0NjgsLTY0MjQ3MTMzMSw2NjQ3OTk3NSw3MjUzMjY5MjQs
+MTQ2MDk3NDgwNCw4MDE1ODIyMjIsMTkwNTAzMDc3LDEyNjI5MD
+c1NjMsLTE4NTU1ODE0NjMsMTYzNTcxMzc1NSwtOTcwNjA5MTk1
+LDIwMjMyOTgwNzMsLTQ0MDU4Mzk2NywtMTI2Njc3MDUyNSwxND
+kxNTM2NjEsNjU1ODMxOTQ5LDg1MjMwMTQ1NSwyNzA1Mzk2Njld
+fQ==
 -->
