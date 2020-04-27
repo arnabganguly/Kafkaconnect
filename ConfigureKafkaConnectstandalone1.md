@@ -101,7 +101,7 @@ plugin.path=/usr/hdp/current/kafka-broker/connectors/jcustenborder-kafka-connect
 
      ![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic9.png)
 
-  -  Create a new folder path on the edge node
+  -  Create a new folder path on the edge node and set its properties
   ```
      sudo mkdir /usr/hdp/current/kafka-broker/connectors
      sudo chmod 777 /usr/hdp/current/kafka-broker/connectors 
@@ -184,7 +184,7 @@ confluent.topic.replication.factor=3
    Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectstandalone2.md)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1MTI5NTc5MiwtMTgwOTMyODE0NSwtMT
-AzOTUyMjk2OCwtNjM2MzAxNjQ0LC04NDc4MzgzNTQsLTg5OTAy
-Nzc4MV19
+eyJoaXN0b3J5IjpbLTE0NjEzMTc2OTIsMTE1MTI5NTc5MiwtMT
+gwOTMyODE0NSwtMTAzOTUyMjk2OCwtNjM2MzAxNjQ0LC04NDc4
+MzgzNTQsLTg5OTAyNzc4MV19
 -->
