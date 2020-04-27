@@ -1,4 +1,4 @@
-# Kafka Connect with HDInsight Managed Kafka(WIP) 
+# Kafka Connect with HDInsight Managed Kafka 
 
 
 ### Kafka Connect
