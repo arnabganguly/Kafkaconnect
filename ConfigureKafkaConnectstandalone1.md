@@ -106,7 +106,7 @@ plugin.path=/usr/hdp/current/kafka-broker/connectors/jcustenborder-kafka-connect
      sudo mkdir /usr/hdp/current/kafka-broker/connectors
      sudo chmod 777 /usr/hdp/current/kafka-broker/connectors 
      ``` 
-- Using WINSCP or any other SCP tool of your choice upload the Kafka Connect plugins into folder path created in the last step
+- Using WINSCP or any other SCP tool of your choice upload the Kafka Connect plugins into the folder path `/usr/hdp/current/kafka-broker/connectors`
 
 ![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic11.png)
 
@@ -184,7 +184,7 @@ confluent.topic.replication.factor=3
    Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectstandalone2.md)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjEzMTc2OTIsMTE1MTI5NTc5MiwtMT
-gwOTMyODE0NSwtMTAzOTUyMjk2OCwtNjM2MzAxNjQ0LC04NDc4
-MzgzNTQsLTg5OTAyNzc4MV19
+eyJoaXN0b3J5IjpbMTgxNTQwOTI5OSwxMTUxMjk1NzkyLC0xOD
+A5MzI4MTQ1LC0xMDM5NTIyOTY4LC02MzYzMDE2NDQsLTg0Nzgz
+ODM1NCwtODk5MDI3NzgxXX0=
 -->
