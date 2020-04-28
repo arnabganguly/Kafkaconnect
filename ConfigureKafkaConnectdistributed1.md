@@ -120,7 +120,7 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
 - In the  `connect-distributed.properties`  file, define the topics that will store the connector state, task configuration state, and connector offset state. Uncomment and modify the parameters in `connect-distributed.properties`  file as shown below. Note that we use some of the topics we created earlier. 
 
 ```
-bootstrap.servers=<Enter the full contents of $KAFKAZKHOSTS>
+bootstrap.servers=<Enter the full contents of $KAFKABROKERS>
 group.id=agconnect-cluster
 
 key.converter=org.apache.kafka.connect.json.JsonConverter
@@ -187,8 +187,9 @@ curl -s http://<edge-node-FQDN>:8083/ |jq
    Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectdistributed2.md)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzOTczNTUxNSwtMTU2ODI1MzA4NywxMD
-MwNTgxOTAzLDUxMDA4Njc2OCwtMTUxMzA0Nzg5NSwtMTE4NDI3
-NjYzNSw4MTQwMDgxNjcsMTU2MzgwMTcxLC0xNTg2MTMzOTgwLD
-Q5OTIyNjMxMCwxMjU5MTMyMTQwLC05NDIwODI0NjRdfQ==
+eyJoaXN0b3J5IjpbMjEzMDk5MjIxOSwxNTM5NzM1NTE1LC0xNT
+Y4MjUzMDg3LDEwMzA1ODE5MDMsNTEwMDg2NzY4LC0xNTEzMDQ3
+ODk1LC0xMTg0Mjc2NjM1LDgxNDAwODE2NywxNTYzODAxNzEsLT
+E1ODYxMzM5ODAsNDk5MjI2MzEwLDEyNTkxMzIxNDAsLTk0MjA4
+MjQ2NF19
 -->
