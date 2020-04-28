@@ -68,7 +68,7 @@ sudo cp /usr/hdp/current/kafka-broker/config/connect-standalone.properties /usr/
  
    
 ```
-bootstrap.servers=<Enter the full contents of $KAFKAZKHOSTS>
+bootstrap.servers=<Enter the full contents of $KAFKABROKERS>
 key.converter.schemas.enable=true
 value.converter.schemas.enable=true
 offset.storage.file.filename=/tmp/connect.offsets1
@@ -184,7 +184,8 @@ confluent.topic.replication.factor=3
    Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectstandalone2.md)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyMzQ1ODE5MCwzNDk0Mjc1NTMsMTE1MT
-I5NTc5MiwtMTgwOTMyODE0NSwtMTAzOTUyMjk2OCwtNjM2MzAx
-NjQ0LC04NDc4MzgzNTQsLTg5OTAyNzc4MV19
+eyJoaXN0b3J5IjpbMTY3OTE2Mjg5NCwxNjIzNDU4MTkwLDM0OT
+QyNzU1MywxMTUxMjk1NzkyLC0xODA5MzI4MTQ1LC0xMDM5NTIy
+OTY4LC02MzYzMDE2NDQsLTg0NzgzODM1NCwtODk5MDI3NzgxXX
+0=
 -->
