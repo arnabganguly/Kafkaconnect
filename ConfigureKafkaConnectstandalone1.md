@@ -50,7 +50,7 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
 
  - To run Kafka Connect in **standalone mode** one needs to look at two important files. 
 
-  - `connect-standalone.properties` : Located at /usr/hdp/current/kafka-broker/bin/conf
+  - `connect-standalone.properties` : Located at /usr/hdp/current/kafka-broker/bin
 
   - `connect-standalone.sh` : Located at /usr/hdp/current/kafka-broker/bin
 
@@ -184,7 +184,7 @@ confluent.topic.replication.factor=3
    Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectstandalone2.md)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ5NDI3NTUzLDExNTEyOTU3OTIsLTE4MD
-kzMjgxNDUsLTEwMzk1MjI5NjgsLTYzNjMwMTY0NCwtODQ3ODM4
-MzU0LC04OTkwMjc3ODFdfQ==
+eyJoaXN0b3J5IjpbMTYyMzQ1ODE5MCwzNDk0Mjc1NTMsMTE1MT
+I5NTc5MiwtMTgwOTMyODE0NSwtMTAzOTUyMjk2OCwtNjM2MzAx
+NjQ0LC04NDc4MzgzNTQsLTg5OTAyNzc4MV19
 -->
